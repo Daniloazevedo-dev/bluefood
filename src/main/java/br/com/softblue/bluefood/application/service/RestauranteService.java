@@ -40,7 +40,7 @@ public class RestauranteService {
 	public void saveRestaurante(Restaurante restaurante) throws ValidationException {
 		
 		if(!validateEmail(restaurante.getEmail(), restaurante.getId())) {
-			throw new ValidationException("O e-mail est· duplicado");
+			throw new ValidationException("O e-mail est√° duplicado");
 		}
 		
 		if (restaurante.getId() != null) {
@@ -98,7 +98,7 @@ public class RestauranteService {
 			
 		} else {
 			
-			throw new IllegalStateException("O tipo de busca " + filter.getSearchType() + " n„o È suportado");
+			throw new IllegalStateException("O tipo de busca " + filter.getSearchType() + " n√£o √© suportado");
 		}
 		
 		Iterator<Restaurante> it = restaurantes.iterator();
