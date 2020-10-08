@@ -96,7 +96,7 @@ public class RestauranteController {
 	public String viewComidas(Model model) {
 		
 		Integer restauranteId = SecurityUtils.loggedRestaurante().getId();
-		Restaurante restaurante = restauranteRepository.findById(restauranteId).orElseThrow();
+		Restaurante restaurante = restauranteRepository.findById(restauranteId).orElseThrow(NoSuchElementException::new);
 		model.addAttribute("restaurante", restaurante);
 		
 		List<ItemCardapio> itensCardapio = itemCardapioRepository.findByRestaurante_IdOrderByNome(restauranteId);

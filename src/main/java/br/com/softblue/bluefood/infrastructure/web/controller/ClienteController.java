@@ -129,7 +129,7 @@ public class ClienteController {
 			Model model
 			) {
 		
-		Restaurante restaurante = restauranteRepository.findById(restauranteId).orElseThrow();
+		Restaurante restaurante = restauranteRepository.findById(restauranteId).orElseThrow(NoSuchElementException::new);
 		model.addAttribute("restaurante", restaurante);
 		
 		model.addAttribute("cep", SecurityUtils.loggedCliente().getCep());

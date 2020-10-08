@@ -1,7 +1,6 @@
 package br.com.softblue.bluefood.infrastructure.web.security;
 
 import java.util.Collection;
-import java.util.List;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -10,6 +9,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import br.com.softblue.bluefood.domain.cliente.Cliente;
 import br.com.softblue.bluefood.domain.restaurante.Restaurante;
 import br.com.softblue.bluefood.domain.usuario.Usuario;
+import br.com.softblue.bluefood.util.CollectionUtils;
 
 @SuppressWarnings("serial")
 public class LoggedUser implements UserDetails{
@@ -32,7 +32,7 @@ public class LoggedUser implements UserDetails{
 		}
 		
 		this.role = role;
-		this.roles = List.of(new SimpleGrantedAuthority("ROLE_" + role));
+		this.roles = CollectionUtils.listOf(new SimpleGrantedAuthority("ROLE_" + role));
 	}
 
 	@Override

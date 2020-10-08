@@ -2,6 +2,7 @@ package br.com.softblue.bluefood.application.service;
 
 import java.util.Iterator;
 import java.util.List;
+import java.util.NoSuchElementException;
 
 import javax.validation.ValidationException;
 
@@ -43,7 +44,7 @@ public class RestauranteService {
 		}
 		
 		if (restaurante.getId() != null) {
-			Restaurante restauranteDB = restauranteRepository.findById(restaurante.getId()).orElseThrow();
+			Restaurante restauranteDB = restauranteRepository.findById(restaurante.getId()).orElseThrow(NoSuchElementException::new);
 			restaurante.setSenha(restauranteDB.getSenha());
 			restaurante.setLogotipo(restauranteDB.getLogotipo());
 			restauranteRepository.save(restaurante);

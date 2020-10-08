@@ -50,7 +50,7 @@ public class CarrinhoController {
 			Model model
 			) {
 		
-		ItemCardapio itemCardapio = itemCardapioRepository.findById(itemId).orElseThrow();
+		ItemCardapio itemCardapio = itemCardapioRepository.findById(itemId).orElseThrow(NoSuchElementException::new);
 		try {
 			carrinho.adicionarItem(itemCardapio, quantidade, observacoes);
 		} catch (RestauranteDiferenteException e) {
@@ -68,7 +68,7 @@ public class CarrinhoController {
 			Model model
 			) {
 		
-		ItemCardapio itemCardapio = itemCardapioRepository.findById(itemId).orElseThrow();
+		ItemCardapio itemCardapio = itemCardapioRepository.findById(itemId).orElseThrow(NoSuchElementException::new);
 		
 		carrinho.removerItem(itemCardapio);
 		

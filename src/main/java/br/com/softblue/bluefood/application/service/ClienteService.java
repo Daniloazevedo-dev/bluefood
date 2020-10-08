@@ -23,6 +23,8 @@
  *******************************************************************************/
 package br.com.softblue.bluefood.application.service;
 
+import java.util.NoSuchElementException;
+
 import javax.validation.ValidationException;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -51,7 +53,7 @@ public class ClienteService {
 		}
 		
 		if (cliente.getId() != null) {
-			Cliente clienteDB = clienteRepository.findById(cliente.getId()).orElseThrow();
+			Cliente clienteDB = clienteRepository.findById(cliente.getId()).orElseThrow(NoSuchElementException::new);
 			cliente.setSenha(clienteDB.getSenha());
 		} else {
 			cliente.encrptPassword();
