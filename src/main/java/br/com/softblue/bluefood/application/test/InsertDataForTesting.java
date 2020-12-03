@@ -49,7 +49,7 @@ public class InsertDataForTesting {
 		
 		org.springframework.core.env.Environment environment = event.getApplicationContext().getEnvironment();
 		
-		if(environment.acceptsProfiles(Profiles.of("dev"))) {
+		if(environment.acceptsProfiles(Profiles.of("prod"))) {
 			
 			Cliente[] clientes = clientes();
 			Restaurante[] restaurantes = restaurantes();
