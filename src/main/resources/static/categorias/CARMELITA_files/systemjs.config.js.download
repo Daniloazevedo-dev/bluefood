@@ -1,0 +1,66 @@
+/**
+ * System configuration for Angular samples
+ * Adjust as necessary for your application needs.
+ */
+(function (global) {
+
+  System.config({
+    paths: {
+      // paths serve as alias
+      'npm:': 'vendor/'
+    },
+    // map tells the System loader where to look for things
+    map: {
+      // our app is within the app folder
+      app: 'app',
+
+      // angular bundles
+      '@angular/core': 'npm:vendor.min.js',
+      '@angular/common': 'npm:vendor.min.js',
+      '@angular/compiler': 'npm:vendor.min.js',
+      '@angular/platform-browser': 'npm:vendor.min.js',
+      '@angular/platform-browser-dynamic': 'npm:vendor.min.js',
+      '@angular/http': 'npm:vendor.min.js',
+      '@angular/router': 'npm:vendor.min.js',
+      '@angular/forms': 'npm:vendor.min.js',
+
+      // other libraries
+      'rxjs/Rx': 'npm:vendor.min.js',
+      // 'angular-in-memory-web-api': 'npm:angular-in-memory-web-api/bundles/in-memory-web-api.umd.js',
+      'moment': 'npm:vendor.min.js',
+      'ng2-bootstrap/ng2-bootstrap': 'npm:vendor.min.js',
+      'ng2-facebook-sdk': 'npm:vendor.min.js',
+      'angular2-google-maps/core': 'npm:vendor.min.js',
+      "ng2-select2": "npm:vendor.min.js",
+      "ngx-popover": "npm:vendor.min.js",
+      "angular2-useful-swiper": "npm:vendor.min.js",
+      "ngx-perfect-scrollbar": "npm:vendor.min.js",
+      'text-mask-core': 'npm:text-mask-core',
+      'angular2-social-login': 'npm:vendor.min.js',
+      'angular2-text-mask': 'dist/angular2TextMask.js',
+      'moment': 'node_modules/moment',
+      'ngx-cookie': 'npm:vendor.min.js'
+    },
+    // packages tells the System loader how to load when no filename and/or no extension
+    packages: {
+      app: {
+        defaultExtension: 'js'
+      },
+
+      rxjs: {
+        defaultExtension: 'js'
+      },
+
+      'text-mask-core': {
+        defaultExtension: 'js'
+      },
+
+      'angular2-text-mask': {
+        defaultExtension: 'js'
+      },
+
+      'moment': { defaultExtension: 'js' }
+    }
+  });
+
+})(this);

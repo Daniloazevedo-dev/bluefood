@@ -1,0 +1,8046 @@
+/*!
+ * Bootstrap v3.3.6 (http://getbootstrap.com)
+ * Copyright 2011-2015 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+
+/*! normalize.avonwg-css v3.0.3 | MIT License | github.avonwg-com/necolas/normalize.avonwg-css */
+
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%
+}
+
+body {
+    margin: 0
+}
+.avonwg article,
+.avonwg aside,
+.avonwg details,
+.avonwg figcaption,
+.avonwg figure,
+.avonwg footer,
+.avonwg header,
+.avonwg hgroup,
+.avonwg main,
+.avonwg menu,
+.avonwg nav,
+.avonwg section,
+.avonwg summary {
+    display: block
+}
+
+.avonwg audio,
+.avonwg canvas,
+.avonwg progress,
+.avonwg video {
+    display: inline-block;
+    vertical-align: baseline
+}
+
+.avonwg audio:not([controls]) {
+    display: none;
+    height: 0
+}
+
+[hidden],
+template {
+    display: none
+}
+
+/*a {
+    background-color: transparent
+}
+
+a:active,
+a:hover {
+    outline: 0
+}*/
+
+.avonwg abbr[title] {
+    border-bottom: 1px dotted
+}
+
+.avonwg b,
+.avonwg strong {
+    font-weight: 700
+}
+
+.avonwg dfn {
+    font-style: italic
+}
+
+.avonwg h1 {
+    margin: .67em 0;
+    font-size: 2em
+}
+
+.avonwg mark {
+    color: #000;
+    background: #ff0
+}
+
+.avonwg small {
+    font-size: 80%
+}
+
+.avonwg sub,
+.avonwg sup {
+    position: relative;
+    font-size: 75%;
+    line-height: 0;
+    vertical-align: baseline
+}
+
+.avonwg sup {
+    top: -.5em
+}
+
+.avonwg sub {
+    bottom: -.25em
+}
+
+.avonwg img {
+    border: 0
+}
+
+.avonwg svg:not(:root) {
+    overflow: hidden
+}
+
+.avonwg figure {
+    margin: 1em 40px
+}
+
+.avonwgpre hr {
+    height: 0;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box
+}
+
+.avonwgpre pre {
+    overflow: auto
+}
+
+.avonwg code,
+.avonwg kbd,
+.avonwg pre,
+.avonwg samp {
+    font-family: monospace, monospace;
+    font-size: 1em
+}
+
+/*button,
+input,
+optgroup,
+select,
+textarea {
+    margin: 0;
+    font: inherit;
+    color: inherit
+}
+
+button {
+    overflow: visible
+}
+
+button,
+select {
+    text-transform: none
+}
+
+button,
+html input[type=button],
+input[type=reset],
+input[type=submit] {
+    -webkit-appearance: button;
+    cursor: pointer
+}
+
+button[disabled],
+html input[disabled] {
+    cursor: default
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    padding: 0;
+    border: 0
+}
+
+input {
+    line-height: normal
+}
+
+input[type=checkbox],
+input[type=radio] {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    height: auto
+}
+
+input[type=search] {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    -webkit-appearance: textfield
+}
+
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+fieldset {
+    padding: .35em .625em .75em;
+    margin: 0 2px;
+    border: 1px solid silver
+}
+
+legend {
+    padding: 0;
+    border: 0
+}
+
+textarea {
+    overflow: auto
+}
+
+optgroup {
+    font-weight: 700
+}
+*/
+.avonwg table {
+    border-spacing: 0;
+    border-collapse: collapse
+}
+
+.avonwg td,
+.avonwg th {
+    padding: 0
+}
+
+
+/*! Source: https://github.avonwg-com/h5bp/html5-boilerplate/blob/master/src/css/main.avonwg-css */
+
+@media print {
+      *,
+    :after,
+    :before {
+        color: #000!important;
+        text-shadow: none!important;
+        background: 0 0!important;
+        -webkit-box-shadow: none!important;
+        box-shadow: none!important
+    }
+    .avonwg a,
+    .avonwg a:visited {
+        text-decoration: underline
+    }
+    .avonwg a[href]:after {
+        content: " (" attr(href) ")"
+    }
+    .avonwg abbr[title]:after {
+        content: " (" attr(title) ")"
+    }
+    .avonwg a[href^="javascript:"]:after,
+    .avonwg a[href^="#"]:after {
+        content: ""
+    }
+    .avonwg blockquote,
+    .avonwg pre {
+        border: 1px solid #999;
+        page-break-inside: avoid
+    }
+    .avonwg thead {
+        display: table-header-group
+    }
+    .avonwg img,
+    .avonwg tr {
+        page-break-inside: avoid
+    }
+    .avonwg img {
+        max-width: 100%!important
+    }
+    .avonwg h2,
+    .avonwg h3,
+    .avonwg p {
+        orphans: 3;
+        widows: 3
+    }
+    .avonwg h2,
+    .avonwg h3 {
+        page-break-after: avoid
+    }
+    .avonwg-navbar {
+        display: none
+    }
+    .avonwg-btn>.avonwg-caret,
+    .avonwg-dropup>.avonwg-btn>.avonwg-caret {
+        border-top-color: #000!important
+    }
+    .avonwg-label {
+        border: 1px solid #000
+    }
+    .avonwg-table {
+        border-collapse: collapse!important
+    }
+    .avonwg-table td,
+    .avonwg-table th {
+        background-color: #fff!important
+    }
+    .avonwg-table-bordered td,
+    .avonwg-table-bordered th {
+        border: 1px solid #ddd!important
+    }
+}
+
+@font-face {
+    font-family: 'Glyphicons Halflings';
+    src: url(/widget/avonwg/app/fonts/glyphicons-halflings-regular.eot);
+    src: url(/widget/avonwg/app/fonts/glyphicons-halflings-regular.eot?#iefix) format('embedded-opentype'), url(/widget/avonwg/app/fonts/glyphicons-halflings-regular.woff2) format('woff2'), url(/widget/avonwg/app/fonts/glyphicons-halflings-regular.woff) format('woff'), url(/widget/avonwg/app/fonts/glyphicons-halflings-regular.ttf) format('truetype'), url(/widget/avonwg/app/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg')
+}
+
+.avonwg-glyphicon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.avonwg-glyphicon-asterisk:before {
+    content: "\002a"
+}
+.avonwg-glyphicons-alert:before {
+   content: "\E505";
+}
+.avonwg-glyphicon-plus:before {
+    content: "\002b"
+}
+
+.avonwg-glyphicon-eur:before,
+.avonwg-glyphicon-euro:before {
+    content: "\20ac"
+}
+
+.avonwg-glyphicon-minus:before {
+    content: "\2212"
+}
+
+.avonwg-glyphicon-cloud:before {
+    content: "\2601"
+}
+
+.avonwg-glyphicon-envelope:before {
+    content: "\2709"
+}
+
+.avonwg-glyphicon-pencil:before {
+    content: "\270f"
+}
+
+.avonwg-glyphicon-glass:before {
+    content: "\e001"
+}
+
+.avonwg-glyphicon-music:before {
+    content: "\e002"
+}
+
+.avonwg-glyphicon-search:before {
+    content: "\e003"
+}
+
+.avonwg-glyphicon-heart:before {
+    content: "\e005"
+}
+
+.avonwg-glyphicon-star:before {
+    content: "\e006"
+}
+
+.avonwg-glyphicon-star-empty:before {
+    content: "\e007"
+}
+
+.avonwg-glyphicon-user:before {
+    content: "\e008"
+}
+
+.avonwg-glyphicon-film:before {
+    content: "\e009"
+}
+
+.avonwg-glyphicon-th-large:before {
+    content: "\e010"
+}
+
+.avonwg-glyphicon-th:before {
+    content: "\e011"
+}
+
+.avonwg-glyphicon-th-list:before {
+    content: "\e012"
+}
+
+.avonwg-glyphicon-ok:before {
+    content: "\e013"
+}
+
+.avonwg-glyphicon-remove:before {
+    content: "\e014"
+}
+
+.avonwg-glyphicon-zoom-in:before {
+    content: "\e015"
+}
+
+.avonwg-glyphicon-zoom-out:before {
+    content: "\e016"
+}
+
+.avonwg-glyphicon-off:before {
+    content: "\e017"
+}
+
+.avonwg-glyphicon-signal:before {
+    content: "\e018"
+}
+
+.avonwg-glyphicon-cog:before {
+    content: "\e019"
+}
+
+.avonwg-glyphicon-trash:before {
+    content: "\e020"
+}
+
+.avonwg-glyphicon-home:before {
+    content: "\e021"
+}
+
+.avonwg-glyphicon-file:before {
+    content: "\e022"
+}
+
+.avonwg-glyphicon-time:before {
+    content: "\e023"
+}
+
+.avonwg-glyphicon-road:before {
+    content: "\e024"
+}
+
+.avonwg-glyphicon-download-alt:before {
+    content: "\e025"
+}
+
+.avonwg-glyphicon-download:before {
+    content: "\e026"
+}
+
+.avonwg-glyphicon-upload:before {
+    content: "\e027"
+}
+
+.avonwg-glyphicon-inbox:before {
+    content: "\e028"
+}
+
+.avonwg-glyphicon-play-circle:before {
+    content: "\e029"
+}
+
+.avonwg-glyphicon-repeat:before {
+    content: "\e030"
+}
+
+.avonwg-glyphicon-refresh:before {
+    content: "\e031"
+}
+
+.avonwg-glyphicon-list-alt:before {
+    content: "\e032"
+}
+
+.avonwg-glyphicon-lock:before {
+    content: "\e033"
+}
+
+.avonwg-glyphicon-flag:before {
+    content: "\e034"
+}
+
+.avonwg-glyphicon-headphones:before {
+    content: "\e035"
+}
+
+.avonwg-glyphicon-volume-off:before {
+    content: "\e036"
+}
+
+.avonwg-glyphicon-volume-down:before {
+    content: "\e037"
+}
+
+.avonwg-glyphicon-volume-up:before {
+    content: "\e038"
+}
+
+.avonwg-glyphicon-qrcode:before {
+    content: "\e039"
+}
+
+.avonwg-glyphicon-barcode:before {
+    content: "\e040"
+}
+
+.avonwg-glyphicon-tag:before {
+    content: "\e041"
+}
+
+.avonwg-glyphicon-tags:before {
+    content: "\e042"
+}
+
+.avonwg-glyphicon-book:before {
+    content: "\e043"
+}
+
+.avonwg-glyphicon-bookmark:before {
+    content: "\e044"
+}
+
+.avonwg-glyphicon-print:before {
+    content: "\e045"
+}
+
+.avonwg-glyphicon-camera:before {
+    content: "\e046"
+}
+
+.avonwg-glyphicon-font:before {
+    content: "\e047"
+}
+
+.avonwg-glyphicon-bold:before {
+    content: "\e048"
+}
+
+.avonwg-glyphicon-italic:before {
+    content: "\e049"
+}
+
+.avonwg-glyphicon-text-height:before {
+    content: "\e050"
+}
+
+.avonwg-glyphicon-text-width:before {
+    content: "\e051"
+}
+
+.avonwg-glyphicon-align-left:before {
+    content: "\e052"
+}
+
+.avonwg-glyphicon-align-center:before {
+    content: "\e053"
+}
+
+.avonwg-glyphicon-align-right:before {
+    content: "\e054"
+}
+
+.avonwg-glyphicon-align-justify:before {
+    content: "\e055"
+}
+
+.avonwg-glyphicon-list:before {
+    content: "\e056"
+}
+
+.avonwg-glyphicon-indent-left:before {
+    content: "\e057"
+}
+
+.avonwg-glyphicon-indent-right:before {
+    content: "\e058"
+}
+
+.avonwg-glyphicon-facetime-video:before {
+    content: "\e059"
+}
+
+.avonwg-glyphicon-picture:before {
+    content: "\e060"
+}
+
+.avonwg-glyphicon-map-marker:before {
+    content: "\e062"
+}
+
+.avonwg-glyphicon-adjust:before {
+    content: "\e063"
+}
+
+.avonwg-glyphicon-tint:before {
+    content: "\e064"
+}
+
+.avonwg-glyphicon-edit:before {
+    content: "\e065"
+}
+
+.avonwg-glyphicon-share:before {
+    content: "\e066"
+}
+
+.avonwg-glyphicon-check:before {
+    content: "\e067"
+}
+
+.avonwg-glyphicon-move:before {
+    content: "\e068"
+}
+
+.avonwg-glyphicon-step-backward:before {
+    content: "\e069"
+}
+
+.avonwg-glyphicon-fast-backward:before {
+    content: "\e070"
+}
+
+.avonwg-glyphicon-backward:before {
+    content: "\e071"
+}
+
+.avonwg-glyphicon-play:before {
+    content: "\e072"
+}
+
+.avonwg-glyphicon-pause:before {
+    content: "\e073"
+}
+
+.avonwg-glyphicon-stop:before {
+    content: "\e074"
+}
+
+.avonwg-glyphicon-forward:before {
+    content: "\e075"
+}
+
+.avonwg-glyphicon-fast-forward:before {
+    content: "\e076"
+}
+
+.avonwg-glyphicon-step-forward:before {
+    content: "\e077"
+}
+
+.avonwg-glyphicon-eject:before {
+    content: "\e078"
+}
+
+.avonwg-glyphicon-chevron-left:before {
+    content: "\e079"
+}
+
+.avonwg-glyphicon-chevron-right:before {
+    content: "\e080"
+}
+
+.avonwg-glyphicon-plus-sign:before {
+    content: "\e081"
+}
+
+.avonwg-glyphicon-minus-sign:before {
+    content: "\e082"
+}
+
+.avonwg-glyphicon-remove-sign:before {
+    content: "\e083"
+}
+
+.avonwg-glyphicon-ok-sign:before {
+    content: "\e084"
+}
+
+.avonwg-glyphicon-question-sign:before {
+    content: "\e085"
+}
+
+.avonwg-glyphicon-info-sign:before {
+    content: "\e086"
+}
+
+.avonwg-glyphicon-screenshot:before {
+    content: "\e087"
+}
+
+.avonwg-glyphicon-remove-circle:before {
+    content: "\e088"
+}
+
+.avonwg-glyphicon-ok-circle:before {
+    content: "\e089"
+}
+
+.avonwg-glyphicon-ban-circle:before {
+    content: "\e090"
+}
+
+.avonwg-glyphicon-arrow-left:before {
+    content: "\e091"
+}
+
+.avonwg-glyphicon-arrow-right:before {
+    content: "\e092"
+}
+
+.avonwg-glyphicon-arrow-up:before {
+    content: "\e093"
+}
+
+.avonwg-glyphicon-arrow-down:before {
+    content: "\e094"
+}
+
+.avonwg-glyphicon-share-alt:before {
+    content: "\e095"
+}
+
+.avonwg-glyphicon-resize-full:before {
+    content: "\e096"
+}
+
+.avonwg-glyphicon-resize-small:before {
+    content: "\e097"
+}
+
+.avonwg-glyphicon-exclamation-sign:before {
+    content: "\e101"
+}
+
+.avonwg-glyphicon-gift:before {
+    content: "\e102"
+}
+
+.avonwg-glyphicon-leaf:before {
+    content: "\e103"
+}
+
+.avonwg-glyphicon-fire:before {
+    content: "\e104"
+}
+
+.avonwg-glyphicon-eye-open:before {
+    content: "\e105"
+}
+
+.avonwg-glyphicon-eye-close:before {
+    content: "\e106"
+}
+
+.avonwg-glyphicon-warning-sign:before {
+    content: "\e107"
+}
+
+.avonwg-glyphicon-plane:before {
+    content: "\e108"
+}
+
+.avonwg-glyphicon-calendar:before {
+    content: "\e109"
+}
+
+.avonwg-glyphicon-random:before {
+    content: "\e110"
+}
+
+.avonwg-glyphicon-comment:before {
+    content: "\e111"
+}
+
+.avonwg-glyphicon-magnet:before {
+    content: "\e112"
+}
+
+.avonwg-glyphicon-chevron-up:before {
+    content: "\e113"
+}
+
+.avonwg-glyphicon-chevron-down:before {
+    content: "\e114"
+}
+
+.avonwg-glyphicon-retweet:before {
+    content: "\e115"
+}
+
+.avonwg-glyphicon-shopping-cart:before {
+    content: "\e116"
+}
+
+.avonwg-glyphicon-folder-close:before {
+    content: "\e117"
+}
+
+.avonwg-glyphicon-folder-open:before {
+    content: "\e118"
+}
+
+.avonwg-glyphicon-resize-vertical:before {
+    content: "\e119"
+}
+
+.avonwg-glyphicon-resize-horizontal:before {
+    content: "\e120"
+}
+
+.avonwg-glyphicon-hdd:before {
+    content: "\e121"
+}
+
+.avonwg-glyphicon-bullhorn:before {
+    content: "\e122"
+}
+
+.avonwg-glyphicon-bell:before {
+    content: "\e123"
+}
+
+.avonwg-glyphicon-certificate:before {
+    content: "\e124"
+}
+
+.avonwg-glyphicon-thumbs-up:before {
+    content: "\e125"
+}
+
+.avonwg-glyphicon-thumbs-down:before {
+    content: "\e126"
+}
+
+.avonwg-glyphicon-hand-right:before {
+    content: "\e127"
+}
+
+.avonwg-glyphicon-hand-left:before {
+    content: "\e128"
+}
+
+.avonwg-glyphicon-hand-up:before {
+    content: "\e129"
+}
+
+.avonwg-glyphicon-hand-down:before {
+    content: "\e130"
+}
+
+.avonwg-glyphicon-circle-arrow-right:before {
+    content: "\e131"
+}
+
+.avonwg-glyphicon-circle-arrow-left:before {
+    content: "\e132"
+}
+
+.avonwg-glyphicon-circle-arrow-up:before {
+    content: "\e133"
+}
+
+.avonwg-glyphicon-circle-arrow-down:before {
+    content: "\e134"
+}
+
+.avonwg-glyphicon-globe:before {
+    content: "\e135"
+}
+
+.avonwg-glyphicon-wrench:before {
+    content: "\e136"
+}
+
+.avonwg-glyphicon-tasks:before {
+    content: "\e137"
+}
+
+.avonwg-glyphicon-filter:before {
+    content: "\e138"
+}
+
+.avonwg-glyphicon-briefcase:before {
+    content: "\e139"
+}
+
+.avonwg-glyphicon-fullscreen:before {
+    content: "\e140"
+}
+
+.avonwg-glyphicon-dashboard:before {
+    content: "\e141"
+}
+
+.avonwg-glyphicon-paperclip:before {
+    content: "\e142"
+}
+
+.avonwg-glyphicon-heart-empty:before {
+    content: "\e143"
+}
+
+.avonwg-glyphicon-link:before {
+    content: "\e144"
+}
+
+.avonwg-glyphicon-phone:before {
+    content: "\e145"
+}
+
+.avonwg-glyphicon-pushpin:before {
+    content: "\e146"
+}
+
+.avonwg-glyphicon-usd:before {
+    content: "\e148"
+}
+
+.avonwg-glyphicon-gbp:before {
+    content: "\e149"
+}
+
+.avonwg-glyphicon-sort:before {
+    content: "\e150"
+}
+
+.avonwg-glyphicon-sort-by-alphabet:before {
+    content: "\e151"
+}
+
+.avonwg-glyphicon-sort-by-alphabet-alt:before {
+    content: "\e152"
+}
+
+.avonwg-glyphicon-sort-by-order:before {
+    content: "\e153"
+}
+
+.avonwg-glyphicon-sort-by-order-alt:before {
+    content: "\e154"
+}
+
+.avonwg-glyphicon-sort-by-attributes:before {
+    content: "\e155"
+}
+
+.avonwg-glyphicon-sort-by-attributes-alt:before {
+    content: "\e156"
+}
+
+.avonwg-glyphicon-unchecked:before {
+    content: "\e157"
+}
+
+.avonwg-glyphicon-expand:before {
+    content: "\e158"
+}
+
+.avonwg-glyphicon-collapse-down:before {
+    content: "\e159"
+}
+
+.avonwg-glyphicon-collapse-up:before {
+    content: "\e160"
+}
+
+.avonwg-glyphicon-log-in:before {
+    content: "\e161"
+}
+
+.avonwg-glyphicon-flash:before {
+    content: "\e162"
+}
+
+.avonwg-glyphicon-log-out:before {
+    content: "\e163"
+}
+
+.avonwg-glyphicon-new-window:before {
+    content: "\e164"
+}
+
+.avonwg-glyphicon-record:before {
+    content: "\e165"
+}
+
+.avonwg-glyphicon-save:before {
+    content: "\e166"
+}
+
+.avonwg-glyphicon-open:before {
+    content: "\e167"
+}
+
+.avonwg-glyphicon-saved:before {
+    content: "\e168"
+}
+
+.avonwg-glyphicon-import:before {
+    content: "\e169"
+}
+
+.avonwg-glyphicon-export:before {
+    content: "\e170"
+}
+
+.avonwg-glyphicon-send:before {
+    content: "\e171"
+}
+
+.avonwg-glyphicon-floppy-disk:before {
+    content: "\e172"
+}
+
+.avonwg-glyphicon-floppy-saved:before {
+    content: "\e173"
+}
+
+.avonwg-glyphicon-floppy-remove:before {
+    content: "\e174"
+}
+
+.avonwg-glyphicon-floppy-save:before {
+    content: "\e175"
+}
+
+.avonwg-glyphicon-floppy-open:before {
+    content: "\e176"
+}
+
+.avonwg-glyphicon-credit-card:before {
+    content: "\e177"
+}
+
+.avonwg-glyphicon-transfer:before {
+    content: "\e178"
+}
+
+.avonwg-glyphicon-cutlery:before {
+    content: "\e179"
+}
+
+.avonwg-glyphicon-header:before {
+    content: "\e180"
+}
+
+.avonwg-glyphicon-compressed:before {
+    content: "\e181"
+}
+
+.avonwg-glyphicon-earphone:before {
+    content: "\e182"
+}
+
+.avonwg-glyphicon-phone-alt:before {
+    content: "\e183"
+}
+
+.avonwg-glyphicon-tower:before {
+    content: "\e184"
+}
+
+.avonwg-glyphicon-stats:before {
+    content: "\e185"
+}
+
+.avonwg-glyphicon-sd-video:before {
+    content: "\e186"
+}
+
+.avonwg-glyphicon-hd-video:before {
+    content: "\e187"
+}
+
+.avonwg-glyphicon-subtitles:before {
+    content: "\e188"
+}
+
+.avonwg-glyphicon-sound-stereo:before {
+    content: "\e189"
+}
+
+.avonwg-glyphicon-sound-dolby:before {
+    content: "\e190"
+}
+
+.avonwg-glyphicon-sound-5-1:before {
+    content: "\e191"
+}
+
+.avonwg-glyphicon-sound-6-1:before {
+    content: "\e192"
+}
+
+.avonwg-glyphicon-sound-7-1:before {
+    content: "\e193"
+}
+
+.avonwg-glyphicon-copyright-mark:before {
+    content: "\e194"
+}
+
+.avonwg-glyphicon-registration-mark:before {
+    content: "\e195"
+}
+
+.avonwg-glyphicon-cloud-download:before {
+    content: "\e197"
+}
+
+.avonwg-glyphicon-cloud-upload:before {
+    content: "\e198"
+}
+
+.avonwg-glyphicon-tree-conifer:before {
+    content: "\e199"
+}
+
+.avonwg-glyphicon-tree-deciduous:before {
+    content: "\e200"
+}
+
+.avonwg-glyphicon-cd:before {
+    content: "\e201"
+}
+
+.avonwg-glyphicon-save-file:before {
+    content: "\e202"
+}
+
+.avonwg-glyphicon-open-file:before {
+    content: "\e203"
+}
+
+.avonwg-glyphicon-level-up:before {
+    content: "\e204"
+}
+
+.avonwg-glyphicon-copy:before {
+    content: "\e205"
+}
+
+.avonwg-glyphicon-paste:before {
+    content: "\e206"
+}
+
+.avonwg-glyphicon-alert:before {
+    content: "\e209"
+}
+
+.avonwg-glyphicon-equalizer:before {
+    content: "\e210"
+}
+
+.avonwg-glyphicon-king:before {
+    content: "\e211"
+}
+
+.avonwg-glyphicon-queen:before {
+    content: "\e212"
+}
+
+.avonwg-glyphicon-pawn:before {
+    content: "\e213"
+}
+
+.avonwg-glyphicon-bishop:before {
+    content: "\e214"
+}
+
+.avonwg-glyphicon-knight:before {
+    content: "\e215"
+}
+
+.avonwg-glyphicon-baby-formula:before {
+    content: "\e216"
+}
+
+.avonwg-glyphicon-tent:before {
+    content: "\26fa"
+}
+
+.avonwg-glyphicon-blackboard:before {
+    content: "\e218"
+}
+
+.avonwg-glyphicon-bed:before {
+    content: "\e219"
+}
+
+.avonwg-glyphicon-apple:before {
+    content: "\f8ff"
+}
+
+.avonwg-glyphicon-erase:before {
+    content: "\e221"
+}
+
+.avonwg-glyphicon-hourglass:before {
+    content: "\231b"
+}
+
+.avonwg-glyphicon-lamp:before {
+    content: "\e223"
+}
+
+.avonwg-glyphicon-duplicate:before {
+    content: "\e224"
+}
+
+.avonwg-glyphicon-piggy-bank:before {
+    content: "\e225"
+}
+
+.avonwg-glyphicon-scissors:before {
+    content: "\e226"
+}
+
+.avonwg-glyphicon-bitcoin:before {
+    content: "\e227"
+}
+
+.avonwg-glyphicon-btc:before {
+    content: "\e227"
+}
+
+.avonwg-glyphicon-xbt:before {
+    content: "\e227"
+}
+
+.avonwg-glyphicon-yen:before {
+    content: "\00a5"
+}
+
+.avonwg-glyphicon-jpy:before {
+    content: "\00a5"
+}
+
+.avonwg-glyphicon-ruble:before {
+    content: "\20bd"
+}
+
+.avonwg-glyphicon-rub:before {
+    content: "\20bd"
+}
+
+.avonwg-glyphicon-scale:before {
+    content: "\e230"
+}
+
+.avonwg-glyphicon-ice-lolly:before {
+    content: "\e231"
+}
+
+.avonwg-glyphicon-ice-lolly-tasted:before {
+    content: "\e232"
+}
+
+.avonwg-glyphicon-education:before {
+    content: "\e233"
+}
+
+.avonwg-glyphicon-option-horizontal:before {
+    content: "\e234"
+}
+
+.avonwg-glyphicon-option-vertical:before {
+    content: "\e235"
+}
+
+.avonwg-glyphicon-menu-hamburger:before {
+    content: "\e236"
+}
+
+.avonwg-glyphicon-modal-window:before {
+    content: "\e237"
+}
+
+.avonwg-glyphicon-oil:before {
+    content: "\e238"
+}
+
+.avonwg-glyphicon-grain:before {
+    content: "\e239"
+}
+
+.avonwg-glyphicon-sunglasses:before {
+    content: "\e240"
+}
+
+.avonwg-glyphicon-text-size:before {
+    content: "\e241"
+}
+
+.avonwg-glyphicon-text-color:before {
+    content: "\e242"
+}
+
+.avonwg-glyphicon-text-background:before {
+    content: "\e243"
+}
+
+.avonwg-glyphicon-object-align-top:before {
+    content: "\e244"
+}
+
+.avonwg-glyphicon-object-align-bottom:before {
+    content: "\e245"
+}
+
+.avonwg-glyphicon-object-align-horizontal:before {
+    content: "\e246"
+}
+
+.avonwg-glyphicon-object-align-left:before {
+    content: "\e247"
+}
+
+.avonwg-glyphicon-object-align-vertical:before {
+    content: "\e248"
+}
+
+.avonwg-glyphicon-object-align-right:before {
+    content: "\e249"
+}
+
+.avonwg-glyphicon-triangle-right:before {
+    content: "\e250"
+}
+
+.avonwg-glyphicon-triangle-left:before {
+    content: "\e251"
+}
+
+.avonwg-glyphicon-triangle-bottom:before {
+    content: "\e252"
+}
+
+.avonwg-glyphicon-triangle-top:before {
+    content: "\e253"
+}
+
+.avonwg-glyphicon-console:before {
+    content: "\e254"
+}
+
+.avonwg-glyphicon-superscript:before {
+    content: "\e255"
+}
+
+.avonwg-glyphicon-subscript:before {
+    content: "\e256"
+}
+
+.avonwg-glyphicon-menu-left:before {
+    content: "\e257"
+}
+
+.avonwg-glyphicon-menu-right:before {
+    content: "\e258"
+}
+
+.avonwg-glyphicon-menu-down:before {
+    content: "\e259"
+}
+
+.avonwg-glyphicon-menu-up:before {
+    content: "\e260"
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+:after,
+:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+/*html {
+
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+}*/
+
+/*body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff
+}*/
+
+/*button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit
+}*/
+
+/*NWA Change due to conflict with WCS */
+.avonwg a {
+    color: #337ab7;
+    text-decoration: none
+}
+
+/*a:focus,
+a:hover {
+    color: #23527c;
+    text-decoration: underline
+}
+
+a:focus {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px
+}*/
+
+.avonwg figure {
+    margin: 0
+}
+
+.avonwg img {
+    vertical-align: middle
+}
+
+.avonwg-carousel-inner>.avonwg-item>a>img,
+.avonwg-carousel-inner>.avonwg-item>img,
+.avonwg-img-responsive,
+.avonwg-thumbnail a>img,
+.avonwg-thumbnail>img {
+    display: block;
+    max-width: 100%;
+    height: auto
+}
+
+.avonwg-img-rounded {
+    border-radius: 6px
+}
+
+.avonwg-img-thumbnail {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    padding: 4px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out
+}
+
+.avonwg-img-circle {
+    border-radius: 50%
+}
+
+.avonwg hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eee
+}
+
+.avonwg-sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0
+}
+
+.avonwg-sr-only-focusable:active,
+.avonwg-sr-only-focusable:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip: auto
+}
+
+[role=button] {
+    cursor: pointer
+}
+
+.avonwg-h1,
+.avonwg-h2,
+.avonwg-h3,
+.avonwg-h4,
+.avonwg-h5,
+.avonwg-h6,
+.avonwg h1,
+.avonwg h2,
+.avonwg h3,
+.avonwg h4,
+.avonwg h5,
+.avonwg h6 {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit
+}
+
+.avonwg-h1 .avonwg-small,
+.avonwg-h1 small,
+.avonwg-h2 .avonwg-small,
+.avonwg-h2 small,
+.avonwg-h3 .avonwg-small,
+.avonwg-h3 small,
+.avonwg-h4 .avonwg-small,
+.avonwg-h4 small,
+.avonwg-h5 .avonwg-small,
+.avonwg-h5 small,
+.avonwg-h6 .avonwg-small,
+.avonwg-h6 small,
+h1 .avonwg-small,
+h1 small,
+h2 .avonwg-small,
+h2 small,
+h3 .avonwg-small,
+h3 small,
+h4 .avonwg-small,
+h4 small,
+h5 .avonwg-small,
+h5 small,
+h6 .avonwg-small,
+h6 small {
+    font-weight: 400;
+    line-height: 1;
+    color: #777
+}
+
+.avonwg-h1,
+.avonwg-h2,
+.avonwg-h3,
+h1,
+h2,
+h3 {
+    margin-top: 20px;
+    margin-bottom: 10px
+}
+
+.avonwg-h1 .avonwg-small,
+.avonwg-h1 small,
+.avonwg-h2 .avonwg-small,
+.avonwg-h2 small,
+.avonwg-h3 .avonwg-small,
+.avonwg-h3 small,
+h1 .avonwg-small,
+h1 small,
+h2 .avonwg-small,
+h2 small,
+h3 .avonwg-small,
+h3 small {
+    font-size: 65%
+}
+
+.avonwg-h4,
+.avonwg-h5,
+.avonwg-h6,
+h4,
+h5,
+h6 {
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+
+.avonwg-h4 .avonwg-small,
+.avonwg-h4 small,
+.avonwg-h5 .avonwg-small,
+.avonwg-h5 small,
+.avonwg-h6 .avonwg-small,
+.avonwg-h6 small,
+h4 .avonwg-small,
+h4 small,
+h5 .avonwg-small,
+h5 small,
+h6 .avonwg-small,
+h6 small {
+    font-size: 75%
+}
+
+.avonwg-h1,
+h1 {
+    font-size: 36px
+}
+
+.avonwg-h2,
+h2 {
+    font-size: 30px
+}
+
+.avonwg-h3,
+h3 {
+    font-size: 24px
+}
+
+.avonwg-h4,
+h4 {
+    font-size: 18px
+}
+
+.avonwg-h5,
+h5 {
+    font-size: 14px
+}
+
+.avonwg-h6,
+h6 {
+    font-size: 12px
+}
+
+p {
+    margin: 0 0 10px
+}
+
+.avonwg-lead {
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.4
+}
+
+@media (min-width:768px) {
+    .avonwg-lead {
+        font-size: 21px
+    }
+}
+
+.avonwg-small,
+small {
+    font-size: 85%
+}
+
+.avonwg-mark,
+mark {
+    padding: .2em;
+    background-color: #fcf8e3
+}
+
+.avonwg-text-left {
+    text-align: left
+}
+
+.avonwg-text-right {
+    text-align: right
+}
+
+.avonwg-text-center {
+    text-align: center
+}
+
+.avonwg-text-justify {
+    text-align: justify
+}
+
+.avonwg-text-nowrap {
+    white-space: nowrap
+}
+
+.avonwg-text-lowercase {
+    text-transform: lowercase
+}
+
+.avonwg-text-uppercase {
+    text-transform: uppercase
+}
+
+.avonwg-text-capitalize {
+    text-transform: capitalize
+}
+
+.avonwg-text-muted {
+    color: #777
+}
+
+.avonwg-text-primary {
+    color: #337ab7
+}
+
+a.avonwg-text-primary:focus,
+a.avonwg-text-primary:hover {
+    color: #286090
+}
+
+.avonwg-text-success {
+    color: #3c763d
+}
+
+a.avonwg-text-success:focus,
+a.avonwg-text-success:hover {
+    color: #2b542c
+}
+
+.avonwg-text-info {
+    color: #31708f
+}
+
+a.avonwg-text-info:focus,
+a.avonwg-text-info:hover {
+    color: #245269
+}
+
+.avonwg-text-warning {
+    color: #8a6d3b
+}
+
+a.avonwg-text-warning:focus,
+a.avonwg-text-warning:hover {
+    color: #66512c
+}
+
+.avonwg-text-danger {
+    color: #a94442
+}
+
+a.avonwg-text-danger:focus,
+a.avonwg-text-danger:hover {
+    color: #843534
+}
+
+.avonwg-bg-primary {
+    color: #fff;
+    background-color: #337ab7
+}
+
+a.avonwg-bg-primary:focus,
+a.avonwg-bg-primary:hover {
+    background-color: #286090
+}
+
+.avonwg-bg-success {
+    background-color: #dff0d8
+}
+
+a.avonwg-bg-success:focus,
+a.avonwg-bg-success:hover {
+    background-color: #c1e2b3
+}
+
+.avonwg-bg-info {
+    background-color: #d9edf7
+}
+
+a.avonwg-bg-info:focus,
+a.avonwg-bg-info:hover {
+    background-color: #afd9ee
+}
+
+.avonwg-bg-warning {
+    background-color: #fcf8e3
+}
+
+a.avonwg-bg-warning:focus,
+a.avonwg-bg-warning:hover {
+    background-color: #f7ecb5
+}
+
+.avonwg-bg-danger {
+    background-color: #f2dede
+}
+
+a.avonwg-bg-danger:focus,
+a.avonwg-bg-danger:hover {
+    background-color: #e4b9b9
+}
+
+.avonwg-page-header {
+    padding-bottom: 9px;
+    margin: 40px 0 20px;
+    border-bottom: 1px solid #eee
+}
+
+/*ol,
+ul {
+    margin-top: 0;
+    margin-bottom: 10px
+}*/
+
+/*ol ol,
+ol ul,
+ul ol,
+ul ul {
+    margin-bottom: 0
+}*/
+
+.avonwg-list-unstyled {
+    padding-left: 0;
+    list-style: none
+}
+
+.avonwg-list-inline {
+    padding-left: 0;
+    margin-left: -5px;
+    list-style: none
+}
+
+.avonwg-list-inline>li {
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px
+}
+
+dl {
+    margin-top: 0;
+    margin-bottom: 20px
+}
+
+dd,
+dt {
+    line-height: 1.42857143
+}
+
+dt {
+    font-weight: 700
+}
+
+dd {
+    margin-left: 0
+}
+
+@media (min-width:768px) {
+    .avonwg-dl-horizontal dt {
+        float: left;
+        width: 160px;
+        overflow: hidden;
+        clear: left;
+        text-align: right;
+        text-overflow: ellipsis;
+        white-space: nowrap
+    }
+    .avonwg-dl-horizontal dd {
+        margin-left: 180px
+    }
+}
+
+abbr[data-original-title],
+abbr[title] {
+    cursor: help;
+    border-bottom: 1px dotted #777
+}
+
+.avonwg-initialism {
+    font-size: 90%;
+    text-transform: uppercase
+}
+
+blockquote {
+    padding: 10px 20px;
+    margin: 0 0 20px;
+    font-size: 17.5px;
+    border-left: 5px solid #eee
+}
+
+blockquote ol:last-child,
+blockquote p:last-child,
+blockquote ul:last-child {
+    margin-bottom: 0
+}
+
+blockquote .avonwg-small,
+blockquote footer,
+blockquote small {
+    display: block;
+    font-size: 80%;
+    line-height: 1.42857143;
+    color: #777
+}
+
+blockquote .avonwg-small:before,
+blockquote footer:before,
+blockquote small:before {
+    content: '\2014 \00A0'
+}
+
+.avonwg-blockquote-reverse,
+blockquote.avonwg-pull-right {
+    padding-right: 15px;
+    padding-left: 0;
+    text-align: right;
+    border-right: 5px solid #eee;
+    border-left: 0
+}
+
+.avonwg-blockquote-reverse .avonwg-small:before,
+.avonwg-blockquote-reverse footer:before,
+.avonwg-blockquote-reverse small:before,
+blockquote.avonwg-pull-right .avonwg-small:before,
+blockquote.avonwg-pull-right footer:before,
+blockquote.avonwg-pull-right small:before {
+    content: ''
+}
+
+.avonwg-blockquote-reverse .avonwg-small:after,
+.avonwg-blockquote-reverse footer:after,
+.avonwg-blockquote-reverse small:after,
+blockquote.avonwg-pull-right .avonwg-small:after,
+blockquote.avonwg-pull-right footer:after,
+blockquote.avonwg-pull-right small:after {
+    content: '\00A0 \2014'
+}
+
+address {
+    margin-bottom: 20px;
+    font-style: normal;
+    line-height: 1.42857143
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace
+}
+
+code {
+    padding: 2px 4px;
+    font-size: 90%;
+    color: #c7254e;
+    background-color: #f9f2f4;
+    border-radius: 4px
+}
+
+kbd {
+    padding: 2px 4px;
+    font-size: 90%;
+    color: #fff;
+    background-color: #333;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .25);
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .25)
+}
+
+kbd kbd {
+    padding: 0;
+    font-size: 100%;
+    font-weight: 700;
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
+
+pre {
+    display: block;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    font-size: 13px;
+    line-height: 1.42857143;
+    color: #333;
+    word-break: break-all;
+    word-wrap: break-word;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 4px
+}
+
+pre code {
+    padding: 0;
+    font-size: inherit;
+    color: inherit;
+    white-space: pre-wrap;
+    background-color: transparent;
+    border-radius: 0
+}
+
+.avonwg-pre-scrollable {
+    max-height: 340px;
+    overflow-y: scroll
+}
+
+.avonwg-container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+@media (min-width:768px) {
+    .avonwg-container {
+        width: 750px
+    }
+}
+
+@media (min-width:992px) {
+    .avonwg-container {
+        width: 970px
+    }
+}
+
+@media (min-width:1200px) {
+    .avonwg-container {
+        width: 1170px
+    }
+}
+
+.avonwg-container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.avonwg-row {
+    margin-right: -15px;
+    margin-left: -15px
+}
+
+.avonwg-col-lg-1,
+.avonwg-col-lg-10,
+.avonwg-col-lg-11,
+.avonwg-col-lg-12,
+.avonwg-col-lg-2,
+.avonwg-col-lg-3,
+.avonwg-col-lg-4,
+.avonwg-col-lg-5,
+.avonwg-col-lg-6,
+.avonwg-col-lg-7,
+.avonwg-col-lg-8,
+.avonwg-col-lg-9,
+.avonwg-col-md-1,
+.avonwg-col-md-10,
+.avonwg-col-md-11,
+.avonwg-col-md-12,
+.avonwg-col-md-2,
+.avonwg-col-md-3,
+.avonwg-col-md-4,
+.avonwg-col-md-5,
+.avonwg-col-md-6,
+.avonwg-col-md-7,
+.avonwg-col-md-8,
+.avonwg-col-md-9,
+.avonwg-col-sm-1,
+.avonwg-col-sm-10,
+.avonwg-col-sm-11,
+.avonwg-col-sm-12,
+.avonwg-col-sm-2,
+.avonwg-col-sm-3,
+.avonwg-col-sm-4,
+.avonwg-col-sm-5,
+.avonwg-col-sm-6,
+.avonwg-col-sm-7,
+.avonwg-col-sm-8,
+.avonwg-col-sm-9,
+.avonwg-col-xs-1,
+.avonwg-col-xs-10,
+.avonwg-col-xs-11,
+.avonwg-col-xs-12,
+.avonwg-col-xs-2,
+.avonwg-col-xs-3,
+.avonwg-col-xs-4,
+.avonwg-col-xs-5,
+.avonwg-col-xs-6,
+.avonwg-col-xs-7,
+.avonwg-col-xs-8,
+.avonwg-col-xs-9 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px
+}
+
+.avonwg-col-xs-1,
+.avonwg-col-xs-10,
+.avonwg-col-xs-11,
+.avonwg-col-xs-12,
+.avonwg-col-xs-2,
+.avonwg-col-xs-3,
+.avonwg-col-xs-4,
+.avonwg-col-xs-5,
+.avonwg-col-xs-6,
+.avonwg-col-xs-7,
+.avonwg-col-xs-8,
+.avonwg-col-xs-9 {
+    float: left
+}
+
+.avonwg-col-xs-12 {
+    width: 100%
+}
+
+.avonwg-col-xs-11 {
+    width: 91.66666667%
+}
+
+.avonwg-col-xs-10 {
+    width: 83.33333333%
+}
+
+.avonwg-col-xs-9 {
+    width: 75%
+}
+
+.avonwg-col-xs-8 {
+    width: 66.66666667%
+}
+
+.avonwg-col-xs-7 {
+    width: 58.33333333%
+}
+
+.avonwg-col-xs-6 {
+    width: 50%
+}
+
+.avonwg-col-xs-5 {
+    width: 41.66666667%
+}
+
+.avonwg-col-xs-4 {
+    width: 33.33333333%
+}
+
+.avonwg-col-xs-3 {
+    width: 25%
+}
+
+.avonwg-col-xs-2 {
+    width: 16.66666667%
+}
+
+.avonwg-col-xs-1 {
+    width: 8.33333333%
+}
+
+.avonwg-col-xs-pull-12 {
+    right: 100%
+}
+
+.avonwg-col-xs-pull-11 {
+    right: 91.66666667%
+}
+
+.avonwg-col-xs-pull-10 {
+    right: 83.33333333%
+}
+
+.avonwg-col-xs-pull-9 {
+    right: 75%
+}
+
+.avonwg-col-xs-pull-8 {
+    right: 66.66666667%
+}
+
+.avonwg-col-xs-pull-7 {
+    right: 58.33333333%
+}
+
+.avonwg-col-xs-pull-6 {
+    right: 50%
+}
+
+.avonwg-col-xs-pull-5 {
+    right: 41.66666667%
+}
+
+.avonwg-col-xs-pull-4 {
+    right: 33.33333333%
+}
+
+.avonwg-col-xs-pull-3 {
+    right: 25%
+}
+
+.avonwg-col-xs-pull-2 {
+    right: 16.66666667%
+}
+
+.avonwg-col-xs-pull-1 {
+    right: 8.33333333%
+}
+
+.avonwg-col-xs-pull-0 {
+    right: auto
+}
+
+.avonwg-col-xs-push-12 {
+    left: 100%
+}
+
+.avonwg-col-xs-push-11 {
+    left: 91.66666667%
+}
+
+.avonwg-col-xs-push-10 {
+    left: 83.33333333%
+}
+
+.avonwg-col-xs-push-9 {
+    left: 75%
+}
+
+.avonwg-col-xs-push-8 {
+    left: 66.66666667%
+}
+
+.avonwg-col-xs-push-7 {
+    left: 58.33333333%
+}
+
+.avonwg-col-xs-push-6 {
+    left: 50%
+}
+
+.avonwg-col-xs-push-5 {
+    left: 41.66666667%
+}
+
+.avonwg-col-xs-push-4 {
+    left: 33.33333333%
+}
+
+.avonwg-col-xs-push-3 {
+    left: 25%
+}
+
+.avonwg-col-xs-push-2 {
+    left: 16.66666667%
+}
+
+.avonwg-col-xs-push-1 {
+    left: 8.33333333%
+}
+
+.avonwg-col-xs-push-0 {
+    left: auto
+}
+
+.avonwg-col-xs-offset-12 {
+    margin-left: 100%
+}
+
+.avonwg-col-xs-offset-11 {
+    margin-left: 91.66666667%
+}
+
+.avonwg-col-xs-offset-10 {
+    margin-left: 83.33333333%
+}
+
+.avonwg-col-xs-offset-9 {
+    margin-left: 75%
+}
+
+.avonwg-col-xs-offset-8 {
+    margin-left: 66.66666667%
+}
+
+.avonwg-col-xs-offset-7 {
+    margin-left: 58.33333333%
+}
+
+.avonwg-col-xs-offset-6 {
+    margin-left: 50%
+}
+
+.avonwg-col-xs-offset-5 {
+    margin-left: 41.66666667%
+}
+
+.avonwg-col-xs-offset-4 {
+    margin-left: 33.33333333%
+}
+
+.avonwg-col-xs-offset-3 {
+    margin-left: 25%
+}
+
+.avonwg-col-xs-offset-2 {
+    margin-left: 16.66666667%
+}
+
+.avonwg-col-xs-offset-1 {
+    margin-left: 8.33333333%
+}
+
+.avonwg-col-xs-offset-0 {
+    margin-left: 0
+}
+
+@media (min-width:768px) {
+    .avonwg-col-sm-1,
+    .avonwg-col-sm-10,
+    .avonwg-col-sm-11,
+    .avonwg-col-sm-12,
+    .avonwg-col-sm-2,
+    .avonwg-col-sm-3,
+    .avonwg-col-sm-4,
+    .avonwg-col-sm-5,
+    .avonwg-col-sm-6,
+    .avonwg-col-sm-7,
+    .avonwg-col-sm-8,
+    .avonwg-col-sm-9 {
+        float: left
+    }
+    .avonwg-col-sm-12 {
+        width: 100%
+    }
+    .avonwg-col-sm-11 {
+        width: 91.66666667%
+    }
+    .avonwg-col-sm-10 {
+        width: 83.33333333%
+    }
+    .avonwg-col-sm-9 {
+        width: 75%
+    }
+    .avonwg-col-sm-8 {
+        width: 66.66666667%
+    }
+    .avonwg-col-sm-7 {
+        width: 58.33333333%
+    }
+    .avonwg-col-sm-6 {
+        width: 50%
+    }
+    .avonwg-col-sm-5 {
+        width: 41.66666667%
+    }
+    .avonwg-col-sm-4 {
+        width: 33.33333333%
+    }
+    .avonwg-col-sm-3 {
+        width: 25%
+    }
+    .avonwg-col-sm-2 {
+        width: 16.66666667%
+    }
+    .avonwg-col-sm-1 {
+        width: 8.33333333%
+    }
+    .avonwg-col-sm-pull-12 {
+        right: 100%
+    }
+    .avonwg-col-sm-pull-11 {
+        right: 91.66666667%
+    }
+    .avonwg-col-sm-pull-10 {
+        right: 83.33333333%
+    }
+    .avonwg-col-sm-pull-9 {
+        right: 75%
+    }
+    .avonwg-col-sm-pull-8 {
+        right: 66.66666667%
+    }
+    .avonwg-col-sm-pull-7 {
+        right: 58.33333333%
+    }
+    .avonwg-col-sm-pull-6 {
+        right: 50%
+    }
+    .avonwg-col-sm-pull-5 {
+        right: 41.66666667%
+    }
+    .avonwg-col-sm-pull-4 {
+        right: 33.33333333%
+    }
+    .avonwg-col-sm-pull-3 {
+        right: 25%
+    }
+    .avonwg-col-sm-pull-2 {
+        right: 16.66666667%
+    }
+    .avonwg-col-sm-pull-1 {
+        right: 8.33333333%
+    }
+    .avonwg-col-sm-pull-0 {
+        right: auto
+    }
+    .avonwg-col-sm-push-12 {
+        left: 100%
+    }
+    .avonwg-col-sm-push-11 {
+        left: 91.66666667%
+    }
+    .avonwg-col-sm-push-10 {
+        left: 83.33333333%
+    }
+    .avonwg-col-sm-push-9 {
+        left: 75%
+    }
+    .avonwg-col-sm-push-8 {
+        left: 66.66666667%
+    }
+    .avonwg-col-sm-push-7 {
+        left: 58.33333333%
+    }
+    .avonwg-col-sm-push-6 {
+        left: 50%
+    }
+    .avonwg-col-sm-push-5 {
+        left: 41.66666667%
+    }
+    .avonwg-col-sm-push-4 {
+        left: 33.33333333%
+    }
+    .avonwg-col-sm-push-3 {
+        left: 25%
+    }
+    .avonwg-col-sm-push-2 {
+        left: 16.66666667%
+    }
+    .avonwg-col-sm-push-1 {
+        left: 8.33333333%
+    }
+    .avonwg-col-sm-push-0 {
+        left: auto
+    }
+    .avonwg-col-sm-offset-12 {
+        margin-left: 100%
+    }
+    .avonwg-col-sm-offset-11 {
+        margin-left: 91.66666667%
+    }
+    .avonwg-col-sm-offset-10 {
+        margin-left: 83.33333333%
+    }
+    .avonwg-col-sm-offset-9 {
+        margin-left: 75%
+    }
+    .avonwg-col-sm-offset-8 {
+        margin-left: 66.66666667%
+    }
+    .avonwg-col-sm-offset-7 {
+        margin-left: 58.33333333%
+    }
+    .avonwg-col-sm-offset-6 {
+        margin-left: 50%
+    }
+    .avonwg-col-sm-offset-5 {
+        margin-left: 41.66666667%
+    }
+    .avonwg-col-sm-offset-4 {
+        margin-left: 33.33333333%
+    }
+    .avonwg-col-sm-offset-3 {
+        margin-left: 25%
+    }
+    .avonwg-col-sm-offset-2 {
+        margin-left: 16.66666667%
+    }
+    .avonwg-col-sm-offset-1 {
+        margin-left: 8.33333333%
+    }
+    .avonwg-col-sm-offset-0 {
+        margin-left: 0
+    }
+}
+
+@media (min-width:992px) {
+    .avonwg-col-md-1,
+    .avonwg-col-md-10,
+    .avonwg-col-md-11,
+    .avonwg-col-md-12,
+    .avonwg-col-md-2,
+    .avonwg-col-md-3,
+    .avonwg-col-md-4,
+    .avonwg-col-md-5,
+    .avonwg-col-md-6,
+    .avonwg-col-md-7,
+    .avonwg-col-md-8,
+    .avonwg-col-md-9 {
+        float: left
+    }
+    .avonwg-col-md-12 {
+        width: 100%
+    }
+    .avonwg-col-md-11 {
+        width: 91.66666667%
+    }
+    .avonwg-col-md-10 {
+        width: 83.33333333%
+    }
+    .avonwg-col-md-9 {
+        width: 75%
+    }
+    .avonwg-col-md-8 {
+        width: 66.66666667%
+    }
+    .avonwg-col-md-7 {
+        width: 58.33333333%
+    }
+    .avonwg-col-md-6 {
+        width: 50%
+    }
+    .avonwg-col-md-5 {
+        width: 41.66666667%
+    }
+    .avonwg-col-md-4 {
+        width: 33.33333333%
+    }
+    .avonwg-col-md-3 {
+        width: 25%
+    }
+    .avonwg-col-md-2 {
+        width: 16.66666667%
+    }
+    .avonwg-col-md-1 {
+        width: 8.33333333%
+    }
+    .avonwg-col-md-pull-12 {
+        right: 100%
+    }
+    .avonwg-col-md-pull-11 {
+        right: 91.66666667%
+    }
+    .avonwg-col-md-pull-10 {
+        right: 83.33333333%
+    }
+    .avonwg-col-md-pull-9 {
+        right: 75%
+    }
+    .avonwg-col-md-pull-8 {
+        right: 66.66666667%
+    }
+    .avonwg-col-md-pull-7 {
+        right: 58.33333333%
+    }
+    .avonwg-col-md-pull-6 {
+        right: 50%
+    }
+    .avonwg-col-md-pull-5 {
+        right: 41.66666667%
+    }
+    .avonwg-col-md-pull-4 {
+        right: 33.33333333%
+    }
+    .avonwg-col-md-pull-3 {
+        right: 25%
+    }
+    .avonwg-col-md-pull-2 {
+        right: 16.66666667%
+    }
+    .avonwg-col-md-pull-1 {
+        right: 8.33333333%
+    }
+    .avonwg-col-md-pull-0 {
+        right: auto
+    }
+    .avonwg-col-md-push-12 {
+        left: 100%
+    }
+    .avonwg-col-md-push-11 {
+        left: 91.66666667%
+    }
+    .avonwg-col-md-push-10 {
+        left: 83.33333333%
+    }
+    .avonwg-col-md-push-9 {
+        left: 75%
+    }
+    .avonwg-col-md-push-8 {
+        left: 66.66666667%
+    }
+    .avonwg-col-md-push-7 {
+        left: 58.33333333%
+    }
+    .avonwg-col-md-push-6 {
+        left: 50%
+    }
+    .avonwg-col-md-push-5 {
+        left: 41.66666667%
+    }
+    .avonwg-col-md-push-4 {
+        left: 33.33333333%
+    }
+    .avonwg-col-md-push-3 {
+        left: 25%
+    }
+    .avonwg-col-md-push-2 {
+        left: 16.66666667%
+    }
+    .avonwg-col-md-push-1 {
+        left: 8.33333333%
+    }
+    .avonwg-col-md-push-0 {
+        left: auto
+    }
+    .avonwg-col-md-offset-12 {
+        margin-left: 100%
+    }
+    .avonwg-col-md-offset-11 {
+        margin-left: 91.66666667%
+    }
+    .avonwg-col-md-offset-10 {
+        margin-left: 83.33333333%
+    }
+    .avonwg-col-md-offset-9 {
+        margin-left: 75%
+    }
+    .avonwg-col-md-offset-8 {
+        margin-left: 66.66666667%
+    }
+    .avonwg-col-md-offset-7 {
+        margin-left: 58.33333333%
+    }
+    .avonwg-col-md-offset-6 {
+        margin-left: 50%
+    }
+    .avonwg-col-md-offset-5 {
+        margin-left: 41.66666667%
+    }
+    .avonwg-col-md-offset-4 {
+        margin-left: 33.33333333%
+    }
+    .avonwg-col-md-offset-3 {
+        margin-left: 25%
+    }
+    .avonwg-col-md-offset-2 {
+        margin-left: 16.66666667%
+    }
+    .avonwg-col-md-offset-1 {
+        margin-left: 8.33333333%
+    }
+    .avonwg-col-md-offset-0 {
+        margin-left: 0
+    }
+}
+
+@media (min-width:1200px) {
+    .avonwg-col-lg-1,
+    .avonwg-col-lg-10,
+    .avonwg-col-lg-11,
+    .avonwg-col-lg-12,
+    .avonwg-col-lg-2,
+    .avonwg-col-lg-3,
+    .avonwg-col-lg-4,
+    .avonwg-col-lg-5,
+    .avonwg-col-lg-6,
+    .avonwg-col-lg-7,
+    .avonwg-col-lg-8,
+    .avonwg-col-lg-9 {
+        float: left
+    }
+    .avonwg-col-lg-12 {
+        width: 100%
+    }
+    .avonwg-col-lg-11 {
+        width: 91.66666667%
+    }
+    .avonwg-col-lg-10 {
+        width: 83.33333333%
+    }
+    .avonwg-col-lg-9 {
+        width: 75%
+    }
+    .avonwg-col-lg-8 {
+        width: 66.66666667%
+    }
+    .avonwg-col-lg-7 {
+        width: 58.33333333%
+    }
+    .avonwg-col-lg-6 {
+        width: 50%
+    }
+    .avonwg-col-lg-5 {
+        width: 41.66666667%
+    }
+    .avonwg-col-lg-4 {
+        width: 33.33333333%
+    }
+    .avonwg-col-lg-3 {
+        width: 25%
+    }
+    .avonwg-col-lg-2 {
+        width: 16.66666667%
+    }
+    .avonwg-col-lg-1 {
+        width: 8.33333333%
+    }
+    .avonwg-col-lg-pull-12 {
+        right: 100%
+    }
+    .avonwg-col-lg-pull-11 {
+        right: 91.66666667%
+    }
+    .avonwg-col-lg-pull-10 {
+        right: 83.33333333%
+    }
+    .avonwg-col-lg-pull-9 {
+        right: 75%
+    }
+    .avonwg-col-lg-pull-8 {
+        right: 66.66666667%
+    }
+    .avonwg-col-lg-pull-7 {
+        right: 58.33333333%
+    }
+    .avonwg-col-lg-pull-6 {
+        right: 50%
+    }
+    .avonwg-col-lg-pull-5 {
+        right: 41.66666667%
+    }
+    .avonwg-col-lg-pull-4 {
+        right: 33.33333333%
+    }
+    .avonwg-col-lg-pull-3 {
+        right: 25%
+    }
+    .avonwg-col-lg-pull-2 {
+        right: 16.66666667%
+    }
+    .avonwg-col-lg-pull-1 {
+        right: 8.33333333%
+    }
+    .avonwg-col-lg-pull-0 {
+        right: auto
+    }
+    .avonwg-col-lg-push-12 {
+        left: 100%
+    }
+    .avonwg-col-lg-push-11 {
+        left: 91.66666667%
+    }
+    .avonwg-col-lg-push-10 {
+        left: 83.33333333%
+    }
+    .avonwg-col-lg-push-9 {
+        left: 75%
+    }
+    .avonwg-col-lg-push-8 {
+        left: 66.66666667%
+    }
+    .avonwg-col-lg-push-7 {
+        left: 58.33333333%
+    }
+    .avonwg-col-lg-push-6 {
+        left: 50%
+    }
+    .avonwg-col-lg-push-5 {
+        left: 41.66666667%
+    }
+    .avonwg-col-lg-push-4 {
+        left: 33.33333333%
+    }
+    .avonwg-col-lg-push-3 {
+        left: 25%
+    }
+    .avonwg-col-lg-push-2 {
+        left: 16.66666667%
+    }
+    .avonwg-col-lg-push-1 {
+        left: 8.33333333%
+    }
+    .avonwg-col-lg-push-0 {
+        left: auto
+    }
+    .avonwg-col-lg-offset-12 {
+        margin-left: 100%
+    }
+    .avonwg-col-lg-offset-11 {
+        margin-left: 91.66666667%
+    }
+    .avonwg-col-lg-offset-10 {
+        margin-left: 83.33333333%
+    }
+    .avonwg-col-lg-offset-9 {
+        margin-left: 75%
+    }
+    .avonwg-col-lg-offset-8 {
+        margin-left: 66.66666667%
+    }
+    .avonwg-col-lg-offset-7 {
+        margin-left: 58.33333333%
+    }
+    .avonwg-col-lg-offset-6 {
+        margin-left: 50%
+    }
+    .avonwg-col-lg-offset-5 {
+        margin-left: 41.66666667%
+    }
+    .avonwg-col-lg-offset-4 {
+        margin-left: 33.33333333%
+    }
+    .avonwg-col-lg-offset-3 {
+        margin-left: 25%
+    }
+    .avonwg-col-lg-offset-2 {
+        margin-left: 16.66666667%
+    }
+    .avonwg-col-lg-offset-1 {
+        margin-left: 8.33333333%
+    }
+    .avonwg-col-lg-offset-0 {
+        margin-left: 0
+    }
+}
+
+table {
+    background-color: transparent
+}
+
+caption {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: #777;
+    text-align: left
+}
+
+th {
+    text-align: left
+}
+
+.avonwg-table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px
+}
+
+.avonwg-table>tbody>tr>td,
+.avonwg-table>tbody>tr>th,
+.avonwg-table>tfoot>tr>td,
+.avonwg-table>tfoot>tr>th,
+.avonwg-table>thead>tr>td,
+.avonwg-table>thead>tr>th {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #ddd
+}
+
+.avonwg-table>thead>tr>th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #ddd
+}
+
+.avonwg-table>caption+thead>tr:first-child>td,
+.avonwg-table>caption+thead>tr:first-child>th,
+.avonwg-table>colgroup+thead>tr:first-child>td,
+.avonwg-table>colgroup+thead>tr:first-child>th,
+.avonwg-table>thead:first-child>tr:first-child>td,
+.avonwg-table>thead:first-child>tr:first-child>th {
+    border-top: 0
+}
+
+.avonwg-table>tbody+tbody {
+    border-top: 2px solid #ddd
+}
+
+.avonwg-table .avonwg-table {
+    background-color: #fff
+}
+
+.avonwg-table-condensed>tbody>tr>td,
+.avonwg-table-condensed>tbody>tr>th,
+.avonwg-table-condensed>tfoot>tr>td,
+.avonwg-table-condensed>tfoot>tr>th,
+.avonwg-table-condensed>thead>tr>td,
+.avonwg-table-condensed>thead>tr>th {
+    padding: 5px
+}
+
+.avonwg-table-bordered {
+    border: 1px solid #ddd
+}
+
+.avonwg-table-bordered>tbody>tr>td,
+.avonwg-table-bordered>tbody>tr>th,
+.avonwg-table-bordered>tfoot>tr>td,
+.avonwg-table-bordered>tfoot>tr>th,
+.avonwg-table-bordered>thead>tr>td,
+.avonwg-table-bordered>thead>tr>th {
+    border: 1px solid #ddd
+}
+
+.avonwg-table-bordered>thead>tr>td,
+.avonwg-table-bordered>thead>tr>th {
+    border-bottom-width: 2px
+}
+
+.avonwg-table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: #f9f9f9
+}
+
+.avonwg-table-hover>tbody>tr:hover {
+    background-color: #f5f5f5
+}
+
+table col[class*=col-] {
+    position: static;
+    display: table-column;
+    float: none
+}
+
+table td[class*=col-],
+table th[class*=col-] {
+    position: static;
+    display: table-cell;
+    float: none
+}
+
+.avonwg-table>tbody>tr.avonwg-active>td,
+.avonwg-table>tbody>tr.avonwg-active>th,
+.avonwg-table>tbody>tr>td.avonwg-active,
+.avonwg-table>tbody>tr>th.avonwg-active,
+.avonwg-table>tfoot>tr.avonwg-active>td,
+.avonwg-table>tfoot>tr.avonwg-active>th,
+.avonwg-table>tfoot>tr>td.avonwg-active,
+.avonwg-table>tfoot>tr>th.avonwg-active,
+.avonwg-table>thead>tr.avonwg-active>td,
+.avonwg-table>thead>tr.avonwg-active>th,
+.avonwg-table>thead>tr>td.avonwg-active,
+.avonwg-table>thead>tr>th.avonwg-active {
+    background-color: #f5f5f5
+}
+
+.avonwg-table-hover>tbody>tr.avonwg-active:hover>td,
+.avonwg-table-hover>tbody>tr.avonwg-active:hover>th,
+.avonwg-table-hover>tbody>tr:hover>.avonwg-active,
+.avonwg-table-hover>tbody>tr>td.avonwg-active:hover,
+.avonwg-table-hover>tbody>tr>th.avonwg-active:hover {
+    background-color: #e8e8e8
+}
+
+.avonwg-table>tbody>tr.avonwg-success>td,
+.avonwg-table>tbody>tr.avonwg-success>th,
+.avonwg-table>tbody>tr>td.avonwg-success,
+.avonwg-table>tbody>tr>th.avonwg-success,
+.avonwg-table>tfoot>tr.avonwg-success>td,
+.avonwg-table>tfoot>tr.avonwg-success>th,
+.avonwg-table>tfoot>tr>td.avonwg-success,
+.avonwg-table>tfoot>tr>th.avonwg-success,
+.avonwg-table>thead>tr.avonwg-success>td,
+.avonwg-table>thead>tr.avonwg-success>th,
+.avonwg-table>thead>tr>td.avonwg-success,
+.avonwg-table>thead>tr>th.avonwg-success {
+    background-color: #dff0d8
+}
+
+.avonwg-table-hover>tbody>tr.avonwg-success:hover>td,
+.avonwg-table-hover>tbody>tr.avonwg-success:hover>th,
+.avonwg-table-hover>tbody>tr:hover>.avonwg-success,
+.avonwg-table-hover>tbody>tr>td.avonwg-success:hover,
+.avonwg-table-hover>tbody>tr>th.avonwg-success:hover {
+    background-color: #d0e9c6
+}
+
+.avonwg-table>tbody>tr.avonwg-info>td,
+.avonwg-table>tbody>tr.avonwg-info>th,
+.avonwg-table>tbody>tr>td.avonwg-info,
+.avonwg-table>tbody>tr>th.avonwg-info,
+.avonwg-table>tfoot>tr.avonwg-info>td,
+.avonwg-table>tfoot>tr.avonwg-info>th,
+.avonwg-table>tfoot>tr>td.avonwg-info,
+.avonwg-table>tfoot>tr>th.avonwg-info,
+.avonwg-table>thead>tr.avonwg-info>td,
+.avonwg-table>thead>tr.avonwg-info>th,
+.avonwg-table>thead>tr>td.avonwg-info,
+.avonwg-table>thead>tr>th.avonwg-info {
+    background-color: #d9edf7
+}
+
+.avonwg-table-hover>tbody>tr.avonwg-info:hover>td,
+.avonwg-table-hover>tbody>tr.avonwg-info:hover>th,
+.avonwg-table-hover>tbody>tr:hover>.avonwg-info,
+.avonwg-table-hover>tbody>tr>td.avonwg-info:hover,
+.avonwg-table-hover>tbody>tr>th.avonwg-info:hover {
+    background-color: #c4e3f3
+}
+
+.avonwg-table>tbody>tr.avonwg-warning>td,
+.avonwg-table>tbody>tr.avonwg-warning>th,
+.avonwg-table>tbody>tr>td.avonwg-warning,
+.avonwg-table>tbody>tr>th.avonwg-warning,
+.avonwg-table>tfoot>tr.avonwg-warning>td,
+.avonwg-table>tfoot>tr.avonwg-warning>th,
+.avonwg-table>tfoot>tr>td.avonwg-warning,
+.avonwg-table>tfoot>tr>th.avonwg-warning,
+.avonwg-table>thead>tr.avonwg-warning>td,
+.avonwg-table>thead>tr.avonwg-warning>th,
+.avonwg-table>thead>tr>td.avonwg-warning,
+.avonwg-table>thead>tr>th.avonwg-warning {
+    background-color: #fcf8e3
+}
+
+.avonwg-table-hover>tbody>tr.avonwg-warning:hover>td,
+.avonwg-table-hover>tbody>tr.avonwg-warning:hover>th,
+.avonwg-table-hover>tbody>tr:hover>.avonwg-warning,
+.avonwg-table-hover>tbody>tr>td.avonwg-warning:hover,
+.avonwg-table-hover>tbody>tr>th.avonwg-warning:hover {
+    background-color: #faf2cc
+}
+
+.avonwg-table>tbody>tr.avonwg-danger>td,
+.avonwg-table>tbody>tr.avonwg-danger>th,
+.avonwg-table>tbody>tr>td.avonwg-danger,
+.avonwg-table>tbody>tr>th.avonwg-danger,
+.avonwg-table>tfoot>tr.avonwg-danger>td,
+.avonwg-table>tfoot>tr.avonwg-danger>th,
+.avonwg-table>tfoot>tr>td.avonwg-danger,
+.avonwg-table>tfoot>tr>th.avonwg-danger,
+.avonwg-table>thead>tr.avonwg-danger>td,
+.avonwg-table>thead>tr.avonwg-danger>th,
+.avonwg-table>thead>tr>td.avonwg-danger,
+.avonwg-table>thead>tr>th.avonwg-danger {
+    background-color: #f2dede
+}
+
+.avonwg-table-hover>tbody>tr.avonwg-danger:hover>td,
+.avonwg-table-hover>tbody>tr.avonwg-danger:hover>th,
+.avonwg-table-hover>tbody>tr:hover>.avonwg-danger,
+.avonwg-table-hover>tbody>tr>td.avonwg-danger:hover,
+.avonwg-table-hover>tbody>tr>th.avonwg-danger:hover {
+    background-color: #ebcccc
+}
+
+.avonwg-table-responsive {
+    min-height: .01%;
+    overflow-x: auto
+}
+
+@media screen and (max-width:767px) {
+    .avonwg-table-responsive {
+        width: 100%;
+        margin-bottom: 15px;
+        overflow-y: hidden;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+        border: 1px solid #ddd
+    }
+    .avonwg-table-responsive>.avonwg-table {
+        margin-bottom: 0
+    }
+    .avonwg-table-responsive>.avonwg-table>tbody>tr>td,
+    .avonwg-table-responsive>.avonwg-table>tbody>tr>th,
+    .avonwg-table-responsive>.avonwg-table>tfoot>tr>td,
+    .avonwg-table-responsive>.avonwg-table>tfoot>tr>th,
+    .avonwg-table-responsive>.avonwg-table>thead>tr>td,
+    .avonwg-table-responsive>.avonwg-table>thead>tr>th {
+        white-space: nowrap
+    }
+    .avonwg-table-responsive>.avonwg-table-bordered {
+        border: 0
+    }
+    .avonwg-table-responsive>.avonwg-table-bordered>tbody>tr>td:first-child,
+    .avonwg-table-responsive>.avonwg-table-bordered>tbody>tr>th:first-child,
+    .avonwg-table-responsive>.avonwg-table-bordered>tfoot>tr>td:first-child,
+    .avonwg-table-responsive>.avonwg-table-bordered>tfoot>tr>th:first-child,
+    .avonwg-table-responsive>.avonwg-table-bordered>thead>tr>td:first-child,
+    .avonwg-table-responsive>.avonwg-table-bordered>thead>tr>th:first-child {
+        border-left: 0
+    }
+    .avonwg-table-responsive>.avonwg-table-bordered>tbody>tr>td:last-child,
+    .avonwg-table-responsive>.avonwg-table-bordered>tbody>tr>th:last-child,
+    .avonwg-table-responsive>.avonwg-table-bordered>tfoot>tr>td:last-child,
+    .avonwg-table-responsive>.avonwg-table-bordered>tfoot>tr>th:last-child,
+    .avonwg-table-responsive>.avonwg-table-bordered>thead>tr>td:last-child,
+    .avonwg-table-responsive>.avonwg-table-bordered>thead>tr>th:last-child {
+        border-right: 0
+    }
+    .avonwg-table-responsive>.avonwg-table-bordered>tbody>tr:last-child>td,
+    .avonwg-table-responsive>.avonwg-table-bordered>tbody>tr:last-child>th,
+    .avonwg-table-responsive>.avonwg-table-bordered>tfoot>tr:last-child>td,
+    .avonwg-table-responsive>.avonwg-table-bordered>tfoot>tr:last-child>th {
+        border-bottom: 0
+    }
+}
+
+.avonwg fieldset {
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    border: 0
+}
+
+.avonwg legend {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: inherit;
+    color: #333;
+    border: 0;
+    border-bottom: 1px solid #e5e5e5
+}
+
+.avonwg label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700
+}
+
+.avonwg input[type=search] {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.avonwg input[type=checkbox],
+.avonwg input[type=radio] {
+    margin: 4px 0 0;
+    margin-top: 1px\9;
+    line-height: normal
+}
+
+.avonwg input[type=file] {
+    display: block
+}
+
+.avonwg input[type=range] {
+    display: block;
+    width: 100%
+}
+
+.avonwg select[multiple],
+.avonwg select[size] {
+    height: auto
+}
+
+.avonwg input[type=file]:focus,
+.avonwg input[type=checkbox]:focus,
+.avonwg input[type=radio]:focus {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px
+}
+
+.avonwg output {
+    display: block;
+    padding-top: 7px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555
+}
+
+.avonwg-form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s
+}
+
+.avonwg-form-control:focus {
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6)
+}
+
+.avonwg-form-control::-moz-placeholder {
+    color: #999;
+    opacity: 1
+}
+
+.avonwg-form-control:-ms-input-placeholder {
+    color: #999
+}
+
+.avonwg-form-control::-webkit-input-placeholder {
+    color: #999
+}
+
+.avonwg-form-control::-ms-expand {
+    background-color: transparent;
+    border: 0
+}
+
+.avonwg-form-control[disabled],
+.avonwg-form-control[readonly],
+fieldset[disabled] .avonwg-form-control {
+    background-color: #eee;
+    opacity: 1
+}
+
+.avonwg-form-control[disabled],
+fieldset[disabled] .avonwg-form-control {
+    cursor: not-allowed
+}
+
+textarea.avonwg-form-control {
+    height: auto
+}
+
+.avonwg input[type=search] {
+    -webkit-appearance: none
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    input[type=date].avonwg-form-control,
+    input[type=time].avonwg-form-control,
+    input[type=datetime-local].avonwg-form-control,
+    input[type=month].avonwg-form-control {
+        line-height: 34px
+    }
+    .avonwg-input-group-sm input[type=date],
+    .avonwg-input-group-sm input[type=time],
+    .avonwg-input-group-sm input[type=datetime-local],
+    .avonwg-input-group-sm input[type=month],
+    input[type=date].avonwg-input-sm,
+    input[type=time].avonwg-input-sm,
+    input[type=datetime-local].avonwg-input-sm,
+    input[type=month].avonwg-input-sm {
+        line-height: 30px
+    }
+    .avonwg-input-group-lg input[type=date],
+    .avonwg-input-group-lg input[type=time],
+    .avonwg-input-group-lg input[type=datetime-local],
+    .avonwg-input-group-lg input[type=month],
+    input[type=date].avonwg-input-lg,
+    input[type=time].avonwg-input-lg,
+    input[type=datetime-local].avonwg-input-lg,
+    input[type=month].avonwg-input-lg {
+        line-height: 46px
+    }
+}
+
+.avonwg-form-group {
+    margin-bottom: 15px
+}
+
+.avonwg-checkbox,
+.avonwg-radio {
+    position: relative;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+
+.avonwg-checkbox label,
+.avonwg-radio label {
+    min-height: 20px;
+    padding-left: 20px;
+    margin-bottom: 0;
+    font-weight: 400;
+    cursor: pointer
+}
+
+.avonwg-checkbox input[type=checkbox],
+.avonwg-checkbox-inline input[type=checkbox],
+.avonwg-radio input[type=radio],
+.avonwg-radio-inline input[type=radio] {
+    position: absolute;
+    margin-top: 4px\9;
+    margin-left: -20px
+}
+
+.avonwg-checkbox+.avonwg-checkbox,
+.avonwg-radio+.avonwg-radio {
+    margin-top: -5px
+}
+
+.avonwg-checkbox-inline,
+.avonwg-radio-inline {
+    position: relative;
+    display: inline-block;
+    padding-left: 20px;
+    margin-bottom: 0;
+    font-weight: 400;
+    vertical-align: middle;
+    cursor: pointer
+}
+
+.avonwg-checkbox-inline+.avonwg-checkbox-inline,
+.avonwg-radio-inline+.avonwg-radio-inline {
+    margin-top: 0;
+    margin-left: 10px
+}
+
+fieldset[disabled] input[type=checkbox],
+fieldset[disabled] input[type=radio],
+input[type=checkbox].avonwg-disabled,
+input[type=checkbox][disabled],
+input[type=radio].avonwg-disabled,
+input[type=radio][disabled] {
+    cursor: not-allowed
+}
+
+.avonwg-checkbox-inline.avonwg-disabled,
+.avonwg-radio-inline.avonwg-disabled,
+fieldset[disabled] .avonwg-checkbox-inline,
+fieldset[disabled] .avonwg-radio-inline {
+    cursor: not-allowed
+}
+
+.avonwg-checkbox.avonwg-disabled label,
+.avonwg-radio.avonwg-disabled label,
+fieldset[disabled] .avonwg-checkbox label,
+fieldset[disabled] .avonwg-radio label {
+    cursor: not-allowed
+}
+
+.avonwg-form-control-static {
+    min-height: 34px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-bottom: 0
+}
+
+.avonwg-form-control-static.avonwg-input-lg,
+.avonwg-form-control-static.avonwg-input-sm {
+    padding-right: 0;
+    padding-left: 0
+}
+
+.avonwg-input-sm {
+    height: 30px;
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px
+}
+
+select.avonwg-input-sm {
+    height: 30px;
+    line-height: 30px
+}
+
+select[multiple].avonwg-input-sm,
+textarea.avonwg-input-sm {
+    height: auto
+}
+
+.avonwg-form-group-sm .avonwg-form-control {
+    height: 30px;
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px
+}
+
+.avonwg-form-group-sm select.avonwg-form-control {
+    height: 30px;
+    line-height: 30px
+}
+
+.avonwg-form-group-sm select[multiple].avonwg-form-control,
+.avonwg-form-group-sm textarea.avonwg-form-control {
+    height: auto
+}
+
+.avonwg-form-group-sm .avonwg-form-control-static {
+    height: 30px;
+    min-height: 32px;
+    padding: 6px 10px;
+    font-size: 12px;
+    line-height: 1.5
+}
+
+.avonwg-input-lg {
+    height: 46px;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px
+}
+
+select.avonwg-input-lg {
+    height: 46px;
+    line-height: 46px
+}
+
+select[multiple].avonwg-input-lg,
+textarea.avonwg-input-lg {
+    height: auto
+}
+
+.avonwg-form-group-lg .avonwg-form-control {
+    height: 46px;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px
+}
+
+.avonwg-form-group-lg select.avonwg-form-control {
+    height: 46px;
+    line-height: 46px
+}
+
+.avonwg-form-group-lg select[multiple].avonwg-form-control,
+.avonwg-form-group-lg textarea.avonwg-form-control {
+    height: auto
+}
+
+.avonwg-form-group-lg .avonwg-form-control-static {
+    height: 46px;
+    min-height: 38px;
+    padding: 11px 16px;
+    font-size: 18px;
+    line-height: 1.3333333
+}
+
+.avonwg-has-feedback {
+    position: relative
+}
+
+.avonwg-has-feedback .avonwg-form-control {
+    padding-right: 42.5px
+}
+
+.avonwg-form-control-feedback {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    display: block;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    pointer-events: none
+}
+
+.avonwg-form-group-lg .avonwg-form-control+.avonwg-form-control-feedback,
+.avonwg-input-group-lg+.avonwg-form-control-feedback,
+.avonwg-input-lg+.avonwg-form-control-feedback {
+    width: 46px;
+    height: 46px;
+    line-height: 46px
+}
+
+.avonwg-form-group-sm .avonwg-form-control+.avonwg-form-control-feedback,
+.avonwg-input-group-sm+.avonwg-form-control-feedback,
+.avonwg-input-sm+.avonwg-form-control-feedback {
+    width: 30px;
+    height: 30px;
+    line-height: 30px
+}
+
+.avonwg-has-success .avonwg-checkbox,
+.avonwg-has-success .avonwg-checkbox-inline,
+.avonwg-has-success .avonwg-control-label,
+.avonwg-has-success .avonwg-help-block,
+.avonwg-has-success .avonwg-radio,
+.avonwg-has-success .avonwg-radio-inline,
+.avonwg-has-success.avonwg-checkbox label,
+.avonwg-has-success.avonwg-checkbox-inline label,
+.avonwg-has-success.avonwg-radio label,
+.avonwg-has-success.avonwg-radio-inline label {
+    color: #3c763d
+}
+
+.avonwg-has-success .avonwg-form-control {
+    border-color: #3c763d;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075)
+}
+
+.avonwg-has-success .avonwg-form-control:focus {
+    border-color: #2b542c;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #67b168;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #67b168
+}
+
+.avonwg-has-success .avonwg-input-group-addon {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #3c763d
+}
+
+.avonwg-has-success .avonwg-form-control-feedback {
+    color: #3c763d
+}
+
+.avonwg-has-warning .avonwg-checkbox,
+.avonwg-has-warning .avonwg-checkbox-inline,
+.avonwg-has-warning .avonwg-control-label,
+.avonwg-has-warning .avonwg-help-block,
+.avonwg-has-warning .avonwg-radio,
+.avonwg-has-warning .avonwg-radio-inline,
+.avonwg-has-warning.avonwg-checkbox label,
+.avonwg-has-warning.avonwg-checkbox-inline label,
+.avonwg-has-warning.avonwg-radio label,
+.avonwg-has-warning.avonwg-radio-inline label {
+    color: #8a6d3b
+}
+
+.avonwg-has-warning .avonwg-form-control {
+    border-color: #8a6d3b;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075)
+}
+
+.avonwg-has-warning .avonwg-form-control:focus {
+    border-color: #66512c;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #c0a16b;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #c0a16b
+}
+
+.avonwg-has-warning .avonwg-input-group-addon {
+    color: #8a6d3b;
+    background-color: #fcf8e3;
+    border-color: #8a6d3b
+}
+
+.avonwg-has-warning .avonwg-form-control-feedback {
+    color: #8a6d3b
+}
+
+.avonwg-has-error .avonwg-checkbox,
+.avonwg-has-error .avonwg-checkbox-inline,
+.avonwg-has-error .avonwg-control-label,
+.avonwg-has-error .avonwg-help-block,
+.avonwg-has-error .avonwg-radio,
+.avonwg-has-error .avonwg-radio-inline,
+.avonwg-has-error.avonwg-checkbox label,
+.avonwg-has-error.avonwg-checkbox-inline label,
+.avonwg-has-error.avonwg-radio label,
+.avonwg-has-error.avonwg-radio-inline label {
+    color: #a94442
+}
+
+.avonwg-has-error .avonwg-form-control {
+    border-color: #a94442;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075)
+}
+
+.avonwg-has-error .avonwg-form-control:focus {
+    border-color: #843534;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #ce8483;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #ce8483
+}
+
+.avonwg-has-error .avonwg-input-group-addon {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #a94442
+}
+
+.avonwg-has-error .avonwg-form-control-feedback {
+    color: #a94442
+}
+
+.avonwg-has-feedback label~.avonwg-form-control-feedback {
+    top: 25px
+}
+
+.avonwg-has-feedback label.avonwg-sr-only~.avonwg-form-control-feedback {
+    top: 0
+}
+
+.avonwg-help-block {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: #737373
+}
+
+@media (min-width:768px) {
+    .avonwg-form-inline .avonwg-form-group {
+        display: inline-block;
+        margin-bottom: 0;
+        vertical-align: middle
+    }
+    .avonwg-form-inline .avonwg-form-control {
+        display: inline-block;
+        width: auto;
+        vertical-align: middle
+    }
+    .avonwg-form-inline .avonwg-form-control-static {
+        display: inline-block
+    }
+    .avonwg-form-inline .avonwg-input-group {
+        display: inline-table;
+        vertical-align: middle
+    }
+    .avonwg-form-inline .avonwg-input-group .avonwg-form-control,
+    .avonwg-form-inline .avonwg-input-group .avonwg-input-group-addon,
+    .avonwg-form-inline .avonwg-input-group .avonwg-input-group-btn {
+        width: auto
+    }
+    .avonwg-form-inline .avonwg-input-group>.avonwg-form-control {
+        width: 100%
+    }
+    .avonwg-form-inline .avonwg-control-label {
+        margin-bottom: 0;
+        vertical-align: middle
+    }
+    .avonwg-form-inline .avonwg-checkbox,
+    .avonwg-form-inline .avonwg-radio {
+        display: inline-block;
+        margin-top: 0;
+        margin-bottom: 0;
+        vertical-align: middle
+    }
+    .avonwg-form-inline .avonwg-checkbox label,
+    .avonwg-form-inline .avonwg-radio label {
+        padding-left: 0
+    }
+    .avonwg-form-inline .avonwg-checkbox input[type=checkbox],
+    .avonwg-form-inline .avonwg-radio input[type=radio] {
+        position: relative;
+        margin-left: 0
+    }
+    .avonwg-form-inline .avonwg-has-feedback .avonwg-form-control-feedback {
+        top: 0
+    }
+}
+
+.avonwg-form-horizontal .avonwg-checkbox,
+.avonwg-form-horizontal .avonwg-checkbox-inline,
+.avonwg-form-horizontal .avonwg-radio,
+.avonwg-form-horizontal .avonwg-radio-inline {
+    padding-top: 7px;
+    margin-top: 0;
+    margin-bottom: 0
+}
+
+.avonwg-form-horizontal .avonwg-checkbox,
+.avonwg-form-horizontal .avonwg-radio {
+    min-height: 27px
+}
+
+.avonwg-form-horizontal .avonwg-form-group {
+    margin-right: -15px;
+    margin-left: -15px
+}
+
+@media (min-width:768px) {
+    .avonwg-form-horizontal .avonwg-control-label {
+        padding-top: 7px;
+        margin-bottom: 0;
+        text-align: right
+    }
+}
+
+.avonwg-form-horizontal .avonwg-has-feedback .avonwg-form-control-feedback {
+    right: 15px
+}
+
+@media (min-width:768px) {
+    .avonwg-form-horizontal .avonwg-form-group-lg .avonwg-control-label {
+        padding-top: 11px;
+        font-size: 18px
+    }
+}
+
+@media (min-width:768px) {
+    .avonwg-form-horizontal .avonwg-form-group-sm .avonwg-control-label {
+        padding-top: 6px;
+        font-size: 12px
+    }
+}
+
+.avonwg-btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.avonwg-btn.avonwg-active.avonwg-focus,
+.avonwg-btn.avonwg-active:focus,
+.avonwg-btn.avonwg-focus,
+.avonwg-btn:active.avonwg-focus,
+.avonwg-btn:active:focus,
+.avonwg-btn:focus {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px
+}
+
+.avonwg-btn.avonwg-focus,
+.avonwg-btn:focus,
+.avonwg-btn:hover {
+    color: #333;
+    text-decoration: none
+}
+
+.avonwg-btn.avonwg-active,
+.avonwg-btn:active {
+    background-image: none;
+    outline: 0;
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125)
+}
+
+.avonwg-btn.avonwg-disabled,
+.avonwg-btn[disabled],
+fieldset[disabled] .avonwg-btn {
+    cursor: not-allowed;
+    filter: alpha(opacity=65);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    opacity: .65
+}
+
+a.avonwg-btn.avonwg-disabled,
+fieldset[disabled] a.avonwg-btn {
+    pointer-events: none
+}
+
+.avonwg-btn-default {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc
+}
+
+.avonwg-btn-default.avonwg-focus,
+.avonwg-btn-default:focus {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #8c8c8c
+}
+
+.avonwg-btn-default:hover {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad
+}
+
+.avonwg-btn-default.avonwg-active,
+.avonwg-btn-default:active,
+.avonwg-open>.avonwg-dropdown-toggle.avonwg-btn-default {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad
+}
+
+.avonwg-btn-default.avonwg-active.avonwg-focus,
+.avonwg-btn-default.avonwg-active:focus,
+.avonwg-btn-default.avonwg-active:hover,
+.avonwg-btn-default:active.avonwg-focus,
+.avonwg-btn-default:active:focus,
+.avonwg-btn-default:active:hover,
+.avonwg-open>.avonwg-dropdown-toggle.avonwg-btn-default.avonwg-focus,
+.avonwg-open>.avonwg-dropdown-toggle.avonwg-btn-default:focus,
+.avonwg-open>.avonwg-dropdown-toggle.avonwg-btn-default:hover {
+    color: #333;
+    background-color: #d4d4d4;
+    border-color: #8c8c8c
+}
+
+.avonwg-btn-default.avonwg-active,
+.avonwg-btn-default:active,
+.avonwg-open>.avonwg-dropdown-toggle.avonwg-btn-default {
+    background-image: none
+}
+
+.avonwg-btn-default.avonwg-disabled.avonwg-focus,
+.avonwg-btn-default.avonwg-disabled:focus,
+.avonwg-btn-default.avonwg-disabled:hover,
+.avonwg-btn-default[disabled].avonwg-focus,
+.avonwg-btn-default[disabled]:focus,
+.avonwg-btn-default[disabled]:hover,
+fieldset[disabled] .avonwg-btn-default.avonwg-focus,
+fieldset[disabled] .avonwg-btn-default:focus,
+fieldset[disabled] .avonwg-btn-default:hover {
+    background-color: #fff;
+    border-color: #ccc
+}
+
+.avonwg-btn-default .avonwg-badge {
+    color: #fff;
+    background-color: #333
+}
+
+.avonwg-btn-primary {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4
+}
+
+.avonwg-btn-primary.avonwg-focus,
+.avonwg-btn-primary:focus {
+    color: #fff;
+    background-color: #286090;
+    border-color: #122b40
+}
+
+.avonwg-btn-primary:hover {
+    color: #fff;
+    background-color: #286090;
+    border-color: #204d74
+}
+
+.avonwg-btn-primary.avonwg-active,
+.avonwg-btn-primary:active,
+.avonwg-open>.avonwg-dropdown-toggle.avonwg-btn-primary {
+    color: #fff;
+    background-color: #286090;
+    border-color: #204d74
+}
+
+.avonwg-btn-primary.avonwg-active.avonwg-focus,
+.avonwg-btn-primary.avonwg-active:focus,
+.avonwg-btn-primary.avonwg-active:hover,
+.avonwg-btn-primary:active.avonwg-focus,
+.avonwg-btn-primary:active:focus,
+.avonwg-btn-primary:active:hover,
+.avonwg-open>.avonwg-dropdown-toggle.avonwg-btn-primary.avonwg-focus,
+.avonwg-open>.avonwg-dropdown-toggle.avonwg-btn-primary:focus,
+.avonwg-open>.avonwg-dropdown-toggle.avonwg-btn-primary:hover {
+    color: #fff;
+    background-color: #204d74;
+    border-color: #122b40
+}
+
+.avonwg-btn-primary.avonwg-active,
+.avonwg-btn-primary:active,
+.avonwg-open>.avonwg-dropdown-toggle.avonwg-btn-primary {
+    background-image: none
+}
+
+.avonwg-btn-primary.avonwg-disabled.avonwg-focus,
+.avonwg-btn-primary.avonwg-disabled:focus,
+.avonwg-btn-primary.avonwg-disabled:hover,
+.avonwg-btn-primary[disabled].avonwg-focus,
+.avonwg-btn-primary[disabled]:focus,
+.avonwg-btn-primary[disabled]:hover,
+fieldset[disabled] .avonwg-btn-primary.avonwg-focus,
+fieldset[disabled] .avonwg-btn-primary:focus,
+fieldset[disabled] .avonwg-btn-primary:hover {
+    background-color: #337ab7;
+    border-color: #2e6da4
+}
+
+.avonwg-btn-primary .avonwg-badge {
+    color: #337ab7;
+    background-color: #fff
+}
+
+.avonwg-btn-success {
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c
+}
+
+.avonwg-btn-success.avonwg-focus,
+.avonwg-btn-success:focus {
+    color: #fff;
+    background-color: #449d44;
+    border-color: #255625
+}
+
+.avonwg-btn-success:hover {
+    color: #fff;
+    background-color: #449d44;
+    border-color: #398439
+}
+
+.avonwg-btn-success.avonwg-active,
+.avonwg-btn-success:active,
+.avonwg-open>.avonwg-dropdown-toggle.avonwg-btn-success {
+    color: #fff;
+    background-color: #449d44;
+    border-color: #398439
+}
+
+.avonwg-btn-success.avonwg-active.avonwg-focus,
+.avonwg-btn-success.avonwg-active:focus,
+.avonwg-btn-success.avonwg-active:hover,
+.avonwg-btn-success:active.avonwg-focus,
+.avonwg-btn-success:active:focus,
+.avonwg-btn-success:active:hover,
+.avonwg-open>.avonwg-dropdown-toggle.avonwg-btn-success.avonwg-focus,
+.avonwg-open>.avonwg-dropdown-toggle.avonwg-btn-success:focus,
+.avonwg-open>.avonwg-dropdown-toggle.avonwg-btn-success:hover {
+    color: #fff;
+    background-color: #398439;
+    border-color: #255625
+}
+
+.avonwg-btn-success.avonwg-active,
+.avonwg-btn-success:active,
+.avonwg-open>.avonwg-dropdown-toggle.avonwg-btn-success {
+    background-image: none
+}
+
+.avonwg-btn-success.avonwg-disabled.avonwg-focus,
+.avonwg-btn-success.avonwg-disabled:focus,
+.avonwg-btn-success.avonwg-disabled:hover,
+.avonwg-btn-success[disabled].avonwg-focus,
+.avonwg-btn-success[disabled]:focus,
+.avonwg-btn-success[disabled]:hover,
+fieldset[disabled] .avonwg-btn-success.avonwg-focus,
+fieldset[disabled] .avonwg-btn-success:focus,
+fieldset[disabled] .avonwg-btn-success:hover {
+    background-color: #5cb85c;
+    border-color: #4cae4c
+}
+
+.avonwg-btn-success .avonwg-badge {
+    color: #5cb85c;
+    background-color: #fff
+}
+
+.avonwg-btn-info {
+    color: #fff;
+    background-color: #5bc0de;
+    border-color: #46b8da
+}
+
+.avonwg-btn-info.avonwg-focus,
+.avonwg-btn-info:focus {
+    color: #fff;
+    background-color: #31b0d5;
+    border-color: #1b6d85
+}
+
+.avonwg-btn-info:hover {
+    color: #fff;
+    background-color: #31b0d5;
+    border-color: #269abc
+}
+
+.avonwg-btn-info.avonwg-active,
+.avonwg-btn-info:active,
+.avonwg-open>.avonwg-dropdown-toggle.avonwg-btn-info {
+    color: #fff;
+    background-color: #31b0d5;
+    border-color: #269abc
+}
+
+.avonwg-btn-info.avonwg-active.avonwg-focus,
+.avonwg-btn-info.avonwg-active:focus,
+.avonwg-btn-info.avonwg-active:hover,
+.avonwg-btn-info:active.avonwg-focus,
+.avonwg-btn-info:active:focus,
+.avonwg-btn-info:active:hover,
+.avonwg-open>.avonwg-dropdown-toggle.avonwg-btn-info.avonwg-focus,
+.avonwg-open>.avonwg-dropdown-toggle.avonwg-btn-info:focus,
+.avonwg-open>.avonwg-dropdown-toggle.avonwg-btn-info:hover {
+    color: #fff;
+    background-color: #269abc;
+    border-color: #1b6d85
+}
+
+.avonwg-btn-info.avonwg-active,
+.avonwg-btn-info:active,
+.avonwg-open>.avonwg-dropdown-toggle.avonwg-btn-info {
+    background-image: none
+}
+
+.avonwg-btn-info.avonwg-disabled.avonwg-focus,
+.avonwg-btn-info.avonwg-disabled:focus,
+.avonwg-btn-info.avonwg-disabled:hover,
+.avonwg-btn-info[disabled].avonwg-focus,
+.avonwg-btn-info[disabled]:focus,
+.avonwg-btn-info[disabled]:hover,
+fieldset[disabled] .avonwg-btn-info.avonwg-focus,
+fieldset[disabled] .avonwg-btn-info:focus,
+fieldset[disabled] .avonwg-btn-info:hover {
+    background-color: #5bc0de;
+    border-color: #46b8da
+}
+
+.avonwg-btn-info .avonwg-badge {
+    color: #5bc0de;
+    background-color: #fff
+}
+
+.avonwg-btn-warning {
+    color: #fff;
+    background-color: #f0ad4e;
+    border-color: #eea236
+}
+
+.avonwg-btn-warning.avonwg-focus,
+.avonwg-btn-warning:focus {
+    color: #fff;
+    background-color: #ec971f;
+    border-color: #985f0d
+}
+
+.avonwg-btn-warning:hover {
+    color: #fff;
+    background-color: #ec971f;
+    border-color: #d58512
+}
+
+.avonwg-btn-warning.avonwg-active,
+.avonwg-btn-warning:active,
+.avonwg-open>.avonwg-dropdown-toggle.avonwg-btn-warning {
+    color: #fff;
+    background-color: #ec971f;
+    border-color: #d58512
+}
+
+.avonwg-btn-warning.avonwg-active.avonwg-focus,
+.avonwg-btn-warning.avonwg-active:focus,
+.avonwg-btn-warning.avonwg-active:hover,
+.avonwg-btn-warning:active.avonwg-focus,
+.avonwg-btn-warning:active:focus,
+.avonwg-btn-warning:active:hover,
+.avonwg-open>.avonwg-dropdown-toggle.avonwg-btn-warning.avonwg-focus,
+.avonwg-open>.avonwg-dropdown-toggle.avonwg-btn-warning:focus,
+.avonwg-open>.avonwg-dropdown-toggle.avonwg-btn-warning:hover {
+    color: #fff;
+    background-color: #d58512;
+    border-color: #985f0d
+}
+
+.avonwg-btn-warning.avonwg-active,
+.avonwg-btn-warning:active,
+.avonwg-open>.avonwg-dropdown-toggle.avonwg-btn-warning {
+    background-image: none
+}
+
+.avonwg-btn-warning.avonwg-disabled.avonwg-focus,
+.avonwg-btn-warning.avonwg-disabled:focus,
+.avonwg-btn-warning.avonwg-disabled:hover,
+.avonwg-btn-warning[disabled].avonwg-focus,
+.avonwg-btn-warning[disabled]:focus,
+.avonwg-btn-warning[disabled]:hover,
+fieldset[disabled] .avonwg-btn-warning.avonwg-focus,
+fieldset[disabled] .avonwg-btn-warning:focus,
+fieldset[disabled] .avonwg-btn-warning:hover {
+    background-color: #f0ad4e;
+    border-color: #eea236
+}
+
+.avonwg-btn-warning .avonwg-badge {
+    color: #f0ad4e;
+    background-color: #fff
+}
+
+.avonwg-btn-danger {
+    color: #fff;
+    background-color: #d9534f;
+    border-color: #d43f3a
+}
+
+.avonwg-btn-danger.avonwg-focus,
+.avonwg-btn-danger:focus {
+    color: #fff;
+    background-color: #c9302c;
+    border-color: #761c19
+}
+
+.avonwg-btn-danger:hover {
+    color: #fff;
+    background-color: #c9302c;
+    border-color: #ac2925
+}
+
+.avonwg-btn-danger.avonwg-active,
+.avonwg-btn-danger:active,
+.avonwg-open>.avonwg-dropdown-toggle.avonwg-btn-danger {
+    color: #fff;
+    background-color: #c9302c;
+    border-color: #ac2925
+}
+
+.avonwg-btn-danger.avonwg-active.avonwg-focus,
+.avonwg-btn-danger.avonwg-active:focus,
+.avonwg-btn-danger.avonwg-active:hover,
+.avonwg-btn-danger:active.avonwg-focus,
+.avonwg-btn-danger:active:focus,
+.avonwg-btn-danger:active:hover,
+.avonwg-open>.avonwg-dropdown-toggle.avonwg-btn-danger.avonwg-focus,
+.avonwg-open>.avonwg-dropdown-toggle.avonwg-btn-danger:focus,
+.avonwg-open>.avonwg-dropdown-toggle.avonwg-btn-danger:hover {
+    color: #fff;
+    background-color: #ac2925;
+    border-color: #761c19
+}
+
+.avonwg-btn-danger.avonwg-active,
+.avonwg-btn-danger:active,
+.avonwg-open>.avonwg-dropdown-toggle.avonwg-btn-danger {
+    background-image: none
+}
+
+.avonwg-btn-danger.avonwg-disabled.avonwg-focus,
+.avonwg-btn-danger.avonwg-disabled:focus,
+.avonwg-btn-danger.avonwg-disabled:hover,
+.avonwg-btn-danger[disabled].avonwg-focus,
+.avonwg-btn-danger[disabled]:focus,
+.avonwg-btn-danger[disabled]:hover,
+fieldset[disabled] .avonwg-btn-danger.avonwg-focus,
+fieldset[disabled] .avonwg-btn-danger:focus,
+fieldset[disabled] .avonwg-btn-danger:hover {
+    background-color: #d9534f;
+    border-color: #d43f3a
+}
+
+.avonwg-btn-danger .avonwg-badge {
+    color: #d9534f;
+    background-color: #fff
+}
+
+.avonwg-btn-link {
+    font-weight: 400;
+    color: #337ab7;
+    border-radius: 0
+}
+
+.avonwg-btn-link,
+.avonwg-btn-link.avonwg-active,
+.avonwg-btn-link:active,
+.avonwg-btn-link[disabled],
+fieldset[disabled] .avonwg-btn-link {
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
+
+.avonwg-btn-link,
+.avonwg-btn-link:active,
+.avonwg-btn-link:focus,
+.avonwg-btn-link:hover {
+    border-color: transparent
+}
+
+.avonwg-btn-link:focus,
+.avonwg-btn-link:hover {
+    color: #23527c;
+    text-decoration: underline;
+    background-color: transparent
+}
+
+.avonwg-btn-link[disabled]:focus,
+.avonwg-btn-link[disabled]:hover,
+fieldset[disabled] .avonwg-btn-link:focus,
+fieldset[disabled] .avonwg-btn-link:hover {
+    color: #777;
+    text-decoration: none
+}
+
+.avonwg-btn-group-lg>.avonwg-btn,
+.avonwg-btn-lg {
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px
+}
+
+.avonwg-btn-group-sm>.avonwg-btn,
+.avonwg-btn-sm {
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px
+}
+
+.avonwg-btn-group-xs>.avonwg-btn,
+.avonwg-btn-xs {
+    padding: 1px 5px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px
+}
+
+.avonwg-btn-block {
+    display: block;
+    width: 100%
+}
+
+.avonwg-btn-block+.avonwg-btn-block {
+    margin-top: 5px
+}
+
+input[type=button].avonwg-btn-block,
+input[type=reset].avonwg-btn-block,
+input[type=submit].avonwg-btn-block {
+    width: 100%
+}
+
+.avonwg-fade {
+    opacity: 0;
+    -webkit-transition: opacity .15s linear;
+    -o-transition: opacity .15s linear;
+    transition: opacity .15s linear
+}
+
+.avonwg-fade.avonwg-in {
+    opacity: 1
+}
+
+.avonwg-collapse {
+    display: none
+}
+
+.avonwg-collapse.avonwg-in {
+    display: block
+}
+
+tr.avonwg-collapse.avonwg-in {
+    display: table-row
+}
+
+tbody.avonwg-collapse.avonwg-in {
+    display: table-row-group
+}
+
+.avonwg-collapsing {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    -webkit-transition-timing-function: ease;
+    -o-transition-timing-function: ease;
+    transition-timing-function: ease;
+    -webkit-transition-duration: .35s;
+    -o-transition-duration: .35s;
+    transition-duration: .35s;
+    -webkit-transition-property: height, visibility;
+    -o-transition-property: height, visibility;
+    transition-property: height, visibility
+}
+
+.avonwg-caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px dashed;
+    border-top: 4px solid\9;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent
+}
+
+.avonwg-dropdown,
+.avonwg-dropup {
+    position: relative
+}
+
+.avonwg-dropdown-toggle:focus {
+    outline: 0
+}
+
+.avonwg-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175)
+}
+
+.avonwg-dropdown-menu.avonwg-pull-right {
+    right: 0;
+    left: auto
+}
+
+.avonwg-dropdown-menu .avonwg-divider {
+    height: 1px;
+    margin: 9px 0;
+    overflow: hidden;
+    background-color: #e5e5e5
+}
+
+.avonwg-dropdown-menu>li>a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #333;
+    white-space: nowrap
+}
+
+.avonwg-dropdown-menu>li>a:focus,
+.avonwg-dropdown-menu>li>a:hover {
+    color: #262626;
+    text-decoration: none;
+    background-color: #f5f5f5
+}
+
+.avonwg-dropdown-menu>.avonwg-active>a,
+.avonwg-dropdown-menu>.avonwg-active>a:focus,
+.avonwg-dropdown-menu>.avonwg-active>a:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: #337ab7;
+    outline: 0
+}
+
+.avonwg-dropdown-menu>.avonwg-disabled>a,
+.avonwg-dropdown-menu>.avonwg-disabled>a:focus,
+.avonwg-dropdown-menu>.avonwg-disabled>a:hover {
+    color: #777
+}
+
+.avonwg-dropdown-menu>.avonwg-disabled>a:focus,
+.avonwg-dropdown-menu>.avonwg-disabled>a:hover {
+    text-decoration: none;
+    cursor: not-allowed;
+    background-color: transparent;
+    background-image: none;
+    filter: progid: DXImageTransform.Microsoft.gradient(enabled=false)
+}
+
+.avonwg-open>.avonwg-dropdown-menu {
+    display: block
+}
+
+.avonwg-open>a {
+    outline: 0
+}
+
+.avonwg-dropdown-menu-right {
+    right: 0;
+    left: auto
+}
+
+.avonwg-dropdown-menu-left {
+    right: auto;
+    left: 0
+}
+
+.avonwg-dropdown-header {
+    display: block;
+    padding: 3px 20px;
+    font-size: 12px;
+    line-height: 1.42857143;
+    color: #777;
+    white-space: nowrap
+}
+
+.avonwg-dropdown-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 990
+}
+
+.avonwg-pull-right>.avonwg-dropdown-menu {
+    right: 0;
+    left: auto
+}
+
+.avonwg-dropup .avonwg-caret,
+.avonwg-navbar-fixed-bottom .avonwg-dropdown .avonwg-caret {
+    content: "";
+    border-top: 0;
+    border-bottom: 4px dashed;
+    border-bottom: 4px solid\9
+}
+
+.avonwg-dropup .avonwg-dropdown-menu,
+.avonwg-navbar-fixed-bottom .avonwg-dropdown .avonwg-dropdown-menu {
+    top: auto;
+    bottom: 100%;
+    margin-bottom: 2px
+}
+
+@media (min-width:768px) {
+    .avonwg-navbar-right .avonwg-dropdown-menu {
+        right: 0;
+        left: auto
+    }
+    .avonwg-navbar-right .avonwg-dropdown-menu-left {
+        right: auto;
+        left: 0
+    }
+}
+
+.avonwg-btn-group,
+.avonwg-btn-group-vertical {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle
+}
+
+.avonwg-btn-group-vertical>.avonwg-btn,
+.avonwg-btn-group>.avonwg-btn {
+    position: relative;
+    float: left
+}
+
+.avonwg-btn-group-vertical>.avonwg-btn.avonwg-active,
+.avonwg-btn-group-vertical>.avonwg-btn:active,
+.avonwg-btn-group-vertical>.avonwg-btn:focus,
+.avonwg-btn-group-vertical>.avonwg-btn:hover,
+.avonwg-btn-group>.avonwg-btn.avonwg-active,
+.avonwg-btn-group>.avonwg-btn:active,
+.avonwg-btn-group>.avonwg-btn:focus,
+.avonwg-btn-group>.avonwg-btn:hover {
+    z-index: 2
+}
+
+.avonwg-btn-group .avonwg-btn+.avonwg-btn,
+.avonwg-btn-group .avonwg-btn+.avonwg-btn-group,
+.avonwg-btn-group .avonwg-btn-group+.avonwg-btn,
+.avonwg-btn-group .avonwg-btn-group+.avonwg-btn-group {
+    margin-left: -1px
+}
+
+.avonwg-btn-toolbar {
+    margin-left: -5px
+}
+
+.avonwg-btn-toolbar .avonwg-btn,
+.avonwg-btn-toolbar .avonwg-btn-group,
+.avonwg-btn-toolbar .avonwg-input-group {
+    float: left
+}
+
+.avonwg-btn-toolbar>.avonwg-btn,
+.avonwg-btn-toolbar>.avonwg-btn-group,
+.avonwg-btn-toolbar>.avonwg-input-group {
+    margin-left: 5px
+}
+
+.avonwg-btn-group>.avonwg-btn:not(:first-child):not(:last-child):not(.avonwg-dropdown-toggle) {
+    border-radius: 0
+}
+
+.avonwg-btn-group>.avonwg-btn:first-child {
+    margin-left: 0
+}
+
+.avonwg-btn-group>.avonwg-btn:first-child:not(:last-child):not(.avonwg-dropdown-toggle) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0
+}
+
+.avonwg-btn-group>.avonwg-btn:last-child:not(:first-child),
+.avonwg-btn-group>.avonwg-dropdown-toggle:not(:first-child) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0
+}
+
+.avonwg-btn-group>.avonwg-btn-group {
+    float: left
+}
+
+.avonwg-btn-group>.avonwg-btn-group:not(:first-child):not(:last-child)>.avonwg-btn {
+    border-radius: 0
+}
+
+.avonwg-btn-group>.avonwg-btn-group:first-child:not(:last-child)>.avonwg-btn:last-child,
+.avonwg-btn-group>.avonwg-btn-group:first-child:not(:last-child)>.avonwg-dropdown-toggle {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0
+}
+
+.avonwg-btn-group>.avonwg-btn-group:last-child:not(:first-child)>.avonwg-btn:first-child {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0
+}
+
+.avonwg-btn-group .avonwg-dropdown-toggle:active,
+.avonwg-btn-group.avonwg-open .avonwg-dropdown-toggle {
+    outline: 0
+}
+
+.avonwg-btn-group>.avonwg-btn+.avonwg-dropdown-toggle {
+    padding-right: 8px;
+    padding-left: 8px
+}
+
+.avonwg-btn-group>.avonwg-btn-lg+.avonwg-dropdown-toggle {
+    padding-right: 12px;
+    padding-left: 12px
+}
+
+.avonwg-btn-group.avonwg-open .avonwg-dropdown-toggle {
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125)
+}
+
+.avonwg-btn-group.avonwg-open .avonwg-dropdown-toggle.avonwg-btn-link {
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
+
+.avonwg-btn .avonwg-caret {
+    margin-left: 0
+}
+
+.avonwg-btn-lg .avonwg-caret {
+    border-width: 5px 5px 0;
+    border-bottom-width: 0
+}
+
+.avonwg-dropup .avonwg-btn-lg .avonwg-caret {
+    border-width: 0 5px 5px
+}
+
+.avonwg-btn-group-vertical>.avonwg-btn,
+.avonwg-btn-group-vertical>.avonwg-btn-group,
+.avonwg-btn-group-vertical>.avonwg-btn-group>.avonwg-btn {
+    display: block;
+    float: none;
+    width: 100%;
+    max-width: 100%
+}
+
+.avonwg-btn-group-vertical>.avonwg-btn-group>.avonwg-btn {
+    float: none
+}
+
+.avonwg-btn-group-vertical>.avonwg-btn+.avonwg-btn,
+.avonwg-btn-group-vertical>.avonwg-btn+.avonwg-btn-group,
+.avonwg-btn-group-vertical>.avonwg-btn-group+.avonwg-btn,
+.avonwg-btn-group-vertical>.avonwg-btn-group+.avonwg-btn-group {
+    margin-top: -1px;
+    margin-left: 0
+}
+
+.avonwg-btn-group-vertical>.avonwg-btn:not(:first-child):not(:last-child) {
+    border-radius: 0
+}
+
+.avonwg-btn-group-vertical>.avonwg-btn:first-child:not(:last-child) {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0
+}
+
+.avonwg-btn-group-vertical>.avonwg-btn:last-child:not(:first-child) {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px
+}
+
+.avonwg-btn-group-vertical>.avonwg-btn-group:not(:first-child):not(:last-child)>.avonwg-btn {
+    border-radius: 0
+}
+
+.avonwg-btn-group-vertical>.avonwg-btn-group:first-child:not(:last-child)>.avonwg-btn:last-child,
+.avonwg-btn-group-vertical>.avonwg-btn-group:first-child:not(:last-child)>.avonwg-dropdown-toggle {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0
+}
+
+.avonwg-btn-group-vertical>.avonwg-btn-group:last-child:not(:first-child)>.avonwg-btn:first-child {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0
+}
+
+.avonwg-btn-group-justified {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: separate
+}
+
+.avonwg-btn-group-justified>.avonwg-btn,
+.avonwg-btn-group-justified>.avonwg-btn-group {
+    display: table-cell;
+    float: none;
+    width: 1%
+}
+
+.avonwg-btn-group-justified>.avonwg-btn-group .avonwg-btn {
+    width: 100%
+}
+
+.avonwg-btn-group-justified>.avonwg-btn-group .avonwg-dropdown-menu {
+    left: auto
+}
+
+[data-toggle=buttons]>.avonwg-btn input[type=checkbox],
+[data-toggle=buttons]>.avonwg-btn input[type=radio],
+[data-toggle=buttons]>.avonwg-btn-group>.avonwg-btn input[type=checkbox],
+[data-toggle=buttons]>.avonwg-btn-group>.avonwg-btn input[type=radio] {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    pointer-events: none
+}
+
+.avonwg-input-group {
+    position: relative;
+    display: table;
+    border-collapse: separate
+}
+
+.avonwg-input-group[class*=col-] {
+    float: none;
+    padding-right: 0;
+    padding-left: 0
+}
+
+.avonwg-input-group .avonwg-form-control {
+    position: relative;
+    z-index: 2;
+    float: left;
+    width: 100%;
+    margin-bottom: 0
+}
+
+.avonwg-input-group .avonwg-form-control:focus {
+    z-index: 3
+}
+
+.avonwg-input-group-lg>.avonwg-form-control,
+.avonwg-input-group-lg>.avonwg-input-group-addon,
+.avonwg-input-group-lg>.avonwg-input-group-btn>.avonwg-btn {
+    height: 46px;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px
+}
+
+select.avonwg-input-group-lg>.avonwg-form-control,
+select.avonwg-input-group-lg>.avonwg-input-group-addon,
+select.avonwg-input-group-lg>.avonwg-input-group-btn>.avonwg-btn {
+    height: 46px;
+    line-height: 46px
+}
+
+select[multiple].avonwg-input-group-lg>.avonwg-form-control,
+select[multiple].avonwg-input-group-lg>.avonwg-input-group-addon,
+select[multiple].avonwg-input-group-lg>.avonwg-input-group-btn>.avonwg-btn,
+textarea.avonwg-input-group-lg>.avonwg-form-control,
+textarea.avonwg-input-group-lg>.avonwg-input-group-addon,
+textarea.avonwg-input-group-lg>.avonwg-input-group-btn>.avonwg-btn {
+    height: auto
+}
+
+.avonwg-input-group-sm>.avonwg-form-control,
+.avonwg-input-group-sm>.avonwg-input-group-addon,
+.avonwg-input-group-sm>.avonwg-input-group-btn>.avonwg-btn {
+    height: 30px;
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px
+}
+
+select.avonwg-input-group-sm>.avonwg-form-control,
+select.avonwg-input-group-sm>.avonwg-input-group-addon,
+select.avonwg-input-group-sm>.avonwg-input-group-btn>.avonwg-btn {
+    height: 30px;
+    line-height: 30px
+}
+
+select[multiple].avonwg-input-group-sm>.avonwg-form-control,
+select[multiple].avonwg-input-group-sm>.avonwg-input-group-addon,
+select[multiple].avonwg-input-group-sm>.avonwg-input-group-btn>.avonwg-btn,
+textarea.avonwg-input-group-sm>.avonwg-form-control,
+textarea.avonwg-input-group-sm>.avonwg-input-group-addon,
+textarea.avonwg-input-group-sm>.avonwg-input-group-btn>.avonwg-btn {
+    height: auto
+}
+
+.avonwg-input-group .avonwg-form-control,
+.avonwg-input-group-addon,
+.avonwg-input-group-btn {
+    display: table-cell
+}
+
+.avonwg-input-group .avonwg-form-control:not(:first-child):not(:last-child),
+.avonwg-input-group-addon:not(:first-child):not(:last-child),
+.avonwg-input-group-btn:not(:first-child):not(:last-child) {
+    border-radius: 0
+}
+
+.avonwg-input-group-addon,
+.avonwg-input-group-btn {
+    width: 1%;
+    white-space: nowrap;
+    vertical-align: middle
+}
+
+.avonwg-input-group-addon {
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    color: #555;
+    text-align: center;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 4px
+}
+
+.avonwg-input-group-addon.avonwg-input-sm {
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 3px
+}
+
+.avonwg-input-group-addon.avonwg-input-lg {
+    padding: 10px 16px;
+    font-size: 18px;
+    border-radius: 6px
+}
+
+.avonwg-input-group-addon input[type=checkbox],
+.avonwg-input-group-addon input[type=radio] {
+    margin-top: 0
+}
+
+.avonwg-input-group .avonwg-form-control:first-child,
+.avonwg-input-group-addon:first-child,
+.avonwg-input-group-btn:first-child>.avonwg-btn,
+.avonwg-input-group-btn:first-child>.avonwg-btn-group>.avonwg-btn,
+.avonwg-input-group-btn:first-child>.avonwg-dropdown-toggle,
+.avonwg-input-group-btn:last-child>.avonwg-btn-group:not(:last-child)>.avonwg-btn,
+.avonwg-input-group-btn:last-child>.avonwg-btn:not(:last-child):not(.avonwg-dropdown-toggle) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0
+}
+
+.avonwg-input-group-addon:first-child {
+    border-right: 0
+}
+
+.avonwg-input-group .avonwg-form-control:last-child,
+.avonwg-input-group-addon:last-child,
+.avonwg-input-group-btn:first-child>.avonwg-btn-group:not(:first-child)>.avonwg-btn,
+.avonwg-input-group-btn:first-child>.avonwg-btn:not(:first-child),
+.avonwg-input-group-btn:last-child>.avonwg-btn,
+.avonwg-input-group-btn:last-child>.avonwg-btn-group>.avonwg-btn,
+.avonwg-input-group-btn:last-child>.avonwg-dropdown-toggle {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0
+}
+
+.avonwg-input-group-addon:last-child {
+    border-left: 0
+}
+
+.avonwg-input-group-btn {
+    position: relative;
+    font-size: 0;
+    white-space: nowrap
+}
+
+.avonwg-input-group-btn>.avonwg-btn {
+    position: relative
+}
+
+.avonwg-input-group-btn>.avonwg-btn+.avonwg-btn {
+    margin-left: -1px
+}
+
+.avonwg-input-group-btn>.avonwg-btn:active,
+.avonwg-input-group-btn>.avonwg-btn:focus,
+.avonwg-input-group-btn>.avonwg-btn:hover {
+    z-index: 2
+}
+
+.avonwg-input-group-btn:first-child>.avonwg-btn,
+.avonwg-input-group-btn:first-child>.avonwg-btn-group {
+    margin-right: -1px
+}
+
+.avonwg-input-group-btn:last-child>.avonwg-btn,
+.avonwg-input-group-btn:last-child>.avonwg-btn-group {
+    z-index: 2;
+    margin-left: -1px
+}
+
+.avonwg-nav {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none
+}
+
+.avonwg-nav>li {
+    position: relative;
+    display: block
+}
+
+.avonwg-nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 15px
+}
+
+.avonwg-nav>li>a:focus,
+.avonwg-nav>li>a:hover {
+    text-decoration: none;
+    background-color: #eee
+}
+
+.avonwg-nav>li.avonwg-disabled>a {
+    color: #777
+}
+
+.avonwg-nav>li.avonwg-disabled>a:focus,
+.avonwg-nav>li.avonwg-disabled>a:hover {
+    color: #777;
+    text-decoration: none;
+    cursor: not-allowed;
+    background-color: transparent
+}
+
+.avonwg-nav .avonwg-open>a,
+.avonwg-nav .avonwg-open>a:focus,
+.avonwg-nav .avonwg-open>a:hover {
+    background-color: #eee;
+    border-color: #337ab7
+}
+
+.avonwg-nav .avonwg-nav-divider {
+    height: 1px;
+    margin: 9px 0;
+    overflow: hidden;
+    background-color: #e5e5e5
+}
+
+.avonwg-nav>li>a>img {
+    max-width: none
+}
+
+.avonwg-nav-tabs {
+    border-bottom: 1px solid #ddd
+}
+
+.avonwg-nav-tabs>li {
+    float: left;
+    margin-bottom: -1px
+}
+
+.avonwg-nav-tabs>li>a {
+    margin-right: 2px;
+    line-height: 1.42857143;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0
+}
+
+.avonwg-nav-tabs>li>a:hover {
+    border-color: #eee #eee #ddd
+}
+
+.avonwg-nav-tabs>li.avonwg-active>a,
+.avonwg-nav-tabs>li.avonwg-active>a:focus,
+.avonwg-nav-tabs>li.avonwg-active>a:hover {
+    color: #555;
+    cursor: default;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-bottom-color: transparent
+}
+
+.avonwg-nav-tabs.avonwg-nav-justified {
+    width: 100%;
+    border-bottom: 0
+}
+
+.avonwg-nav-tabs.avonwg-nav-justified>li {
+    float: none
+}
+
+.avonwg-nav-tabs.avonwg-nav-justified>li>a {
+    margin-bottom: 5px;
+    text-align: center
+}
+
+.avonwg-nav-tabs.avonwg-nav-justified>.avonwg-dropdown .avonwg-dropdown-menu {
+    top: auto;
+    left: auto
+}
+
+@media (min-width:768px) {
+    .avonwg-nav-tabs.avonwg-nav-justified>li {
+        display: table-cell;
+        width: 1%
+    }
+    .avonwg-nav-tabs.avonwg-nav-justified>li>a {
+        margin-bottom: 0
+    }
+}
+
+.avonwg-nav-tabs.avonwg-nav-justified>li>a {
+    margin-right: 0;
+    border-radius: 4px
+}
+
+.avonwg-nav-tabs.avonwg-nav-justified>.avonwg-active>a,
+.avonwg-nav-tabs.avonwg-nav-justified>.avonwg-active>a:focus,
+.avonwg-nav-tabs.avonwg-nav-justified>.avonwg-active>a:hover {
+    border: 1px solid #ddd
+}
+
+@media (min-width:768px) {
+    .avonwg-nav-tabs.avonwg-nav-justified>li>a {
+        border-bottom: 1px solid #ddd;
+        border-radius: 4px 4px 0 0
+    }
+    .avonwg-nav-tabs.avonwg-nav-justified>.avonwg-active>a,
+    .avonwg-nav-tabs.avonwg-nav-justified>.avonwg-active>a:focus,
+    .avonwg-nav-tabs.avonwg-nav-justified>.avonwg-active>a:hover {
+        border-bottom-color: #fff
+    }
+}
+
+.avonwg-nav-pills>li {
+    float: left
+}
+
+.avonwg-nav-pills>li>a {
+    border-radius: 4px
+}
+
+.avonwg-nav-pills>li+li {
+    margin-left: 2px
+}
+
+.avonwg-nav-pills>li.avonwg-active>a,
+.avonwg-nav-pills>li.avonwg-active>a:focus,
+.avonwg-nav-pills>li.avonwg-active>a:hover {
+    color: #fff;
+    background-color: #337ab7
+}
+
+.avonwg-nav-stacked>li {
+    float: none
+}
+
+.avonwg-nav-stacked>li+li {
+    margin-top: 2px;
+    margin-left: 0
+}
+
+.avonwg-nav-justified {
+    width: 100%
+}
+
+.avonwg-nav-justified>li {
+    float: none
+}
+
+.avonwg-nav-justified>li>a {
+    margin-bottom: 5px;
+    text-align: center
+}
+
+.avonwg-nav-justified>.avonwg-dropdown .avonwg-dropdown-menu {
+    top: auto;
+    left: auto
+}
+
+@media (min-width:768px) {
+    .avonwg-nav-justified>li {
+        display: table-cell;
+        width: 1%
+    }
+    .avonwg-nav-justified>li>a {
+        margin-bottom: 0
+    }
+}
+
+.avonwg-nav-tabs-justified {
+    border-bottom: 0
+}
+
+.avonwg-nav-tabs-justified>li>a {
+    margin-right: 0;
+    border-radius: 4px
+}
+
+.avonwg-nav-tabs-justified>.avonwg-active>a,
+.avonwg-nav-tabs-justified>.avonwg-active>a:focus,
+.avonwg-nav-tabs-justified>.avonwg-active>a:hover {
+    border: 1px solid #ddd
+}
+
+@media (min-width:768px) {
+    .avonwg-nav-tabs-justified>li>a {
+        border-bottom: 1px solid #ddd;
+        border-radius: 4px 4px 0 0
+    }
+    .avonwg-nav-tabs-justified>.avonwg-active>a,
+    .avonwg-nav-tabs-justified>.avonwg-active>a:focus,
+    .avonwg-nav-tabs-justified>.avonwg-active>a:hover {
+        border-bottom-color: #fff
+    }
+}
+
+.avonwg-tab-content>.avonwg-tab-pane {
+    display: none
+}
+
+.avonwg-tab-content>.avonwg-active {
+    display: block
+}
+
+.avonwg-nav-tabs .avonwg-dropdown-menu {
+    margin-top: -1px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0
+}
+
+.avonwg-navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 20px;
+    border: 1px solid transparent
+}
+
+@media (min-width:768px) {
+    .avonwg-navbar {
+        border-radius: 4px
+    }
+}
+
+@media (min-width:768px) {
+    .avonwg-navbar-header {
+        float: left
+    }
+}
+
+.avonwg-navbar-collapse {
+    padding-right: 15px;
+    padding-left: 15px;
+    overflow-x: visible;
+    -webkit-overflow-scrolling: touch;
+    border-top: 1px solid transparent;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1)
+}
+
+.avonwg-navbar-collapse.avonwg-in {
+    overflow-y: auto
+}
+
+@media (min-width:768px) {
+    .avonwg-navbar-collapse {
+        width: auto;
+        border-top: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none
+    }
+    .avonwg-navbar-collapse.avonwg-collapse {
+        display: block!important;
+        height: auto!important;
+        padding-bottom: 0;
+        overflow: visible!important
+    }
+    .avonwg-navbar-collapse.avonwg-in {
+        overflow-y: visible
+    }
+    .avonwg-navbar-fixed-bottom .avonwg-navbar-collapse,
+    .avonwg-navbar-fixed-top .avonwg-navbar-collapse,
+    .avonwg-navbar-static-top .avonwg-navbar-collapse {
+        padding-right: 0;
+        padding-left: 0
+    }
+}
+
+.avonwg-navbar-fixed-bottom .avonwg-navbar-collapse,
+.avonwg-navbar-fixed-top .avonwg-navbar-collapse {
+    max-height: 340px
+}
+
+@media (max-device-width:480px) and (orientation:landscape) {
+    .avonwg-navbar-fixed-bottom .avonwg-navbar-collapse,
+    .avonwg-navbar-fixed-top .avonwg-navbar-collapse {
+        max-height: 200px
+    }
+}
+
+.avonwg-container-fluid>.avonwg-navbar-collapse,
+.avonwg-container-fluid>.avonwg-navbar-header,
+.avonwg-container>.avonwg-navbar-collapse,
+.avonwg-container>.avonwg-navbar-header {
+    margin-right: -15px;
+    margin-left: -15px
+}
+
+@media (min-width:768px) {
+    .avonwg-container-fluid>.avonwg-navbar-collapse,
+    .avonwg-container-fluid>.avonwg-navbar-header,
+    .avonwg-container>.avonwg-navbar-collapse,
+    .avonwg-container>.avonwg-navbar-header {
+        margin-right: 0;
+        margin-left: 0
+    }
+}
+
+.avonwg-navbar-static-top {
+    z-index: 1000;
+    border-width: 0 0 1px
+}
+
+@media (min-width:768px) {
+    .avonwg-navbar-static-top {
+        border-radius: 0
+    }
+}
+
+.avonwg-navbar-fixed-bottom,
+.avonwg-navbar-fixed-top {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030
+}
+
+@media (min-width:768px) {
+    .avonwg-navbar-fixed-bottom,
+    .avonwg-navbar-fixed-top {
+        border-radius: 0
+    }
+}
+
+.avonwg-navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px
+}
+
+.avonwg-navbar-fixed-bottom {
+    bottom: 0;
+    margin-bottom: 0;
+    border-width: 1px 0 0
+}
+
+.avonwg-navbar-brand {
+    float: left;
+    height: 50px;
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 20px
+}
+
+.avonwg-navbar-brand:focus,
+.avonwg-navbar-brand:hover {
+    text-decoration: none
+}
+
+.avonwg-navbar-brand>img {
+    display: block
+}
+
+@media (min-width:768px) {
+    .avonwg-navbar>.avonwg-container .avonwg-navbar-brand,
+    .avonwg-navbar>.avonwg-container-fluid .avonwg-navbar-brand {
+        margin-left: -15px
+    }
+}
+
+.avonwg-navbar-toggle {
+    position: relative;
+    float: right;
+    padding: 9px 10px;
+    margin-top: 8px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px
+}
+
+.avonwg-navbar-toggle:focus {
+    outline: 0
+}
+
+.avonwg-navbar-toggle .avonwg-icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px
+}
+
+.avonwg-navbar-toggle .avonwg-icon-bar+.avonwg-icon-bar {
+    margin-top: 4px
+}
+
+@media (min-width:768px) {
+    .avonwg-navbar-toggle {
+        display: none
+    }
+}
+
+.avonwg-navbar-nav {
+    margin: 7.5px -15px
+}
+
+.avonwg-navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 20px
+}
+
+@media (max-width:767px) {
+    .avonwg-navbar-nav .avonwg-open .avonwg-dropdown-menu {
+        position: static;
+        float: none;
+        width: auto;
+        margin-top: 0;
+        background-color: transparent;
+        border: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none
+    }
+    .avonwg-navbar-nav .avonwg-open .avonwg-dropdown-menu .avonwg-dropdown-header,
+    .avonwg-navbar-nav .avonwg-open .avonwg-dropdown-menu>li>a {
+        padding: 5px 15px 5px 25px
+    }
+    .avonwg-navbar-nav .avonwg-open .avonwg-dropdown-menu>li>a {
+        line-height: 20px
+    }
+    .avonwg-navbar-nav .avonwg-open .avonwg-dropdown-menu>li>a:focus,
+    .avonwg-navbar-nav .avonwg-open .avonwg-dropdown-menu>li>a:hover {
+        background-image: none
+    }
+}
+
+@media (min-width:768px) {
+    .avonwg-navbar-nav {
+        float: left;
+        margin: 0
+    }
+    .avonwg-navbar-nav>li {
+        float: left
+    }
+    .avonwg-navbar-nav>li>a {
+        padding-top: 15px;
+        padding-bottom: 15px
+    }
+}
+
+.avonwg-navbar-form {
+    padding: 10px 15px;
+    margin-top: 8px;
+    margin-right: -15px;
+    margin-bottom: 8px;
+    margin-left: -15px;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), 0 1px 0 rgba(255, 255, 255, .1);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), 0 1px 0 rgba(255, 255, 255, .1)
+}
+
+@media (min-width:768px) {
+    .avonwg-navbar-form .avonwg-form-group {
+        display: inline-block;
+        margin-bottom: 0;
+        vertical-align: middle
+    }
+    .avonwg-navbar-form .avonwg-form-control {
+        display: inline-block;
+        width: auto;
+        vertical-align: middle
+    }
+    .avonwg-navbar-form .avonwg-form-control-static {
+        display: inline-block
+    }
+    .avonwg-navbar-form .avonwg-input-group {
+        display: inline-table;
+        vertical-align: middle
+    }
+    .avonwg-navbar-form .avonwg-input-group .avonwg-form-control,
+    .avonwg-navbar-form .avonwg-input-group .avonwg-input-group-addon,
+    .avonwg-navbar-form .avonwg-input-group .avonwg-input-group-btn {
+        width: auto
+    }
+    .avonwg-navbar-form .avonwg-input-group>.avonwg-form-control {
+        width: 100%
+    }
+    .avonwg-navbar-form .avonwg-control-label {
+        margin-bottom: 0;
+        vertical-align: middle
+    }
+    .avonwg-navbar-form .avonwg-checkbox,
+    .avonwg-navbar-form .avonwg-radio {
+        display: inline-block;
+        margin-top: 0;
+        margin-bottom: 0;
+        vertical-align: middle
+    }
+    .avonwg-navbar-form .avonwg-checkbox label,
+    .avonwg-navbar-form .avonwg-radio label {
+        padding-left: 0
+    }
+    .avonwg-navbar-form .avonwg-checkbox input[type=checkbox],
+    .avonwg-navbar-form .avonwg-radio input[type=radio] {
+        position: relative;
+        margin-left: 0
+    }
+    .avonwg-navbar-form .avonwg-has-feedback .avonwg-form-control-feedback {
+        top: 0
+    }
+}
+
+@media (max-width:767px) {
+    .avonwg-navbar-form .avonwg-form-group {
+        margin-bottom: 5px
+    }
+    .avonwg-navbar-form .avonwg-form-group:last-child {
+        margin-bottom: 0
+    }
+}
+
+@media (min-width:768px) {
+    .avonwg-navbar-form {
+        width: auto;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-right: 0;
+        margin-left: 0;
+        border: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none
+    }
+}
+
+.avonwg-navbar-nav>li>.avonwg-dropdown-menu {
+    margin-top: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0
+}
+
+.avonwg-navbar-fixed-bottom .avonwg-navbar-nav>li>.avonwg-dropdown-menu {
+    margin-bottom: 0;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0
+}
+
+.avonwg-navbar-btn {
+    margin-top: 8px;
+    margin-bottom: 8px
+}
+
+.avonwg-navbar-btn.avonwg-btn-sm {
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+
+.avonwg-navbar-btn.avonwg-btn-xs {
+    margin-top: 14px;
+    margin-bottom: 14px
+}
+
+.avonwg-navbar-text {
+    margin-top: 15px;
+    margin-bottom: 15px
+}
+
+@media (min-width:768px) {
+    .avonwg-navbar-text {
+        float: left;
+        margin-right: 15px;
+        margin-left: 15px
+    }
+}
+
+@media (min-width:768px) {
+    .avonwg-navbar-left {
+        float: left!important
+    }
+    .avonwg-navbar-right {
+        float: right!important;
+        margin-right: -15px
+    }
+    .avonwg-navbar-right~.avonwg-navbar-right {
+        margin-right: 0
+    }
+}
+
+.avonwg-navbar-default {
+    background-color: #f8f8f8;
+    border-color: #e7e7e7
+}
+
+.avonwg-navbar-default .avonwg-navbar-brand {
+    color: #777
+}
+
+.avonwg-navbar-default .avonwg-navbar-brand:focus,
+.avonwg-navbar-default .avonwg-navbar-brand:hover {
+    color: #5e5e5e;
+    background-color: transparent
+}
+
+.avonwg-navbar-default .avonwg-navbar-text {
+    color: #777
+}
+
+.avonwg-navbar-default .avonwg-navbar-nav>li>a {
+    color: #777
+}
+
+.avonwg-navbar-default .avonwg-navbar-nav>li>a:focus,
+.avonwg-navbar-default .avonwg-navbar-nav>li>a:hover {
+    color: #333;
+    background-color: transparent
+}
+
+.avonwg-navbar-default .avonwg-navbar-nav>.avonwg-active>a,
+.avonwg-navbar-default .avonwg-navbar-nav>.avonwg-active>a:focus,
+.avonwg-navbar-default .avonwg-navbar-nav>.avonwg-active>a:hover {
+    color: #555;
+    background-color: #e7e7e7
+}
+
+.avonwg-navbar-default .avonwg-navbar-nav>.avonwg-disabled>a,
+.avonwg-navbar-default .avonwg-navbar-nav>.avonwg-disabled>a:focus,
+.avonwg-navbar-default .avonwg-navbar-nav>.avonwg-disabled>a:hover {
+    color: #ccc;
+    background-color: transparent
+}
+
+.avonwg-navbar-default .avonwg-navbar-toggle {
+    border-color: #ddd
+}
+
+.avonwg-navbar-default .avonwg-navbar-toggle:focus,
+.avonwg-navbar-default .avonwg-navbar-toggle:hover {
+    background-color: #ddd
+}
+
+.avonwg-navbar-default .avonwg-navbar-toggle .avonwg-icon-bar {
+    background-color: #888
+}
+
+.avonwg-navbar-default .avonwg-navbar-collapse,
+.avonwg-navbar-default .avonwg-navbar-form {
+    border-color: #e7e7e7
+}
+
+.avonwg-navbar-default .avonwg-navbar-nav>.avonwg-open>a,
+.avonwg-navbar-default .avonwg-navbar-nav>.avonwg-open>a:focus,
+.avonwg-navbar-default .avonwg-navbar-nav>.avonwg-open>a:hover {
+    color: #555;
+    background-color: #e7e7e7
+}
+
+@media (max-width:767px) {
+    .avonwg-navbar-default .avonwg-navbar-nav .avonwg-open .avonwg-dropdown-menu>li>a {
+        color: #777
+    }
+    .avonwg-navbar-default .avonwg-navbar-nav .avonwg-open .avonwg-dropdown-menu>li>a:focus,
+    .avonwg-navbar-default .avonwg-navbar-nav .avonwg-open .avonwg-dropdown-menu>li>a:hover {
+        color: #333;
+        background-color: transparent
+    }
+    .avonwg-navbar-default .avonwg-navbar-nav .avonwg-open .avonwg-dropdown-menu>.avonwg-active>a,
+    .avonwg-navbar-default .avonwg-navbar-nav .avonwg-open .avonwg-dropdown-menu>.avonwg-active>a:focus,
+    .avonwg-navbar-default .avonwg-navbar-nav .avonwg-open .avonwg-dropdown-menu>.avonwg-active>a:hover {
+        color: #555;
+        background-color: #e7e7e7
+    }
+    .avonwg-navbar-default .avonwg-navbar-nav .avonwg-open .avonwg-dropdown-menu>.avonwg-disabled>a,
+    .avonwg-navbar-default .avonwg-navbar-nav .avonwg-open .avonwg-dropdown-menu>.avonwg-disabled>a:focus,
+    .avonwg-navbar-default .avonwg-navbar-nav .avonwg-open .avonwg-dropdown-menu>.avonwg-disabled>a:hover {
+        color: #ccc;
+        background-color: transparent
+    }
+}
+
+.avonwg-navbar-default .avonwg-navbar-link {
+    color: #777
+}
+
+.avonwg-navbar-default .avonwg-navbar-link:hover {
+    color: #333
+}
+
+.avonwg-navbar-default .avonwg-btn-link {
+    color: #777
+}
+
+.avonwg-navbar-default .avonwg-btn-link:focus,
+.avonwg-navbar-default .avonwg-btn-link:hover {
+    color: #333
+}
+
+.avonwg-navbar-default .avonwg-btn-link[disabled]:focus,
+.avonwg-navbar-default .avonwg-btn-link[disabled]:hover,
+fieldset[disabled] .avonwg-navbar-default .avonwg-btn-link:focus,
+fieldset[disabled] .avonwg-navbar-default .avonwg-btn-link:hover {
+    color: #ccc
+}
+
+.avonwg-navbar-inverse {
+    background-color: #222;
+    border-color: #080808
+}
+
+.avonwg-navbar-inverse .avonwg-navbar-brand {
+    color: #9d9d9d
+}
+
+.avonwg-navbar-inverse .avonwg-navbar-brand:focus,
+.avonwg-navbar-inverse .avonwg-navbar-brand:hover {
+    color: #fff;
+    background-color: transparent
+}
+
+.avonwg-navbar-inverse .avonwg-navbar-text {
+    color: #9d9d9d
+}
+
+.avonwg-navbar-inverse .avonwg-navbar-nav>li>a {
+    color: #9d9d9d
+}
+
+.avonwg-navbar-inverse .avonwg-navbar-nav>li>a:focus,
+.avonwg-navbar-inverse .avonwg-navbar-nav>li>a:hover {
+    color: #fff;
+    background-color: transparent
+}
+
+.avonwg-navbar-inverse .avonwg-navbar-nav>.avonwg-active>a,
+.avonwg-navbar-inverse .avonwg-navbar-nav>.avonwg-active>a:focus,
+.avonwg-navbar-inverse .avonwg-navbar-nav>.avonwg-active>a:hover {
+    color: #fff;
+    background-color: #080808
+}
+
+.avonwg-navbar-inverse .avonwg-navbar-nav>.avonwg-disabled>a,
+.avonwg-navbar-inverse .avonwg-navbar-nav>.avonwg-disabled>a:focus,
+.avonwg-navbar-inverse .avonwg-navbar-nav>.avonwg-disabled>a:hover {
+    color: #444;
+    background-color: transparent
+}
+
+.avonwg-navbar-inverse .avonwg-navbar-toggle {
+    border-color: #333
+}
+
+.avonwg-navbar-inverse .avonwg-navbar-toggle:focus,
+.avonwg-navbar-inverse .avonwg-navbar-toggle:hover {
+    background-color: #333
+}
+
+.avonwg-navbar-inverse .avonwg-navbar-toggle .avonwg-icon-bar {
+    background-color: #fff
+}
+
+.avonwg-navbar-inverse .avonwg-navbar-collapse,
+.avonwg-navbar-inverse .avonwg-navbar-form {
+    border-color: #101010
+}
+
+.avonwg-navbar-inverse .avonwg-navbar-nav>.avonwg-open>a,
+.avonwg-navbar-inverse .avonwg-navbar-nav>.avonwg-open>a:focus,
+.avonwg-navbar-inverse .avonwg-navbar-nav>.avonwg-open>a:hover {
+    color: #fff;
+    background-color: #080808
+}
+
+@media (max-width:767px) {
+    .avonwg-navbar-inverse .avonwg-navbar-nav .avonwg-open .avonwg-dropdown-menu>.avonwg-dropdown-header {
+        border-color: #080808
+    }
+    .avonwg-navbar-inverse .avonwg-navbar-nav .avonwg-open .avonwg-dropdown-menu .avonwg-divider {
+        background-color: #080808
+    }
+    .avonwg-navbar-inverse .avonwg-navbar-nav .avonwg-open .avonwg-dropdown-menu>li>a {
+        color: #9d9d9d
+    }
+    .avonwg-navbar-inverse .avonwg-navbar-nav .avonwg-open .avonwg-dropdown-menu>li>a:focus,
+    .avonwg-navbar-inverse .avonwg-navbar-nav .avonwg-open .avonwg-dropdown-menu>li>a:hover {
+        color: #fff;
+        background-color: transparent
+    }
+    .avonwg-navbar-inverse .avonwg-navbar-nav .avonwg-open .avonwg-dropdown-menu>.avonwg-active>a,
+    .avonwg-navbar-inverse .avonwg-navbar-nav .avonwg-open .avonwg-dropdown-menu>.avonwg-active>a:focus,
+    .avonwg-navbar-inverse .avonwg-navbar-nav .avonwg-open .avonwg-dropdown-menu>.avonwg-active>a:hover {
+        color: #fff;
+        background-color: #080808
+    }
+    .avonwg-navbar-inverse .avonwg-navbar-nav .avonwg-open .avonwg-dropdown-menu>.avonwg-disabled>a,
+    .avonwg-navbar-inverse .avonwg-navbar-nav .avonwg-open .avonwg-dropdown-menu>.avonwg-disabled>a:focus,
+    .avonwg-navbar-inverse .avonwg-navbar-nav .avonwg-open .avonwg-dropdown-menu>.avonwg-disabled>a:hover {
+        color: #444;
+        background-color: transparent
+    }
+}
+
+.avonwg-navbar-inverse .avonwg-navbar-link {
+    color: #9d9d9d
+}
+
+.avonwg-navbar-inverse .avonwg-navbar-link:hover {
+    color: #fff
+}
+
+.avonwg-navbar-inverse .avonwg-btn-link {
+    color: #9d9d9d
+}
+
+.avonwg-navbar-inverse .avonwg-btn-link:focus,
+.avonwg-navbar-inverse .avonwg-btn-link:hover {
+    color: #fff
+}
+
+.avonwg-navbar-inverse .avonwg-btn-link[disabled]:focus,
+.avonwg-navbar-inverse .avonwg-btn-link[disabled]:hover,
+fieldset[disabled] .avonwg-navbar-inverse .avonwg-btn-link:focus,
+fieldset[disabled] .avonwg-navbar-inverse .avonwg-btn-link:hover {
+    color: #444
+}
+
+.avonwg-breadcrumb {
+    padding: 8px 15px;
+    margin-bottom: 20px;
+    list-style: none;
+    background-color: #f5f5f5;
+    border-radius: 4px
+}
+
+.avonwg-breadcrumb>li {
+    display: inline-block
+}
+
+.avonwg-breadcrumb>li+li:before {
+    padding: 0 5px;
+    color: #ccc;
+    content: "/\00a0"
+}
+
+.avonwg-breadcrumb>.avonwg-active {
+    color: #777
+}
+
+.avonwg-pagination {
+    display: inline-block;
+    padding-left: 0;
+    margin: 20px 0;
+    border-radius: 4px
+}
+
+.avonwg-pagination>li {
+    display: inline
+}
+
+.avonwg-pagination>li>a,
+.avonwg-pagination>li>span {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: #337ab7;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ddd
+}
+
+.avonwg-pagination>li:first-child>a,
+.avonwg-pagination>li:first-child>span {
+    margin-left: 0;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px
+}
+
+.avonwg-pagination>li:last-child>a,
+.avonwg-pagination>li:last-child>span {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px
+}
+
+.avonwg-pagination>li>a:focus,
+.avonwg-pagination>li>a:hover,
+.avonwg-pagination>li>span:focus,
+.avonwg-pagination>li>span:hover {
+    z-index: 2;
+    color: #23527c;
+    background-color: #eee;
+    border-color: #ddd
+}
+
+.avonwg-pagination>.avonwg-active>a,
+.avonwg-pagination>.avonwg-active>a:focus,
+.avonwg-pagination>.avonwg-active>a:hover,
+.avonwg-pagination>.avonwg-active>span,
+.avonwg-pagination>.avonwg-active>span:focus,
+.avonwg-pagination>.avonwg-active>span:hover {
+    z-index: 3;
+    color: #fff;
+    cursor: default;
+    background-color: #337ab7;
+    border-color: #337ab7
+}
+
+.avonwg-pagination>.avonwg-disabled>a,
+.avonwg-pagination>.avonwg-disabled>a:focus,
+.avonwg-pagination>.avonwg-disabled>a:hover,
+.avonwg-pagination>.avonwg-disabled>span,
+.avonwg-pagination>.avonwg-disabled>span:focus,
+.avonwg-pagination>.avonwg-disabled>span:hover {
+    color: #777;
+    cursor: not-allowed;
+    background-color: #fff;
+    border-color: #ddd
+}
+
+.avonwg-pagination-lg>li>a,
+.avonwg-pagination-lg>li>span {
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333
+}
+
+.avonwg-pagination-lg>li:first-child>a,
+.avonwg-pagination-lg>li:first-child>span {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px
+}
+
+.avonwg-pagination-lg>li:last-child>a,
+.avonwg-pagination-lg>li:last-child>span {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px
+}
+
+.avonwg-pagination-sm>li>a,
+.avonwg-pagination-sm>li>span {
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5
+}
+
+.avonwg-pagination-sm>li:first-child>a,
+.avonwg-pagination-sm>li:first-child>span {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px
+}
+
+.avonwg-pagination-sm>li:last-child>a,
+.avonwg-pagination-sm>li:last-child>span {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px
+}
+
+.avonwg-pager {
+    padding-left: 0;
+    margin: 20px 0;
+    text-align: center;
+    list-style: none
+}
+
+.avonwg-pager li {
+    display: inline
+}
+
+.avonwg-pager li>a,
+.avonwg-pager li>span {
+    display: inline-block;
+    padding: 5px 14px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 15px
+}
+
+.avonwg-pager li>a:focus,
+.avonwg-pager li>a:hover {
+    text-decoration: none;
+    background-color: #eee
+}
+
+.avonwg-pager .avonwg-next>a,
+.avonwg-pager .avonwg-next>span {
+    float: right
+}
+
+.avonwg-pager .avonwg-previous>a,
+.avonwg-pager .avonwg-previous>span {
+    float: left
+}
+
+.avonwg-pager .avonwg-disabled>a,
+.avonwg-pager .avonwg-disabled>a:focus,
+.avonwg-pager .avonwg-disabled>a:hover,
+.avonwg-pager .avonwg-disabled>span {
+    color: #777;
+    cursor: not-allowed;
+    background-color: #fff
+}
+
+.avonwg-label {
+    display: inline;
+    padding: .2em .6em .3em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em
+}
+
+a.avonwg-label:focus,
+a.avonwg-label:hover {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer
+}
+
+.avonwg-label:empty {
+    display: none
+}
+
+.avonwg-btn .avonwg-label {
+    position: relative;
+    top: -1px
+}
+
+.avonwg-label-default {
+    background-color: #777
+}
+
+.avonwg-label-default[href]:focus,
+.avonwg-label-default[href]:hover {
+    background-color: #5e5e5e
+}
+
+.avonwg-label-primary {
+    background-color: #337ab7
+}
+
+.avonwg-label-primary[href]:focus,
+.avonwg-label-primary[href]:hover {
+    background-color: #286090
+}
+
+.avonwg-label-success {
+    background-color: #5cb85c
+}
+
+.avonwg-label-success[href]:focus,
+.avonwg-label-success[href]:hover {
+    background-color: #449d44
+}
+
+.avonwg-label-info {
+    background-color: #5bc0de
+}
+
+.avonwg-label-info[href]:focus,
+.avonwg-label-info[href]:hover {
+    background-color: #31b0d5
+}
+
+.avonwg-label-warning {
+    background-color: #f0ad4e
+}
+
+.avonwg-label-warning[href]:focus,
+.avonwg-label-warning[href]:hover {
+    background-color: #ec971f
+}
+
+.avonwg-label-danger {
+    background-color: #d9534f
+}
+
+.avonwg-label-danger[href]:focus,
+.avonwg-label-danger[href]:hover {
+    background-color: #c9302c
+}
+
+.avonwg-badge {
+    display: inline-block;
+    min-width: 10px;
+    padding: 3px 7px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    background-color: #777;
+    border-radius: 10px
+}
+
+.avonwg-badge:empty {
+    display: none
+}
+
+.avonwg-btn .avonwg-badge {
+    position: relative;
+    top: -1px
+}
+
+.avonwg-btn-group-xs>.avonwg-btn .avonwg-badge,
+.avonwg-btn-xs .avonwg-badge {
+    top: 0;
+    padding: 1px 5px
+}
+
+a.avonwg-badge:focus,
+a.avonwg-badge:hover {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer
+}
+
+.avonwg-list-group-item.avonwg-active>.avonwg-badge,
+.avonwg-nav-pills>.avonwg-active>a>.avonwg-badge {
+    color: #337ab7;
+    background-color: #fff
+}
+
+.avonwg-list-group-item>.avonwg-badge {
+    float: right
+}
+
+.avonwg-list-group-item>.avonwg-badge+.avonwg-badge {
+    margin-right: 5px
+}
+
+.avonwg-nav-pills>li>a>.avonwg-badge {
+    margin-left: 3px
+}
+
+.avonwg-jumbotron {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    color: inherit;
+    background-color: #eee
+}
+
+.avonwg-jumbotron .avonwg-h1,
+.avonwg-jumbotron h1 {
+    color: inherit
+}
+
+.avonwg-jumbotron p {
+    margin-bottom: 15px;
+    font-size: 21px;
+    font-weight: 200
+}
+
+.avonwg-jumbotron>hr {
+    border-top-color: #d5d5d5
+}
+
+.avonwg-container .avonwg-jumbotron,
+.avonwg-container-fluid .avonwg-jumbotron {
+    padding-right: 15px;
+    padding-left: 15px;
+    border-radius: 6px
+}
+
+.avonwg-jumbotron .avonwg-container {
+    max-width: 100%
+}
+
+@media screen and (min-width:768px) {
+    .avonwg-jumbotron {
+        padding-top: 48px;
+        padding-bottom: 48px
+    }
+    .avonwg-container .avonwg-jumbotron,
+    .avonwg-container-fluid .avonwg-jumbotron {
+        padding-right: 60px;
+        padding-left: 60px
+    }
+    .avonwg-jumbotron .avonwg-h1,
+    .avonwg-jumbotron h1 {
+        font-size: 63px
+    }
+}
+
+.avonwg-thumbnail {
+    display: block;
+    padding: 4px;
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: border .2s ease-in-out;
+    -o-transition: border .2s ease-in-out;
+    transition: border .2s ease-in-out
+}
+
+.avonwg-thumbnail a>img,
+.avonwg-thumbnail>img {
+    margin-right: auto;
+    margin-left: auto
+}
+
+a.avonwg-thumbnail.avonwg-active,
+a.avonwg-thumbnail:focus,
+a.avonwg-thumbnail:hover {
+    border-color: #337ab7
+}
+
+.avonwg-thumbnail .avonwg-caption {
+    padding: 9px;
+    color: #333
+}
+
+.avonwg-alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px
+}
+
+.avonwg-alert h4 {
+    margin-top: 0;
+    color: inherit
+}
+
+.avonwg-alert .avonwg-alert-link {
+    font-weight: 700
+}
+
+.avonwg-alert>p,
+.avonwg-alert>ul {
+    margin-bottom: 0
+}
+
+.avonwg-alert>p+p {
+    margin-top: 5px
+}
+
+.avonwg-alert-dismissable,
+.avonwg-alert-dismissible {
+    padding-right: 35px
+}
+
+.avonwg-alert-dismissable .avonwg-close,
+.avonwg-alert-dismissible .avonwg-close {
+    position: relative;
+    top: -2px;
+    right: -21px;
+    color: inherit
+}
+
+.avonwg-alert-success {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6
+}
+
+.avonwg-alert-success hr {
+    border-top-color: #c9e2b3
+}
+
+.avonwg-alert-success .avonwg-alert-link {
+    color: #2b542c
+}
+
+.avonwg-alert-info {
+    color: #31708f;
+    background-color: #d9edf7;
+    border-color: #bce8f1
+}
+
+.avonwg-alert-info hr {
+    border-top-color: #a6e1ec
+}
+
+.avonwg-alert-info .avonwg-alert-link {
+    color: #245269
+}
+
+.avonwg-alert-warning {
+    color: #8a6d3b;
+    background-color: #fcf8e3;
+    border-color: #faebcc
+}
+
+.avonwg-alert-warning hr {
+    border-top-color: #f7e1b5
+}
+
+.avonwg-alert-warning .avonwg-alert-link {
+    color: #66512c
+}
+
+.avonwg-alert-danger {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1
+}
+
+.avonwg-alert-danger hr {
+    border-top-color: #e4b9c0
+}
+
+.avonwg-alert-danger .avonwg-alert-link {
+    color: #843534
+}
+
+@-webkit-keyframes progress-bar-stripes {
+    from {
+        background-position: 40px 0
+    }
+    to {
+        background-position: 0 0
+    }
+}
+
+@-o-keyframes progress-bar-stripes {
+    from {
+        background-position: 40px 0
+    }
+    to {
+        background-position: 0 0
+    }
+}
+
+@keyframes progress-bar-stripes {
+    from {
+        background-position: 40px 0
+    }
+    to {
+        background-position: 0 0
+    }
+}
+
+.avonwg-progress {
+    height: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1)
+}
+
+.avonwg-progress-bar {
+    float: left;
+    width: 0;
+    height: 100%;
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+    text-align: center;
+    background-color: #337ab7;
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15);
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15);
+    -webkit-transition: width .6s ease;
+    -o-transition: width .6s ease;
+    transition: width .6s ease
+}
+
+.avonwg-progress-bar-striped,
+.avonwg-progress-striped .avonwg-progress-bar {
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    -webkit-background-size: 40px 40px;
+    background-size: 40px 40px
+}
+
+.avonwg-progress-bar.avonwg-active,
+.avonwg-progress.avonwg-active .avonwg-progress-bar {
+    -webkit-animation: progress-bar-stripes 2s linear infinite;
+    -o-animation: progress-bar-stripes 2s linear infinite;
+    animation: progress-bar-stripes 2s linear infinite
+}
+
+.avonwg-progress-bar-success {
+    background-color: #5cb85c
+}
+
+.avonwg-progress-striped .avonwg-progress-bar-success {
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent)
+}
+
+.avonwg-progress-bar-info {
+    background-color: #5bc0de
+}
+
+.avonwg-progress-striped .avonwg-progress-bar-info {
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent)
+}
+
+.avonwg-progress-bar-warning {
+    background-color: #f0ad4e
+}
+
+.avonwg-progress-striped .avonwg-progress-bar-warning {
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent)
+}
+
+.avonwg-progress-bar-danger {
+    background-color: #d9534f
+}
+
+.avonwg-progress-striped .avonwg-progress-bar-danger {
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent)
+}
+
+.avonwg-media {
+    margin-top: 15px
+}
+
+.avonwg-media:first-child {
+    margin-top: 0
+}
+
+.avonwg-media,
+.avonwg-media-body {
+    overflow: hidden;
+    zoom: 1
+}
+
+.avonwg-media-body {
+    width: 10000px
+}
+
+.avonwg-media-object {
+    display: block
+}
+
+.avonwg-media-object.avonwg-img-thumbnail {
+    max-width: none
+}
+
+.avonwg-media-right,
+.avonwg-media>.avonwg-pull-right {
+    padding-left: 10px
+}
+
+.avonwg-media-left,
+.avonwg-media>.avonwg-pull-left {
+    padding-right: 10px
+}
+
+.avonwg-media-body,
+.avonwg-media-left,
+.avonwg-media-right {
+    display: table-cell;
+    vertical-align: top
+}
+
+.avonwg-media-middle {
+    vertical-align: middle
+}
+
+.avonwg-media-bottom {
+    vertical-align: bottom
+}
+
+.avonwg-media-heading {
+    margin-top: 0;
+    margin-bottom: 5px
+}
+
+.avonwg-media-list {
+    padding-left: 0;
+    list-style: none
+}
+
+.avonwg-list-group {
+    padding-left: 0;
+    margin-bottom: 20px
+}
+
+.avonwg-list-group-item {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: -1px;
+    background-color: #fff;
+    border: 1px solid #ddd
+}
+
+.avonwg-list-group-item:first-child {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px
+}
+
+.avonwg-list-group-item:last-child {
+    margin-bottom: 0;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px
+}
+
+a.avonwg-list-group-item,
+button.avonwg-list-group-item {
+    color: #555
+}
+
+a.avonwg-list-group-item .avonwg-list-group-item-heading,
+button.avonwg-list-group-item .avonwg-list-group-item-heading {
+    color: #333
+}
+
+a.avonwg-list-group-item:focus,
+a.avonwg-list-group-item:hover,
+button.avonwg-list-group-item:focus,
+button.avonwg-list-group-item:hover {
+    color: #555;
+    text-decoration: none;
+    background-color: #f5f5f5
+}
+
+button.avonwg-list-group-item {
+    width: 100%;
+    text-align: left
+}
+
+.avonwg-list-group-item.avonwg-disabled,
+.avonwg-list-group-item.avonwg-disabled:focus,
+.avonwg-list-group-item.avonwg-disabled:hover {
+    color: #777;
+    cursor: not-allowed;
+    background-color: #eee
+}
+
+.avonwg-list-group-item.avonwg-disabled .avonwg-list-group-item-heading,
+.avonwg-list-group-item.avonwg-disabled:focus .avonwg-list-group-item-heading,
+.avonwg-list-group-item.avonwg-disabled:hover .avonwg-list-group-item-heading {
+    color: inherit
+}
+
+.avonwg-list-group-item.avonwg-disabled .avonwg-list-group-item-text,
+.avonwg-list-group-item.avonwg-disabled:focus .avonwg-list-group-item-text,
+.avonwg-list-group-item.avonwg-disabled:hover .avonwg-list-group-item-text {
+    color: #777
+}
+
+.avonwg-list-group-item.avonwg-active,
+.avonwg-list-group-item.avonwg-active:focus,
+.avonwg-list-group-item.avonwg-active:hover {
+    z-index: 2;
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #337ab7
+}
+
+.avonwg-list-group-item.avonwg-active .avonwg-list-group-item-heading,
+.avonwg-list-group-item.avonwg-active .avonwg-list-group-item-heading>.avonwg-small,
+.avonwg-list-group-item.avonwg-active .avonwg-list-group-item-heading>small,
+.avonwg-list-group-item.avonwg-active:focus .avonwg-list-group-item-heading,
+.avonwg-list-group-item.avonwg-active:focus .avonwg-list-group-item-heading>.avonwg-small,
+.avonwg-list-group-item.avonwg-active:focus .avonwg-list-group-item-heading>small,
+.avonwg-list-group-item.avonwg-active:hover .avonwg-list-group-item-heading,
+.avonwg-list-group-item.avonwg-active:hover .avonwg-list-group-item-heading>.avonwg-small,
+.avonwg-list-group-item.avonwg-active:hover .avonwg-list-group-item-heading>small {
+    color: inherit
+}
+
+.avonwg-list-group-item.avonwg-active .avonwg-list-group-item-text,
+.avonwg-list-group-item.avonwg-active:focus .avonwg-list-group-item-text,
+.avonwg-list-group-item.avonwg-active:hover .avonwg-list-group-item-text {
+    color: #c7ddef
+}
+
+.avonwg-list-group-item-success {
+    color: #3c763d;
+    background-color: #dff0d8
+}
+
+a.avonwg-list-group-item-success,
+button.avonwg-list-group-item-success {
+    color: #3c763d
+}
+
+a.avonwg-list-group-item-success .avonwg-list-group-item-heading,
+button.avonwg-list-group-item-success .avonwg-list-group-item-heading {
+    color: inherit
+}
+
+a.avonwg-list-group-item-success:focus,
+a.avonwg-list-group-item-success:hover,
+button.avonwg-list-group-item-success:focus,
+button.avonwg-list-group-item-success:hover {
+    color: #3c763d;
+    background-color: #d0e9c6
+}
+
+a.avonwg-list-group-item-success.avonwg-active,
+a.avonwg-list-group-item-success.avonwg-active:focus,
+a.avonwg-list-group-item-success.avonwg-active:hover,
+button.avonwg-list-group-item-success.avonwg-active,
+button.avonwg-list-group-item-success.avonwg-active:focus,
+button.avonwg-list-group-item-success.avonwg-active:hover {
+    color: #fff;
+    background-color: #3c763d;
+    border-color: #3c763d
+}
+
+.avonwg-list-group-item-info {
+    color: #31708f;
+    background-color: #d9edf7
+}
+
+a.avonwg-list-group-item-info,
+button.avonwg-list-group-item-info {
+    color: #31708f
+}
+
+a.avonwg-list-group-item-info .avonwg-list-group-item-heading,
+button.avonwg-list-group-item-info .avonwg-list-group-item-heading {
+    color: inherit
+}
+
+a.avonwg-list-group-item-info:focus,
+a.avonwg-list-group-item-info:hover,
+button.avonwg-list-group-item-info:focus,
+button.avonwg-list-group-item-info:hover {
+    color: #31708f;
+    background-color: #c4e3f3
+}
+
+a.avonwg-list-group-item-info.avonwg-active,
+a.avonwg-list-group-item-info.avonwg-active:focus,
+a.avonwg-list-group-item-info.avonwg-active:hover,
+button.avonwg-list-group-item-info.avonwg-active,
+button.avonwg-list-group-item-info.avonwg-active:focus,
+button.avonwg-list-group-item-info.avonwg-active:hover {
+    color: #fff;
+    background-color: #31708f;
+    border-color: #31708f
+}
+
+.avonwg-list-group-item-warning {
+    color: #8a6d3b;
+    background-color: #fcf8e3
+}
+
+a.avonwg-list-group-item-warning,
+button.avonwg-list-group-item-warning {
+    color: #8a6d3b
+}
+
+a.avonwg-list-group-item-warning .avonwg-list-group-item-heading,
+button.avonwg-list-group-item-warning .avonwg-list-group-item-heading {
+    color: inherit
+}
+
+a.avonwg-list-group-item-warning:focus,
+a.avonwg-list-group-item-warning:hover,
+button.avonwg-list-group-item-warning:focus,
+button.avonwg-list-group-item-warning:hover {
+    color: #8a6d3b;
+    background-color: #faf2cc
+}
+
+a.avonwg-list-group-item-warning.avonwg-active,
+a.avonwg-list-group-item-warning.avonwg-active:focus,
+a.avonwg-list-group-item-warning.avonwg-active:hover,
+button.avonwg-list-group-item-warning.avonwg-active,
+button.avonwg-list-group-item-warning.avonwg-active:focus,
+button.avonwg-list-group-item-warning.avonwg-active:hover {
+    color: #fff;
+    background-color: #8a6d3b;
+    border-color: #8a6d3b
+}
+
+.avonwg-list-group-item-danger {
+    color: #a94442;
+    background-color: #f2dede
+}
+
+a.avonwg-list-group-item-danger,
+button.avonwg-list-group-item-danger {
+    color: #a94442
+}
+
+a.avonwg-list-group-item-danger .avonwg-list-group-item-heading,
+button.avonwg-list-group-item-danger .avonwg-list-group-item-heading {
+    color: inherit
+}
+
+a.avonwg-list-group-item-danger:focus,
+a.avonwg-list-group-item-danger:hover,
+button.avonwg-list-group-item-danger:focus,
+button.avonwg-list-group-item-danger:hover {
+    color: #a94442;
+    background-color: #ebcccc
+}
+
+a.avonwg-list-group-item-danger.avonwg-active,
+a.avonwg-list-group-item-danger.avonwg-active:focus,
+a.avonwg-list-group-item-danger.avonwg-active:hover,
+button.avonwg-list-group-item-danger.avonwg-active,
+button.avonwg-list-group-item-danger.avonwg-active:focus,
+button.avonwg-list-group-item-danger.avonwg-active:hover {
+    color: #fff;
+    background-color: #a94442;
+    border-color: #a94442
+}
+
+.avonwg-list-group-item-heading {
+    margin-top: 0;
+    margin-bottom: 5px
+}
+
+.avonwg-list-group-item-text {
+    margin-bottom: 0;
+    line-height: 1.3
+}
+
+.avonwg-panel {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .05)
+}
+
+.avonwg-panel-body {
+    padding: 15px
+}
+
+.avonwg-panel-heading {
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px
+}
+
+.avonwg-panel-heading>.avonwg-dropdown .avonwg-dropdown-toggle {
+    color: inherit
+}
+
+.avonwg-panel-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    color: inherit
+}
+
+.avonwg-panel-title>.avonwg-small,
+.avonwg-panel-title>.avonwg-small>a,
+.avonwg-panel-title>a,
+.avonwg-panel-title>small,
+.avonwg-panel-title>small>a {
+    color: inherit
+}
+
+.avonwg-panel-footer {
+    padding: 10px 15px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px
+}
+
+.avonwg-panel>.avonwg-list-group,
+.avonwg-panel>.avonwg-panel-collapse>.avonwg-list-group {
+    margin-bottom: 0
+}
+
+.avonwg-panel>.avonwg-list-group .avonwg-list-group-item,
+.avonwg-panel>.avonwg-panel-collapse>.avonwg-list-group .avonwg-list-group-item {
+    border-width: 1px 0;
+    border-radius: 0
+}
+
+.avonwg-panel>.avonwg-list-group:first-child .avonwg-list-group-item:first-child,
+.avonwg-panel>.avonwg-panel-collapse>.avonwg-list-group:first-child .avonwg-list-group-item:first-child {
+    border-top: 0;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px
+}
+
+.avonwg-panel>.avonwg-list-group:last-child .avonwg-list-group-item:last-child,
+.avonwg-panel>.avonwg-panel-collapse>.avonwg-list-group:last-child .avonwg-list-group-item:last-child {
+    border-bottom: 0;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px
+}
+
+.avonwg-panel>.avonwg-panel-heading+.avonwg-panel-collapse>.avonwg-list-group .avonwg-list-group-item:first-child {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0
+}
+
+.avonwg-panel-heading+.avonwg-list-group .avonwg-list-group-item:first-child {
+    border-top-width: 0
+}
+
+.avonwg-list-group+.avonwg-panel-footer {
+    border-top-width: 0
+}
+
+.avonwg-panel>.avonwg-panel-collapse>.avonwg-table,
+.avonwg-panel>.avonwg-table,
+.avonwg-panel>.avonwg-table-responsive>.avonwg-table {
+    margin-bottom: 0
+}
+
+.avonwg-panel>.avonwg-panel-collapse>.avonwg-table caption,
+.avonwg-panel>.avonwg-table caption,
+.avonwg-panel>.avonwg-table-responsive>.avonwg-table caption {
+    padding-right: 15px;
+    padding-left: 15px
+}
+
+.avonwg-panel>.avonwg-table-responsive:first-child>.avonwg-table:first-child,
+.avonwg-panel>.avonwg-table:first-child {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px
+}
+
+.avonwg-panel>.avonwg-table-responsive:first-child>.avonwg-table:first-child>tbody:first-child>tr:first-child,
+.avonwg-panel>.avonwg-table-responsive:first-child>.avonwg-table:first-child>thead:first-child>tr:first-child,
+.avonwg-panel>.avonwg-table:first-child>tbody:first-child>tr:first-child,
+.avonwg-panel>.avonwg-table:first-child>thead:first-child>tr:first-child {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px
+}
+
+.avonwg-panel>.avonwg-table-responsive:first-child>.avonwg-table:first-child>tbody:first-child>tr:first-child td:first-child,
+.avonwg-panel>.avonwg-table-responsive:first-child>.avonwg-table:first-child>tbody:first-child>tr:first-child th:first-child,
+.avonwg-panel>.avonwg-table-responsive:first-child>.avonwg-table:first-child>thead:first-child>tr:first-child td:first-child,
+.avonwg-panel>.avonwg-table-responsive:first-child>.avonwg-table:first-child>thead:first-child>tr:first-child th:first-child,
+.avonwg-panel>.avonwg-table:first-child>tbody:first-child>tr:first-child td:first-child,
+.avonwg-panel>.avonwg-table:first-child>tbody:first-child>tr:first-child th:first-child,
+.avonwg-panel>.avonwg-table:first-child>thead:first-child>tr:first-child td:first-child,
+.avonwg-panel>.avonwg-table:first-child>thead:first-child>tr:first-child th:first-child {
+    border-top-left-radius: 3px
+}
+
+.avonwg-panel>.avonwg-table-responsive:first-child>.avonwg-table:first-child>tbody:first-child>tr:first-child td:last-child,
+.avonwg-panel>.avonwg-table-responsive:first-child>.avonwg-table:first-child>tbody:first-child>tr:first-child th:last-child,
+.avonwg-panel>.avonwg-table-responsive:first-child>.avonwg-table:first-child>thead:first-child>tr:first-child td:last-child,
+.avonwg-panel>.avonwg-table-responsive:first-child>.avonwg-table:first-child>thead:first-child>tr:first-child th:last-child,
+.avonwg-panel>.avonwg-table:first-child>tbody:first-child>tr:first-child td:last-child,
+.avonwg-panel>.avonwg-table:first-child>tbody:first-child>tr:first-child th:last-child,
+.avonwg-panel>.avonwg-table:first-child>thead:first-child>tr:first-child td:last-child,
+.avonwg-panel>.avonwg-table:first-child>thead:first-child>tr:first-child th:last-child {
+    border-top-right-radius: 3px
+}
+
+.avonwg-panel>.avonwg-table-responsive:last-child>.avonwg-table:last-child,
+.avonwg-panel>.avonwg-table:last-child {
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px
+}
+
+.avonwg-panel>.avonwg-table-responsive:last-child>.avonwg-table:last-child>tbody:last-child>tr:last-child,
+.avonwg-panel>.avonwg-table-responsive:last-child>.avonwg-table:last-child>tfoot:last-child>tr:last-child,
+.avonwg-panel>.avonwg-table:last-child>tbody:last-child>tr:last-child,
+.avonwg-panel>.avonwg-table:last-child>tfoot:last-child>tr:last-child {
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px
+}
+
+.avonwg-panel>.avonwg-table-responsive:last-child>.avonwg-table:last-child>tbody:last-child>tr:last-child td:first-child,
+.avonwg-panel>.avonwg-table-responsive:last-child>.avonwg-table:last-child>tbody:last-child>tr:last-child th:first-child,
+.avonwg-panel>.avonwg-table-responsive:last-child>.avonwg-table:last-child>tfoot:last-child>tr:last-child td:first-child,
+.avonwg-panel>.avonwg-table-responsive:last-child>.avonwg-table:last-child>tfoot:last-child>tr:last-child th:first-child,
+.avonwg-panel>.avonwg-table:last-child>tbody:last-child>tr:last-child td:first-child,
+.avonwg-panel>.avonwg-table:last-child>tbody:last-child>tr:last-child th:first-child,
+.avonwg-panel>.avonwg-table:last-child>tfoot:last-child>tr:last-child td:first-child,
+.avonwg-panel>.avonwg-table:last-child>tfoot:last-child>tr:last-child th:first-child {
+    border-bottom-left-radius: 3px
+}
+
+.avonwg-panel>.avonwg-table-responsive:last-child>.avonwg-table:last-child>tbody:last-child>tr:last-child td:last-child,
+.avonwg-panel>.avonwg-table-responsive:last-child>.avonwg-table:last-child>tbody:last-child>tr:last-child th:last-child,
+.avonwg-panel>.avonwg-table-responsive:last-child>.avonwg-table:last-child>tfoot:last-child>tr:last-child td:last-child,
+.avonwg-panel>.avonwg-table-responsive:last-child>.avonwg-table:last-child>tfoot:last-child>tr:last-child th:last-child,
+.avonwg-panel>.avonwg-table:last-child>tbody:last-child>tr:last-child td:last-child,
+.avonwg-panel>.avonwg-table:last-child>tbody:last-child>tr:last-child th:last-child,
+.avonwg-panel>.avonwg-table:last-child>tfoot:last-child>tr:last-child td:last-child,
+.avonwg-panel>.avonwg-table:last-child>tfoot:last-child>tr:last-child th:last-child {
+    border-bottom-right-radius: 3px
+}
+
+.avonwg-panel>.avonwg-panel-body+.avonwg-table,
+.avonwg-panel>.avonwg-panel-body+.avonwg-table-responsive,
+.avonwg-panel>.avonwg-table+.avonwg-panel-body,
+.avonwg-panel>.avonwg-table-responsive+.avonwg-panel-body {
+    border-top: 1px solid #ddd
+}
+
+.avonwg-panel>.avonwg-table>tbody:first-child>tr:first-child td,
+.avonwg-panel>.avonwg-table>tbody:first-child>tr:first-child th {
+    border-top: 0
+}
+
+.avonwg-panel>.avonwg-table-bordered,
+.avonwg-panel>.avonwg-table-responsive>.avonwg-table-bordered {
+    border: 0
+}
+
+.avonwg-panel>.avonwg-table-bordered>tbody>tr>td:first-child,
+.avonwg-panel>.avonwg-table-bordered>tbody>tr>th:first-child,
+.avonwg-panel>.avonwg-table-bordered>tfoot>tr>td:first-child,
+.avonwg-panel>.avonwg-table-bordered>tfoot>tr>th:first-child,
+.avonwg-panel>.avonwg-table-bordered>thead>tr>td:first-child,
+.avonwg-panel>.avonwg-table-bordered>thead>tr>th:first-child,
+.avonwg-panel>.avonwg-table-responsive>.avonwg-table-bordered>tbody>tr>td:first-child,
+.avonwg-panel>.avonwg-table-responsive>.avonwg-table-bordered>tbody>tr>th:first-child,
+.avonwg-panel>.avonwg-table-responsive>.avonwg-table-bordered>tfoot>tr>td:first-child,
+.avonwg-panel>.avonwg-table-responsive>.avonwg-table-bordered>tfoot>tr>th:first-child,
+.avonwg-panel>.avonwg-table-responsive>.avonwg-table-bordered>thead>tr>td:first-child,
+.avonwg-panel>.avonwg-table-responsive>.avonwg-table-bordered>thead>tr>th:first-child {
+    border-left: 0
+}
+
+.avonwg-panel>.avonwg-table-bordered>tbody>tr>td:last-child,
+.avonwg-panel>.avonwg-table-bordered>tbody>tr>th:last-child,
+.avonwg-panel>.avonwg-table-bordered>tfoot>tr>td:last-child,
+.avonwg-panel>.avonwg-table-bordered>tfoot>tr>th:last-child,
+.avonwg-panel>.avonwg-table-bordered>thead>tr>td:last-child,
+.avonwg-panel>.avonwg-table-bordered>thead>tr>th:last-child,
+.avonwg-panel>.avonwg-table-responsive>.avonwg-table-bordered>tbody>tr>td:last-child,
+.avonwg-panel>.avonwg-table-responsive>.avonwg-table-bordered>tbody>tr>th:last-child,
+.avonwg-panel>.avonwg-table-responsive>.avonwg-table-bordered>tfoot>tr>td:last-child,
+.avonwg-panel>.avonwg-table-responsive>.avonwg-table-bordered>tfoot>tr>th:last-child,
+.avonwg-panel>.avonwg-table-responsive>.avonwg-table-bordered>thead>tr>td:last-child,
+.avonwg-panel>.avonwg-table-responsive>.avonwg-table-bordered>thead>tr>th:last-child {
+    border-right: 0
+}
+
+.avonwg-panel>.avonwg-table-bordered>tbody>tr:first-child>td,
+.avonwg-panel>.avonwg-table-bordered>tbody>tr:first-child>th,
+.avonwg-panel>.avonwg-table-bordered>thead>tr:first-child>td,
+.avonwg-panel>.avonwg-table-bordered>thead>tr:first-child>th,
+.avonwg-panel>.avonwg-table-responsive>.avonwg-table-bordered>tbody>tr:first-child>td,
+.avonwg-panel>.avonwg-table-responsive>.avonwg-table-bordered>tbody>tr:first-child>th,
+.avonwg-panel>.avonwg-table-responsive>.avonwg-table-bordered>thead>tr:first-child>td,
+.avonwg-panel>.avonwg-table-responsive>.avonwg-table-bordered>thead>tr:first-child>th {
+    border-bottom: 0
+}
+
+.avonwg-panel>.avonwg-table-bordered>tbody>tr:last-child>td,
+.avonwg-panel>.avonwg-table-bordered>tbody>tr:last-child>th,
+.avonwg-panel>.avonwg-table-bordered>tfoot>tr:last-child>td,
+.avonwg-panel>.avonwg-table-bordered>tfoot>tr:last-child>th,
+.avonwg-panel>.avonwg-table-responsive>.avonwg-table-bordered>tbody>tr:last-child>td,
+.avonwg-panel>.avonwg-table-responsive>.avonwg-table-bordered>tbody>tr:last-child>th,
+.avonwg-panel>.avonwg-table-responsive>.avonwg-table-bordered>tfoot>tr:last-child>td,
+.avonwg-panel>.avonwg-table-responsive>.avonwg-table-bordered>tfoot>tr:last-child>th {
+    border-bottom: 0
+}
+
+.avonwg-panel>.avonwg-table-responsive {
+    margin-bottom: 0;
+    border: 0
+}
+
+.avonwg-panel-group {
+    margin-bottom: 20px
+}
+
+.avonwg-panel-group .avonwg-panel {
+    margin-bottom: 0;
+    border-radius: 4px
+}
+
+.avonwg-panel-group .avonwg-panel+.avonwg-panel {
+    margin-top: 5px
+}
+
+.avonwg-panel-group .avonwg-panel-heading {
+    border-bottom: 0
+}
+
+.avonwg-panel-group .avonwg-panel-heading+.avonwg-panel-collapse>.avonwg-list-group,
+.avonwg-panel-group .avonwg-panel-heading+.avonwg-panel-collapse>.avonwg-panel-body {
+    border-top: 1px solid #ddd
+}
+
+.avonwg-panel-group .avonwg-panel-footer {
+    border-top: 0
+}
+
+.avonwg-panel-group .avonwg-panel-footer+.avonwg-panel-collapse .avonwg-panel-body {
+    border-bottom: 1px solid #ddd
+}
+
+.avonwg-panel-default {
+    border-color: #ddd
+}
+
+.avonwg-panel-default>.avonwg-panel-heading {
+    color: #333;
+    background-color: #f5f5f5;
+    border-color: #ddd
+}
+
+.avonwg-panel-default>.avonwg-panel-heading+.avonwg-panel-collapse>.avonwg-panel-body {
+    border-top-color: #ddd
+}
+
+.avonwg-panel-default>.avonwg-panel-heading .avonwg-badge {
+    color: #f5f5f5;
+    background-color: #333
+}
+
+.avonwg-panel-default>.avonwg-panel-footer+.avonwg-panel-collapse>.avonwg-panel-body {
+    border-bottom-color: #ddd
+}
+
+.avonwg-panel-primary {
+    border-color: #337ab7
+}
+
+.avonwg-panel-primary>.avonwg-panel-heading {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #337ab7
+}
+
+.avonwg-panel-primary>.avonwg-panel-heading+.avonwg-panel-collapse>.avonwg-panel-body {
+    border-top-color: #337ab7
+}
+
+.avonwg-panel-primary>.avonwg-panel-heading .avonwg-badge {
+    color: #337ab7;
+    background-color: #fff
+}
+
+.avonwg-panel-primary>.avonwg-panel-footer+.avonwg-panel-collapse>.avonwg-panel-body {
+    border-bottom-color: #337ab7
+}
+
+.avonwg-panel-success {
+    border-color: #d6e9c6
+}
+
+.avonwg-panel-success>.avonwg-panel-heading {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6
+}
+
+.avonwg-panel-success>.avonwg-panel-heading+.avonwg-panel-collapse>.avonwg-panel-body {
+    border-top-color: #d6e9c6
+}
+
+.avonwg-panel-success>.avonwg-panel-heading .avonwg-badge {
+    color: #dff0d8;
+    background-color: #3c763d
+}
+
+.avonwg-panel-success>.avonwg-panel-footer+.avonwg-panel-collapse>.avonwg-panel-body {
+    border-bottom-color: #d6e9c6
+}
+
+.avonwg-panel-info {
+    border-color: #bce8f1
+}
+
+.avonwg-panel-info>.avonwg-panel-heading {
+    color: #31708f;
+    background-color: #d9edf7;
+    border-color: #bce8f1
+}
+
+.avonwg-panel-info>.avonwg-panel-heading+.avonwg-panel-collapse>.avonwg-panel-body {
+    border-top-color: #bce8f1
+}
+
+.avonwg-panel-info>.avonwg-panel-heading .avonwg-badge {
+    color: #d9edf7;
+    background-color: #31708f
+}
+
+.avonwg-panel-info>.avonwg-panel-footer+.avonwg-panel-collapse>.avonwg-panel-body {
+    border-bottom-color: #bce8f1
+}
+
+.avonwg-panel-warning {
+    border-color: #faebcc
+}
+
+.avonwg-panel-warning>.avonwg-panel-heading {
+    color: #8a6d3b;
+    background-color: #fcf8e3;
+    border-color: #faebcc
+}
+
+.avonwg-panel-warning>.avonwg-panel-heading+.avonwg-panel-collapse>.avonwg-panel-body {
+    border-top-color: #faebcc
+}
+
+.avonwg-panel-warning>.avonwg-panel-heading .avonwg-badge {
+    color: #fcf8e3;
+    background-color: #8a6d3b
+}
+
+.avonwg-panel-warning>.avonwg-panel-footer+.avonwg-panel-collapse>.avonwg-panel-body {
+    border-bottom-color: #faebcc
+}
+
+.avonwg-panel-danger {
+    border-color: #ebccd1
+}
+
+.avonwg-panel-danger>.avonwg-panel-heading {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1
+}
+
+.avonwg-panel-danger>.avonwg-panel-heading+.avonwg-panel-collapse>.avonwg-panel-body {
+    border-top-color: #ebccd1
+}
+
+.avonwg-panel-danger>.avonwg-panel-heading .avonwg-badge {
+    color: #f2dede;
+    background-color: #a94442
+}
+
+.avonwg-panel-danger>.avonwg-panel-footer+.avonwg-panel-collapse>.avonwg-panel-body {
+    border-bottom-color: #ebccd1
+}
+
+.avonwg-embed-responsive {
+    position: relative;
+    display: block;
+    height: 0;
+    padding: 0;
+    overflow: hidden
+}
+
+.avonwg-embed-responsive .avonwg-embed-responsive-item,
+.avonwg-embed-responsive embed,
+.avonwg-embed-responsive iframe,
+.avonwg-embed-responsive object,
+.avonwg-embed-responsive video {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0
+}
+
+.avonwg-embed-responsive-16by9 {
+    padding-bottom: 56.25%
+}
+
+.avonwg-embed-responsive-4by3 {
+    padding-bottom: 75%
+}
+
+.avonwg-well {
+    min-height: 20px;
+    padding: 19px;
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05)
+}
+
+.avonwg-well blockquote {
+    border-color: #ddd;
+    border-color: rgba(0, 0, 0, .15)
+}
+
+.avonwg-well-lg {
+    padding: 24px;
+    border-radius: 6px
+}
+
+.avonwg-well-sm {
+    padding: 9px;
+    border-radius: 3px
+}
+
+.avonwg-close {
+    float: right;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+    opacity: .2
+}
+
+.avonwg-close:focus,
+.avonwg-close:hover {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    filter: alpha(opacity=50);
+    opacity: .5
+}
+
+button.avonwg-close {
+    -webkit-appearance: none;
+    padding: 0;
+    cursor: pointer;
+    background: 0 0;
+    border: 0;
+}
+
+.avonwg-modal-open {
+    overflow: hidden
+}
+
+.avonwg-modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    overflow: hidden;
+    outline: 0
+}
+
+.avonwg-modal.avonwg-fade .avonwg-modal-dialog {
+    -webkit-transition: -webkit-transform .3s ease-out;
+    -o-transition: -o-transform .3s ease-out;
+    transition: transform .3s ease-out;
+    -webkit-transform: translate(0, -25%);
+    -ms-transform: translate(0, -25%);
+    -o-transform: translate(0, -25%);
+    transform: translate(0, -25%)
+}
+
+.avonwg-modal.avonwg-in .avonwg-modal-dialog {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0)
+}
+
+.avonwg-modal-open .avonwg-modal {
+    overflow-x: hidden;
+    overflow-y: auto
+}
+
+.avonwg-modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 10px
+}
+
+.avonwg-modal-content {
+    position: relative;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #999;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 6px;
+    outline: 0;
+    -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+    box-shadow: 0 3px 9px rgba(0, 0, 0, .5)
+}
+
+.avonwg-modal-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1040;
+    background-color: #000
+}
+
+.avonwg-modal-backdrop.avonwg-fade {
+    filter: alpha(opacity=0);
+    opacity: 0
+}
+
+.avonwg-modal-backdrop.avonwg-in {
+    filter: alpha(opacity=50);
+    opacity: .5
+}
+
+.avonwg-modal-header {
+    padding: 15px;
+    border-bottom: 1px solid #e5e5e5
+}
+
+.avonwg-modal-header .avonwg-close {
+    margin-top: -2px
+}
+
+.avonwg-modal-title {
+    margin: 0;
+    line-height: 1.42857143
+}
+
+.avonwg-modal-body {
+    position: relative;
+    padding: 15px
+}
+
+.avonwg-modal-footer {
+    padding: 15px;
+    text-align: right;
+    border-top: 1px solid #e5e5e5
+}
+
+.avonwg-modal-footer .avonwg-btn+.avonwg-btn {
+    margin-bottom: 0;
+    margin-left: 5px
+}
+
+.avonwg-modal-footer .avonwg-btn-group .avonwg-btn+.avonwg-btn {
+    margin-left: -1px
+}
+
+.avonwg-modal-footer .avonwg-btn-block+.avonwg-btn-block {
+    margin-left: 0
+}
+
+.avonwg-modal-scrollbar-measure {
+    position: absolute;
+    top: -9999px;
+    width: 50px;
+    height: 50px;
+    overflow: scroll
+}
+
+@media (min-width:768px) {
+    .avonwg-modal-dialog {
+        width: 600px;
+        margin: 30px auto
+    }
+    .avonwg-modal-content {
+        -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, .5)
+    }
+    .avonwg-modal-sm {
+        width: 300px
+    }
+}
+
+@media (min-width:992px) {
+    .avonwg-modal-lg {
+        width: 900px
+    }
+}
+
+.avonwg-tooltip {
+    position: absolute;
+    z-index: 1070;
+    display: block;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: left;
+    text-align: start;
+    text-decoration: none;
+    text-shadow: none;
+    text-transform: none;
+    letter-spacing: normal;
+    word-break: normal;
+    word-spacing: normal;
+    word-wrap: normal;
+    white-space: normal;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    line-break: auto
+}
+
+.avonwg-tooltip.avonwg-in {
+    filter: alpha(opacity=90);
+    opacity: .9
+}
+
+.avonwg-tooltip.avonwg-top {
+    padding: 5px 0;
+    margin-top: -3px
+}
+
+.avonwg-tooltip.avonwg-right {
+    padding: 0 5px;
+    margin-left: 3px
+}
+
+.avonwg-tooltip.avonwg-bottom {
+    padding: 5px 0;
+    margin-top: 3px
+}
+
+.avonwg-tooltip.avonwg-left {
+    padding: 0 5px;
+    margin-left: -3px
+}
+
+.avonwg-tooltip-inner {
+    max-width: 200px;
+    padding: 3px 8px;
+    color: #fff;
+    text-align: center;
+    background-color: #000;
+    border-radius: 4px
+}
+
+.avonwg-tooltip-arrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid
+}
+
+.avonwg-tooltip.avonwg-top .avonwg-tooltip-arrow {
+    bottom: 0;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px 5px 0;
+    border-top-color: #000
+}
+
+.avonwg-tooltip.avonwg-top-left .avonwg-tooltip-arrow {
+    right: 5px;
+    bottom: 0;
+    margin-bottom: -5px;
+    border-width: 5px 5px 0;
+    border-top-color: #000
+}
+
+.avonwg-tooltip.avonwg-top-right .avonwg-tooltip-arrow {
+    bottom: 0;
+    left: 5px;
+    margin-bottom: -5px;
+    border-width: 5px 5px 0;
+    border-top-color: #000
+}
+
+.avonwg-tooltip.avonwg-right .avonwg-tooltip-arrow {
+    top: 50%;
+    left: 0;
+    margin-top: -5px;
+    border-width: 5px 5px 5px 0;
+    border-right-color: #000
+}
+
+.avonwg-tooltip.avonwg-left .avonwg-tooltip-arrow {
+    top: 50%;
+    right: 0;
+    margin-top: -5px;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #000
+}
+
+.avonwg-tooltip.avonwg-bottom .avonwg-tooltip-arrow {
+    top: 0;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 0 5px 5px;
+    border-bottom-color: #000
+}
+
+.avonwg-tooltip.avonwg-bottom-left .avonwg-tooltip-arrow {
+    top: 0;
+    right: 5px;
+    margin-top: -5px;
+    border-width: 0 5px 5px;
+    border-bottom-color: #000
+}
+
+.avonwg-tooltip.avonwg-bottom-right .avonwg-tooltip-arrow {
+    top: 0;
+    left: 5px;
+    margin-top: -5px;
+    border-width: 0 5px 5px;
+    border-bottom-color: #000
+}
+
+.avonwg-popover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1060;
+    display: none;
+    max-width: 276px;
+    padding: 1px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: left;
+    text-align: start;
+    text-decoration: none;
+    text-shadow: none;
+    text-transform: none;
+    letter-spacing: normal;
+    word-break: normal;
+    word-spacing: normal;
+    word-wrap: normal;
+    white-space: normal;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 6px;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    line-break: auto
+}
+
+.avonwg-popover.avonwg-top {
+    margin-top: -10px
+}
+
+.avonwg-popover.avonwg-right {
+    margin-left: 10px
+}
+
+.avonwg-popover.avonwg-bottom {
+    margin-top: 10px
+}
+
+.avonwg-popover.avonwg-left {
+    margin-left: -10px
+}
+
+.avonwg-popover-title {
+    padding: 8px 14px;
+    margin: 0;
+    font-size: 14px;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #ebebeb;
+    border-radius: 5px 5px 0 0
+}
+
+.avonwg-popover-content {
+    padding: 9px 14px
+}
+
+.avonwg-popover>.avonwg-arrow,
+.avonwg-popover>.avonwg-arrow:after {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid
+}
+
+.avonwg-popover>.avonwg-arrow {
+    border-width: 11px
+}
+
+.avonwg-popover>.avonwg-arrow:after {
+    content: "";
+    border-width: 10px
+}
+
+.avonwg-popover.avonwg-top>.avonwg-arrow {
+    bottom: -11px;
+    left: 50%;
+    margin-left: -11px;
+    border-top-color: #999;
+    border-top-color: rgba(0, 0, 0, .25);
+    border-bottom-width: 0
+}
+
+.avonwg-popover.avonwg-top>.avonwg-arrow:after {
+    bottom: 1px;
+    margin-left: -10px;
+    content: " ";
+    border-top-color: #fff;
+    border-bottom-width: 0
+}
+
+.avonwg-popover.avonwg-right>.avonwg-arrow {
+    top: 50%;
+    left: -11px;
+    margin-top: -11px;
+    border-right-color: #999;
+    border-right-color: rgba(0, 0, 0, .25);
+    border-left-width: 0
+}
+
+.avonwg-popover.avonwg-right>.avonwg-arrow:after {
+    bottom: -10px;
+    left: 1px;
+    content: " ";
+    border-right-color: #fff;
+    border-left-width: 0
+}
+
+.avonwg-popover.avonwg-bottom>.avonwg-arrow {
+    top: -11px;
+    left: 50%;
+    margin-left: -11px;
+    border-top-width: 0;
+    border-bottom-color: #999;
+    border-bottom-color: rgba(0, 0, 0, .25)
+}
+
+.avonwg-popover.avonwg-bottom>.avonwg-arrow:after {
+    top: 1px;
+    margin-left: -10px;
+    content: " ";
+    border-top-width: 0;
+    border-bottom-color: #fff
+}
+
+.avonwg-popover.avonwg-left>.avonwg-arrow {
+    top: 50%;
+    right: -11px;
+    margin-top: -11px;
+    border-right-width: 0;
+    border-left-color: #999;
+    border-left-color: rgba(0, 0, 0, .25)
+}
+
+.avonwg-popover.avonwg-left>.avonwg-arrow:after {
+    right: 1px;
+    bottom: -10px;
+    content: " ";
+    border-right-width: 0;
+    border-left-color: #fff
+}
+
+.avonwg-carousel {
+    position: relative
+}
+
+.avonwg-carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden
+}
+
+.avonwg-carousel-inner>.avonwg-item {
+    position: relative;
+    display: none;
+    -webkit-transition: .6s ease-in-out left;
+    -o-transition: .6s ease-in-out left;
+    transition: .6s ease-in-out left
+}
+
+.avonwg-carousel-inner>.avonwg-item>a>img,
+.avonwg-carousel-inner>.avonwg-item>img {
+    line-height: 1
+}
+
+@media all and (transform-3d),
+(-webkit-transform-3d) {
+    .avonwg-carousel-inner>.avonwg-item {
+        -webkit-transition: -webkit-transform .6s ease-in-out;
+        -o-transition: -o-transform .6s ease-in-out;
+        transition: transform .6s ease-in-out;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -webkit-perspective: 1000px;
+        perspective: 1000px
+    }
+    .avonwg-carousel-inner>.avonwg-item.avonwg-active.avonwg-right,
+    .avonwg-carousel-inner>.avonwg-item.avonwg-next {
+        left: 0;
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0)
+    }
+    .avonwg-carousel-inner>.avonwg-item.avonwg-active.avonwg-left,
+    .avonwg-carousel-inner>.avonwg-item.avonwg-prev {
+        left: 0;
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0)
+    }
+    .avonwg-carousel-inner>.avonwg-item.avonwg-active,
+    .avonwg-carousel-inner>.avonwg-item.avonwg-next.avonwg-left,
+    .avonwg-carousel-inner>.avonwg-item.avonwg-prev.avonwg-right {
+        left: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0)
+    }
+}
+
+.avonwg-carousel-inner>.avonwg-active,
+.avonwg-carousel-inner>.avonwg-next,
+.avonwg-carousel-inner>.avonwg-prev {
+    display: block
+}
+
+.avonwg-carousel-inner>.avonwg-active {
+    left: 0
+}
+
+.avonwg-carousel-inner>.avonwg-next,
+.avonwg-carousel-inner>.avonwg-prev {
+    position: absolute;
+    top: 0;
+    width: 100%
+}
+
+.avonwg-carousel-inner>.avonwg-next {
+    left: 100%
+}
+
+.avonwg-carousel-inner>.avonwg-prev {
+    left: -100%
+}
+
+.avonwg-carousel-inner>.avonwg-next.avonwg-left,
+.avonwg-carousel-inner>.avonwg-prev.avonwg-right {
+    left: 0
+}
+
+.avonwg-carousel-inner>.avonwg-active.avonwg-left {
+    left: -100%
+}
+
+.avonwg-carousel-inner>.avonwg-active.avonwg-right {
+    left: 100%
+}
+
+.avonwg-carousel-control {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 15%;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+    background-color: rgba(0, 0, 0, 0);
+    filter: alpha(opacity=50);
+    opacity: .5
+}
+
+.avonwg-carousel-control.avonwg-left {
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .5) 0, rgba(0, 0, 0, .0001) 100%);
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, .5) 0, rgba(0, 0, 0, .0001) 100%);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .5)), to(rgba(0, 0, 0, .0001)));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .5) 0, rgba(0, 0, 0, .0001) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+    background-repeat: repeat-x
+}
+
+.avonwg-carousel-control.avonwg-right {
+    right: 0;
+    left: auto;
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .0001) 0, rgba(0, 0, 0, .5) 100%);
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, .0001) 0, rgba(0, 0, 0, .5) 100%);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .0001)), to(rgba(0, 0, 0, .5)));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .0001) 0, rgba(0, 0, 0, .5) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+    background-repeat: repeat-x
+}
+
+.avonwg-carousel-control:focus,
+.avonwg-carousel-control:hover {
+    color: #fff;
+    text-decoration: none;
+    filter: alpha(opacity=90);
+    outline: 0;
+    opacity: .9
+}
+
+.avonwg-carousel-control .avonwg-glyphicon-chevron-left,
+.avonwg-carousel-control .avonwg-glyphicon-chevron-right,
+.avonwg-carousel-control .avonwg-icon-next,
+.avonwg-carousel-control .avonwg-icon-prev {
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    display: inline-block;
+    margin-top: -10px
+}
+
+.avonwg-carousel-control .avonwg-glyphicon-chevron-left,
+.avonwg-carousel-control .avonwg-icon-prev {
+    left: 50%;
+    margin-left: -10px
+}
+
+.avonwg-carousel-control .avonwg-glyphicon-chevron-right,
+.avonwg-carousel-control .avonwg-icon-next {
+    right: 50%;
+    margin-right: -10px
+}
+
+.avonwg-carousel-control .avonwg-icon-next,
+.avonwg-carousel-control .avonwg-icon-prev {
+    width: 20px;
+    height: 20px;
+    font-family: serif;
+    line-height: 1
+}
+
+.avonwg-carousel-control .avonwg-icon-prev:before {
+    content: '\2039'
+}
+
+.avonwg-carousel-control .avonwg-icon-next:before {
+    content: '\203a'
+}
+
+.avonwg-carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    z-index: 15;
+    width: 60%;
+    padding-left: 0;
+    margin-left: -30%;
+    text-align: center;
+    list-style: none
+}
+
+.avonwg-carousel-indicators li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 1px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #000\9;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #fff;
+    border-radius: 10px
+}
+
+.avonwg-carousel-indicators .avonwg-active {
+    width: 12px;
+    height: 12px;
+    margin: 0;
+    background-color: #fff
+}
+
+.avonwg-carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 20px;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .6)
+}
+
+.avonwg-carousel-caption .avonwg-btn {
+    text-shadow: none
+}
+
+@media screen and (min-width:768px) {
+    .avonwg-carousel-control .avonwg-glyphicon-chevron-left,
+    .avonwg-carousel-control .avonwg-glyphicon-chevron-right,
+    .avonwg-carousel-control .avonwg-icon-next,
+    .avonwg-carousel-control .avonwg-icon-prev {
+        width: 30px;
+        height: 30px;
+        margin-top: -10px;
+        font-size: 30px
+    }
+    .avonwg-carousel-control .avonwg-glyphicon-chevron-left,
+    .avonwg-carousel-control .avonwg-icon-prev {
+        margin-left: -10px
+    }
+    .avonwg-carousel-control .avonwg-glyphicon-chevron-right,
+    .avonwg-carousel-control .avonwg-icon-next {
+        margin-right: -10px
+    }
+    .avonwg-carousel-caption {
+        right: 20%;
+        left: 20%;
+        padding-bottom: 30px
+    }
+    .avonwg-carousel-indicators {
+        bottom: 20px
+    }
+}
+
+.avonwg-btn-group-vertical>.avonwg-btn-group:after,
+.avonwg-btn-group-vertical>.avonwg-btn-group:before,
+.avonwg-btn-toolbar:after,
+.avonwg-btn-toolbar:before,
+.avonwg-clearfix:after,
+.avonwg-clearfix:before,
+.avonwg-container-fluid:after,
+.avonwg-container-fluid:before,
+.avonwg-container:after,
+.avonwg-container:before,
+.avonwg-dl-horizontal dd:after,
+.avonwg-dl-horizontal dd:before,
+.avonwg-form-horizontal .avonwg-form-group:after,
+.avonwg-form-horizontal .avonwg-form-group:before,
+.avonwg-modal-footer:after,
+.avonwg-modal-footer:before,
+.avonwg-modal-header:after,
+.avonwg-modal-header:before,
+.avonwg-nav:after,
+.avonwg-nav:before,
+.avonwg-navbar-collapse:after,
+.avonwg-navbar-collapse:before,
+.avonwg-navbar-header:after,
+.avonwg-navbar-header:before,
+.avonwg-navbar:after,
+.avonwg-navbar:before,
+.avonwg-pager:after,
+.avonwg-pager:before,
+.avonwg-panel-body:after,
+.avonwg-panel-body:before,
+.avonwg-row:after,
+.avonwg-row:before {
+    display: table;
+    content: " "
+}
+
+.avonwg-btn-group-vertical>.avonwg-btn-group:after,
+.avonwg-btn-toolbar:after,
+.avonwg-clearfix:after,
+.avonwg-container-fluid:after,
+.avonwg-container:after,
+.avonwg-dl-horizontal dd:after,
+.avonwg-form-horizontal .avonwg-form-group:after,
+.avonwg-modal-footer:after,
+.avonwg-modal-header:after,
+.avonwg-nav:after,
+.avonwg-navbar-collapse:after,
+.avonwg-navbar-header:after,
+.avonwg-navbar:after,
+.avonwg-pager:after,
+.avonwg-panel-body:after,
+.avonwg-row:after {
+    clear: both
+}
+
+.avonwg-center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto
+}
+
+.avonwg-pull-right {
+    float: right!important
+}
+
+.avonwg-pull-left {
+    float: left!important
+}
+
+.avonwg-hide {
+    display: none!important
+}
+
+.avonwg-show {
+    display: block!important
+}
+
+.avonwg-invisible {
+    visibility: hidden
+}
+
+.avonwg-text-hide {
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0
+}
+
+.avonwg-hidden {
+    display: none!important
+}
+
+.avonwg-affix {
+    position: fixed
+}
+
+@-ms-viewport {
+    width: device-width
+}
+
+.avonwg-visible-lg,
+.avonwg-visible-md,
+.avonwg-visible-sm,
+.avonwg-visible-xs {
+    display: none!important
+}
+
+.avonwg-visible-lg-block,
+.avonwg-visible-lg-inline,
+.avonwg-visible-lg-inline-block,
+.avonwg-visible-md-block,
+.avonwg-visible-md-inline,
+.avonwg-visible-md-inline-block,
+.avonwg-visible-sm-block,
+.avonwg-visible-sm-inline,
+.avonwg-visible-sm-inline-block,
+.avonwg-visible-xs-block,
+.avonwg-visible-xs-inline,
+.avonwg-visible-xs-inline-block {
+    display: none!important
+}
+
+@media (max-width:767px) {
+    .avonwg-visible-xs {
+        display: block!important
+    }
+    table.avonwg-visible-xs {
+        display: table!important
+    }
+    tr.avonwg-visible-xs {
+        display: table-row!important
+    }
+    td.avonwg-visible-xs,
+    th.avonwg-visible-xs {
+        display: table-cell!important
+    }
+}
+
+@media (max-width:767px) {
+    .avonwg-visible-xs-block {
+        display: block!important
+    }
+}
+
+@media (max-width:767px) {
+    .avonwg-visible-xs-inline {
+        display: inline!important
+    }
+}
+
+@media (max-width:767px) {
+    .avonwg-visible-xs-inline-block {
+        display: inline-block!important
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .avonwg-visible-sm {
+        display: block!important
+    }
+    table.avonwg-visible-sm {
+        display: table!important
+    }
+    tr.avonwg-visible-sm {
+        display: table-row!important
+    }
+    td.avonwg-visible-sm,
+    th.avonwg-visible-sm {
+        display: table-cell!important
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .avonwg-visible-sm-block {
+        display: block!important
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .avonwg-visible-sm-inline {
+        display: inline!important
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .avonwg-visible-sm-inline-block {
+        display: inline-block!important
+    }
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+    .avonwg-visible-md {
+        display: block!important
+    }
+    table.avonwg-visible-md {
+        display: table!important
+    }
+    tr.avonwg-visible-md {
+        display: table-row!important
+    }
+    td.avonwg-visible-md,
+    th.avonwg-visible-md {
+        display: table-cell!important
+    }
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+    .avonwg-visible-md-block {
+        display: block!important
+    }
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+    .avonwg-visible-md-inline {
+        display: inline!important
+    }
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+    .avonwg-visible-md-inline-block {
+        display: inline-block!important
+    }
+}
+
+@media (min-width:1200px) {
+    .avonwg-visible-lg {
+        display: block!important
+    }
+    table.avonwg-visible-lg {
+        display: table!important
+    }
+    tr.avonwg-visible-lg {
+        display: table-row!important
+    }
+    td.avonwg-visible-lg,
+    th.avonwg-visible-lg {
+        display: table-cell!important
+    }
+}
+
+@media (min-width:768px) {
+    .avonwg-visible-lg-block {
+        display: block!important
+    }
+}
+
+@media (min-width:1200px) {
+    .avonwg-visible-lg-inline {
+        display: inline!important
+    }
+}
+
+@media (min-width:1200px) {
+    .avonwg-visible-lg-inline-block {
+        display: inline-block!important
+    }
+}
+
+@media (max-width:767px) {
+    .avonwg-hidden-xs {
+        display: none!important
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .avonwg-hidden-sm {
+        display: none!important
+    }
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+    .avonwg-hidden-md {
+        display: none!important
+    }
+}
+
+@media (min-width:1200px) {
+    .avonwg-hidden-lg {
+        display: none!important
+    }
+}
+
+.avonwg-visible-print {
+    display: none!important
+}
+
+@media print {
+    .avonwg-visible-print {
+        display: block!important
+    }
+    table.avonwg-visible-print {
+        display: table!important
+    }
+    tr.avonwg-visible-print {
+        display: table-row!important
+    }
+    td.avonwg-visible-print,
+    th.avonwg-visible-print {
+        display: table-cell!important
+    }
+}
+
+.avonwg-visible-print-block {
+    display: none!important
+}
+
+@media print {
+    .avonwg-visible-print-block {
+        display: block!important
+    }
+}
+
+.avonwg-visible-print-inline {
+    display: none!important
+}
+
+@media print {
+    .avonwg-visible-print-inline {
+        display: inline!important
+    }
+}
+
+.avonwg-visible-print-inline-block {
+    display: none!important
+}
+
+@media print {
+    .avonwg-visible-print-inline-block {
+        display: inline-block!important
+    }
+}
+
+@media print {
+    .avonwg-hidden-print {
+        display: none!important
+    }
+}
+
+
+/*# sourceMappingURL=bootstrap.min.css.map */

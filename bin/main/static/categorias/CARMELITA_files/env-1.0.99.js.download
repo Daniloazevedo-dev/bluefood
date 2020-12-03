@@ -1,0 +1,284 @@
+var EnvData = {
+    "development": {
+        "host": "localhost:8081",
+        "config": {
+            "APP": {
+                "MRKTCD": "BR",
+                "LANGCD": "pt",
+                "TIMEOUT": "20",
+                "TOKEN_REF_TIME": "10"
+            },
+            "WCS_APP": {
+                "LANGCD": "pt-BR"
+            },
+            "LOCALSETTINGS": {
+                "AGS_SYS_USER": "IVRUSER1",
+                "AGS_CLASSIC_END_POINT_URL": "https://webeservicesqaf.avon.com/agws/srvc/",
+                "AGS_END_POINT_URL": "https://webeservices3qaf.avon.com",
+                "WCS_END_POINT_URL": "https://novabruat1livewc.br.avon.com",
+                "FILEUPLOAD_END_POINT_URL": "https://webeservices3qaf.avon.com",
+                "DEV_KEY": "NjUDzSxRsRYqzp0ma3SKoCzLgX+/T1s9",
+                "CI_DEV_KEY": "eCvEQDizkC55/OoYdZlONI6eLc6VUQVQ4+tUiorEg54=",
+                "RESOURCES_CONTEXT_URL": "",
+                "HOME_PAGE": "widget_home.html",
+                "DOWNLOAD_REPORT_URL": "http://www.br.avon.com/cgi-bin/download-webe.pl",
+                "IMAGES_URL": "https://novabruat1livewc.br.avon.com/wcsstore/AvonStoreCAS/",
+                "mundiTokenURL": "https://api.mundipagg.com/core/v1.0/tokens?appId=",
+                "MUNDIPAGG_KEY": "pk_test_wNZ7MWECEIppKd81",
+                "FACEBOOK_TOKEN": "https://www.facebook.com/dialog/oauth?display=page&client_id=1122914924474812&state=login&scope=public_profile,email&redirect_uri=",
+                "GOOGLE_TOKEN": "https://accounts.google.com/o/oauth2/v2/auth?response_type=code&client_id=520718610993-s5g2q9vs6qlu2umngbro2jksvpq34rnu.apps.googleusercontent.com&scope=email%20profile&redirect_uri=",
+                "REDIRECT_URL": "http://novabruat1livewc.br.avon.com/widget/avonwg2/app/fbredirect.html",
+                "GOOGLE_MAP_KEY": "AIzaSyBXEmNQmxMpxhpkBqf_re7s5zBFfgms4uo",
+                "RECAPCHA_KEY": "6LfbQqwUAAAAABrecmv4XwKdnsA2Mt3-PoKgCJq6",
+                "APPLY_TO_BE_REP": "https://novabruat1livewc.br.avon.com/widget/novapply/#/",
+                "TEALIUM": "(function(a,b,c,d){a='//tags.tiqcdn.com/utag/avon/brazil-nova/qa/utag.js';b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);})();",
+                "IP_ADDRESS_URL":"https://api.ipify.org/?format=json"
+            }
+        }
+    },
+    "qa": {
+        "host": "ryelxwebebrdap1.rye.avon.com",
+        "config": {
+            "APP": {
+                "MRKTCD": "BR",
+                "LANGCD": "pt",
+                "TIMEOUT": "20",
+                "TOKEN_REF_TIME": "10"
+            },
+            "WCS_APP": {
+                "LANGCD": "pt-BR"
+            },
+            "LOCALSETTINGS": {
+                "AGS_SYS_USER": "IVRUSER1",
+                "AGS_CLASSIC_END_POINT_URL": "https://webeservicesqaf.avon.com/agws/srvc/",
+                "AGS_END_POINT_URL": "https://webeservices3qaf.avon.com",
+                "WCS_END_POINT_URL": "https://ryelxwebebrdap1.rye.avon.com",
+                "DEV_KEY": "NjUDzSxRsRYqzp0ma3SKoCzLgX+/T1s9",
+                "CI_DEV_KEY": "eCvEQDizkC55/OoYdZlONI6eLc6VUQVQ4+tUiorEg54=",
+                "RESOURCES_CONTEXT_URL": "https://ryelxwebebrdap1.rye.avon.com/widget/avonwg/app/",
+                "HOME_PAGE": "avonwghome",
+                "DOWNLOAD_REPORT_URL": "http://www.br.avon.com/cgi-bin/download-webe.pl",
+                "IMAGES_URL": "https://novabruat2livewc.br.avon.com/wcsstore/AvonStoreCAS/",
+                "mundiTokenURL": "https://api.mundipagg.com/core/v1.0/tokens?appId=",
+                "MUNDIPAGG_KEY": "pk_test_wNZ7MWECEIppKd81",
+                "GOOGLE_MAP_KEY": "AIzaSyC072XZoaL_4pCFb5S3StY2E4VnWPGGCEA",
+                "RECAPCHA_KEY": "6LftxBkUAAAAAKB-4rxHFRyyKwkitD4RAVdtnI4B",
+                "APPLY_TO_BE_REP": "https://novabruat1livewc.br.avon.com/widget/novapply/#/",
+                "TEALIUM": "(function(a,b,c,d){a='//tags.tiqcdn.com/utag/avon/brazil-nova/qa/utag.js';b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);})();",
+                "IP_ADDRESS_URL":"https://api.ipify.org/?format=json"
+            }
+        }
+    },
+    "uat1": {
+        "host": "novabruat2livewc.br.avon.com",
+        "config": {
+            "APP": {
+                "MRKTCD": "BR",
+                "LANGCD": "pt",
+                "TIMEOUT": "20",
+                "TOKEN_REF_TIME": "10"
+            },
+            "WCS_APP": {
+                "LANGCD": "pt-BR"
+            },
+            "LOCALSETTINGS": {
+                "AGS_SYS_USER": "IVRUSER1",
+                "AGS_CLASSIC_END_POINT_URL": "https://webeservicesqaf.avon.com/agws/srvc/",
+                "AGS_END_POINT_URL": "https://webeservices3qaf.avon.com",
+                "WCS_END_POINT_URL": "https:/novabruat2livewc.br.avon.com",
+                "FILEUPLOAD_END_POINT_URL": "https://webeservices3dev.rye.avon.com",
+                "DEV_KEY": "NjUDzSxRsRYqzp0ma3SKoCzLgX+/T1s9",
+                "CI_DEV_KEY": "eCvEQDizkC55/OoYdZlONI6eLc6VUQVQ4+tUiorEg54=",
+                "RESOURCES_CONTEXT_URL": "https://novabruat2livewc.br.avon.com/widget/avonwg/app/",
+                "HOME_PAGE": "avonwghome",
+                "DOWNLOAD_REPORT_URL": "http://www.br.avon.com/cgi-bin/download-webe.pl",
+                "IMAGES_URL": "https://novabruat2livewc.br.avon.com/wcsstore/AvonStoreCAS/",
+                "mundiTokenURL": "https://api.mundipagg.com/core/v1.0/tokens?appId=",
+                "MUNDIPAGG_KEY": "pk_test_wNZ7MWECEIppKd81",
+		        "FACEBOOK_TOKEN": "https://www.facebook.com/dialog/oauth?display=page&client_id=1122914924474812&state=login&scope=public_profile,email&redirect_uri=",
+                "GOOGLE_TOKEN": "https://accounts.google.com/o/oauth2/v2/auth?response_type=code&client_id=520718610993-s5g2q9vs6qlu2umngbro2jksvpq34rnu.apps.googleusercontent.com&scope=email%20profile&redirect_uri=",
+                "REDIRECT_URL": "https://novabruat2livewc.br.avon.com/widget/avonwg2/app/fbredirect.html",
+                "GOOGLE_MAP_KEY": "AIzaSyC072XZoaL_4pCFb5S3StY2E4VnWPGGCEA",
+                "RECAPCHA_KEY": "6LfbQqwUAAAAABrecmv4XwKdnsA2Mt3-PoKgCJq6",
+                "APPLY_TO_BE_REP": "https://novabruat2livewc.br.avon.com/widget/novapply/#/",
+                "TEALIUM": "(function(a,b,c,d){a='//tags.tiqcdn.com/utag/avon/brazil-nova/qa/utag.js';b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);})();",
+                "IP_ADDRESS_URL":"https://api.ipify.org/?format=json"
+            }
+        }
+    },
+    "uat": {
+        "host": "novabruat1livewc.br.avon.com",
+        "config": {
+            "APP": {
+                "MRKTCD": "BR",
+                "LANGCD": "pt",
+                "TIMEOUT": "20",
+                "TOKEN_REF_TIME": "10"
+            },
+            "WCS_APP": {
+                "LANGCD": "pt-BR"
+            },
+            "LOCALSETTINGS": {
+                "AGS_SYS_USER": "IVRUSER1",
+                "AGS_CLASSIC_END_POINT_URL": "https://webeservicesqaf.avon.com/agws/srvc/",
+                "AGS_END_POINT_URL": "https://webeservices3qaf.avon.com",
+                "WCS_END_POINT_URL": "https://novabruat1livewc.br.avon.com",
+                "FILEUPLOAD_END_POINT_URL": "https://webeservices3dev.rye.avon.com",
+                "DEV_KEY": "NjUDzSxRsRYqzp0ma3SKoCzLgX+/T1s9",
+                "CI_DEV_KEY": "eCvEQDizkC55/OoYdZlONI6eLc6VUQVQ4+tUiorEg54=",
+                "RESOURCES_CONTEXT_URL": "https://novabruat1livewc.br.avon.com/widget/avonwg/app/",
+                "HOME_PAGE": "avonwghome",
+                "DOWNLOAD_REPORT_URL": "http://www.br.avon.com/cgi-bin/download-webe.pl",
+                "IMAGES_URL": "https://novabruat1livewc.br.avon.com/wcsstore/AvonStoreCAS/",
+                "mundiTokenURL": "https://api.mundipagg.com/core/v1.0/tokens?appId=",
+                "MUNDIPAGG_KEY": "pk_test_wNZ7MWECEIppKd81",
+                "FACEBOOK_TOKEN": "https://www.facebook.com/dialog/oauth?display=page&client_id=1122914924474812&state=login&scope=public_profile,email&redirect_uri=",
+                "GOOGLE_TOKEN": "https://accounts.google.com/o/oauth2/v2/auth?response_type=code&client_id=520718610993-s5g2q9vs6qlu2umngbro2jksvpq34rnu.apps.googleusercontent.com&scope=email%20profile&redirect_uri=",
+                "REDIRECT_URL": "https://novabruat1livewc.br.avon.com/widget/avonwg2/app/fbredirect.html",
+                "GOOGLE_MAP_KEY": "AIzaSyBXEmNQmxMpxhpkBqf_re7s5zBFfgms4uo",
+                "RECAPCHA_KEY": "6LfbQqwUAAAAABrecmv4XwKdnsA2Mt3-PoKgCJq6",
+                "APPLY_TO_BE_REP": "https://novabruat1livewc.br.avon.com/widget/novapply/#/",
+                "TEALIUM": "(function(a,b,c,d){a='//tags.tiqcdn.com/utag/avon/brazil-nova/qa/utag.js';b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);})();",
+                "IP_ADDRESS_URL":"https://api.ipify.org/?format=json"
+            }
+        }
+    },
+    "qap": {
+        "host": "qapwc.br.avon.com",
+        "config": {
+            "APP": {
+                "MRKTCD": "BR",
+                "LANGCD": "pt",
+                "TIMEOUT": "20",
+                "TOKEN_REF_TIME": "10"
+            },
+            "WCS_APP": {
+                "LANGCD": "pt-BR"
+            },
+            "LOCALSETTINGS": {
+                "AGS_SYS_USER": "IVRUSER1",
+                "AGS_CLASSIC_END_POINT_URL": "https://webeservicesqaf.avon.com/agws/srvc/",
+                "AGS_END_POINT_URL": "https://webeservices3qaf.avon.com",
+                "WCS_END_POINT_URL": "https://qapwc.br.avon.com",
+                "DEV_KEY": "NjUDzSxRsRYqzp0ma3SKoCzLgX+/T1s9",
+                "CI_DEV_KEY": "eCvEQDizkC55/OoYdZlONI6eLc6VUQVQ4+tUiorEg54=",
+                "RESOURCES_CONTEXT_URL": "https://qapwc.br.avon.com/widget/avonwg/app/",
+                "HOME_PAGE": "avonwghome",
+                "DOWNLOAD_REPORT_URL": "http://www.br.avon.com/cgi-bin/download-webe.pl",
+                "IMAGES_URL": "https://qapwc.br.avon.com/wcsstore/AvonStoreCAS/",
+                "mundiTokenURL": "https://api.mundipagg.com/core/v1.0/tokens?appId=",
+                "MUNDIPAGG_KEY": "pk_test_wNZ7MWECEIppKd81",
+                "GOOGLE_MAP_KEY": "AIzaSyC072XZoaL_4pCFb5S3StY2E4VnWPGGCEA",
+                "RECAPCHA_KEY": "6LftxBkUAAAAAKB-4rxHFRyyKwkitD4RAVdtnI4B",
+                "APPLY_TO_BE_REP": "https://qapwc.br.avon.com/widget/novapply/#/",
+                "TEALIUM": "(function(a,b,c,d){a='//tags.tiqcdn.com/utag/avon/brazil-nova/qa/utag.js';b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);})();",
+                "IP_ADDRESS_URL":"https://api.ipify.org/?format=json"
+            }
+        }
+    },
+    "production1": {
+        "host": "www.avoncomigo.avon.com.br",
+        "config": {
+            "APP": {
+                "MRKTCD": "BR",
+                "LANGCD": "pt",
+                "TIMEOUT": "20",
+                "TOKEN_REF_TIME": "10"
+            },
+            "WCS_APP": {
+                "LANGCD": "pt-BR"
+            },
+            "LOCALSETTINGS": {
+                "AGS_SYS_USER": "IVRUSER1",
+                "AGS_CLASSIC_END_POINT_URL": "https://webeservices1.avon.com/agws/srvc/",
+                "AGS_END_POINT_URL": "https://la.agws3.avon.com",
+                "WCS_END_POINT_URL": "https://www.avoncomigo.avon.com.br",
+                "DEV_KEY": "X5IrjRRjsGzrBvMh5x+vlOBpUGJIRvJl",
+                "CI_DEV_KEY": "X5IrjRRjsGzrBvMh5x+vlOBpUGJIRvJl",
+                "RESOURCES_CONTEXT_URL": "https://www.avoncomigo.avon.com.br/widget/avonwg/app/",
+                "HOME_PAGE": "avonwghome",
+                "DOWNLOAD_REPORT_URL": "http://www.br.avon.com/cgi-bin/download-webe.pl",
+                "IMAGES_URL": "https://www.avoncomigo.avon.com.br/wcsstore/AvonStoreCAS/",
+                "mundiTokenURL": "https://api.mundipagg.com/core/v1.0/tokens?appId=",
+                "MUNDIPAGG_KEY": "pk_nEX76VCMDu9O7Ode",
+                "FACEBOOK_TOKEN": "https://www.facebook.com/dialog/oauth?display=page&client_id=165433807553557&state=login&scope=public_profile,email&redirect_uri=",
+                "GOOGLE_TOKEN": "https://accounts.google.com/o/oauth2/v2/auth?response_type=code&client_id=367814738536-1lnaiu2ltuedf2mlupd0u9nr80r9b2kd.apps.googleusercontent.com&scope=email%20profile&redirect_uri=",
+                "REDIRECT_URL": "https://www.avoncomigo.avon.com.br/widget/avonwg2/app/fbredirect.html",
+                "GOOGLE_MAP_KEY": "AIzaSyC072XZoaL_4pCFb5S3StY2E4VnWPGGCEA",
+                "RECAPCHA_KEY": "6Lc0VxYTAAAAAGEgSkDsGdtGJMKhCg3I6erHF11Y",
+                "APPLY_TO_BE_REP": "https://www.avoncomigo.avon.com.br/widget/novapply/#/",
+                "TEALIUM": "(function(a,b,c,d){a='//tags.tiqcdn.com/utag/avon/brazil-nova/prod/utag.js';b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);})();",
+                "IP_ADDRESS_URL":"https://api.ipify.org/?format=json"               
+            }
+        }
+    },
+     "production2": {
+        "host": "avoncomigo.avon.com.br",
+        "config": {
+            "APP": {
+                "MRKTCD": "BR",
+                "LANGCD": "pt",
+                "TIMEOUT": "20",
+                "TOKEN_REF_TIME": "10"
+            },
+            "WCS_APP": {
+                "LANGCD": "pt-BR"
+            },
+            "LOCALSETTINGS": {
+                "AGS_SYS_USER": "IVRUSER1",
+                "AGS_CLASSIC_END_POINT_URL": "https://webeservices1.avon.com/agws/srvc/",
+                "AGS_END_POINT_URL": "https://la.agws3.avon.com",
+                "WCS_END_POINT_URL": "https://avoncomigo.avon.com.br",
+                "DEV_KEY": "X5IrjRRjsGzrBvMh5x+vlOBpUGJIRvJl",
+                "CI_DEV_KEY": "X5IrjRRjsGzrBvMh5x+vlOBpUGJIRvJl",
+                "RESOURCES_CONTEXT_URL": "https://avoncomigo.avon.com.br/widget/avonwg/app/",
+                "HOME_PAGE": "avonwghome",
+                "DOWNLOAD_REPORT_URL": "http://www.br.avon.com/cgi-bin/download-webe.pl",
+                "IMAGES_URL": "https://avoncomigo.avon.com.br/wcsstore/AvonStoreCAS/",
+                "mundiTokenURL": "https://api.mundipagg.com/core/v1.0/tokens?appId=",
+                "MUNDIPAGG_KEY": "pk_nEX76VCMDu9O7Ode",
+                "FACEBOOK_TOKEN": "https://www.facebook.com/dialog/oauth?display=page&client_id=165433807553557&state=login&scope=public_profile,email&redirect_uri=",
+                "GOOGLE_TOKEN": "https://accounts.google.com/o/oauth2/v2/auth?response_type=code&client_id=367814738536-1lnaiu2ltuedf2mlupd0u9nr80r9b2kd.apps.googleusercontent.com&scope=email%20profile&redirect_uri=",
+                "REDIRECT_URL": "https://avoncomigo.avon.com.br/widget/avonwg2/app/fbredirect.html",
+                "GOOGLE_MAP_KEY": "AIzaSyC072XZoaL_4pCFb5S3StY2E4VnWPGGCEA",
+                "RECAPCHA_KEY": "6LftxBkUAAAAAKB-4rxHFRyyKwkitD4RAVdtnI4B",
+                "APPLY_TO_BE_REP": "https://avoncomigo.avon.com.br/widget/novapply/#/",
+                "TEALIUM": "(function(a,b,c,d){a='//tags.tiqcdn.com/utag/avon/brazil-nova/prod/utag.js';b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);})();",
+                "IP_ADDRESS_URL":"https://api.ipify.org/?format=json"               
+            }
+        }
+    },
+    "dev2": {
+        "host": "ryelxnolwcdap1.rye.avon.com",
+        "config": {
+            "APP": {
+                "MRKTCD": "BR",
+                "LANGCD": "pt",
+                "TIMEOUT": "20",
+                "TOKEN_REF_TIME": "10"
+            },
+            "WCS_APP": {
+                "LANGCD": "pt-BR"
+            },
+            "LOCALSETTINGS": {
+                "AGS_SYS_USER": "IVRUSER1",
+                "AGS_CLASSIC_END_POINT_URL": "https://webeservices1.avon.com/agws/srvc/",
+                "AGS_END_POINT_URL": "https://webeservices3bf.avon.com",
+                "WCS_END_POINT_URL": "https://ryelxnolwcdap1.rye.avon.com",
+                "DEV_KEY": "NjUDzSxRsRYqzp0ma3SKoCzLgX+/T1s9",
+                "CI_DEV_KEY": "NjUDzSxRsRYqzp0ma3SKoCzLgX+/T1s9",
+                "RESOURCES_CONTEXT_URL": "https://ryelxnolwcdap1.rye.avon.com/widget/avonwg/app/",
+                "HOME_PAGE": "avonwghome",
+                "DOWNLOAD_REPORT_URL": "http://www.br.avon.com/cgi-bin/download-webe.pl",
+                "IMAGES_URL": "https://ryelxnolwcdap1.rye.avon.com/wcsstore/AvonStoreCAS/",
+                "mundiTokenURL": "https://api.mundipagg.com/core/v1.0/tokens?appId=",
+                "MUNDIPAGG_KEY": "pk_test_wNZ7MWECEIppKd81",
+                "GOOGLE_MAP_KEY": "AIzaSyC072XZoaL_4pCFb5S3StY2E4VnWPGGCEA",
+                "RECAPCHA_KEY": "6LftxBkUAAAAAKB-4rxHFRyyKwkitD4RAVdtnI4B",
+                "APPLY_TO_BE_REP": "https://novabruat1livewc.br.avon.com/widget/novapply/#/",
+                "TEALIUM": "(function(a,b,c,d){a='//tags.tiqcdn.com/utag/avon/brazil-nova/qa/utag.js';b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);})();",
+                "IP_ADDRESS_URL":"https://api.ipify.org/?format=json"
+            }
+        }
+    }
+};

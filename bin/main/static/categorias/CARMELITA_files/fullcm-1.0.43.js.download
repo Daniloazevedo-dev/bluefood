@@ -1,0 +1,46 @@
+//Simple javaScript/jQuery will be supported.
+var arrayImgDestaque = [
+  "https://static1.br.avon.com/wcsstore/img-banner/campanhas/2018/cp-05/login/banner02-02.jpg",
+  "https://www.br.avon.com/REPSuite/static/pages/login/img/banner03.jpg",
+];
+var arrayImgSecundario = [
+  "https://static1.br.avon.com/wcsstore/img-banner/campanhas/2018/cp-05/login/banner02-02.jpg",
+  "https://www.br.avon.com/REPSuite/static/pages/login/img/banner03.jpg",
+];
+var control = 0;
+
+function reloadOfertaExtra(value) {
+  if (value != "") {
+    control = value;
+  }
+  if (control == 0) {
+    $(".destaque-oferta-extra-principal img").attr("src", arrayImgDestaque[0]);
+    $(".destaque-oferta-extra-segundo img").attr("src", arrayImgSecundario[1]);
+    $(".destaque-oferta-extra-terceiro img").attr("src", arrayImgSecundario[2]);
+    control += 1;
+  } else {
+    $(".destaque-oferta-extra-principal img").attr("src", arrayImgDestaque[1]);
+    $(".destaque-oferta-extra-segundo img").attr("src", arrayImgSecundario[2]);
+    $(".destaque-oferta-extra-terceiro img").attr("src", arrayImgSecundario[0]);
+    control = 0;
+  }
+}
+setInterval(function () {
+  //reloadOfertaExtra("");
+}, 4000);
+
+//Change the content of the below JS variable to show it in loginHome page. Do not delete this var.
+//Styles will not work here.include CSS file in index.html
+var loginCont =
+  '<img class="imageWidth avonwg-imagewidth" src="https://static1.br.avon.com/wcsstore/img-banner/fixo/main/login/cp03-banner-login-lucro-sem-ferias.jpg" />';
+
+/*SAFARI*/
+var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
+var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+
+if (isSafari) {
+  var storage_atualizacao = sessionStorage.getItem("alertaSafari");
+  if (storage_atualizacao == null) {
+    document.location.href = "/digital";
+  }
+}
