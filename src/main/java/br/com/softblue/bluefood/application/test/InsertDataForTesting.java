@@ -9,6 +9,7 @@ import java.util.NoSuchElementException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.context.event.EventListener;
+import org.springframework.core.env.Profiles;
 import org.springframework.stereotype.Component;
 
 import br.com.softblue.bluefood.domain.cliente.Cliente;
@@ -23,6 +24,7 @@ import br.com.softblue.bluefood.domain.restaurante.ItemCardapioRepository;
 import br.com.softblue.bluefood.domain.restaurante.Restaurante;
 import br.com.softblue.bluefood.domain.restaurante.RestauranteRepository;
 import br.com.softblue.bluefood.util.StringUtils;
+
 
 @Component
 public class InsertDataForTesting {
@@ -45,19 +47,24 @@ public class InsertDataForTesting {
 	@EventListener
 	public void onApplicationEvent(ContextRefreshedEvent event) {
 		
-		Cliente[] clientes = clientes();
-		Restaurante[] restaurantes = restaurantes();
-		itensCardapio(restaurantes);
+		org.springframework.core.env.Environment environment = event.getApplicationContext().getEnvironment();
 		
-		Pedido p = new Pedido();
-		p.setData(LocalDateTime.now());
-		p.setCliente(clientes[0]);
-		p.setRestaurante(restaurantes[0]);
-		p.setStatus(Status.Producao);
-		p.setSubtotal(BigDecimal.valueOf(10));
-		p.setTaxaEntrega(BigDecimal.valueOf(2));
-		p.setTotal(BigDecimal.valueOf(12.0));
-		pedidoRespository.save(p);
+		if(environment.acceptsProfiles(Profiles.of("dev"))) {
+			
+			Cliente[] clientes = clientes();
+			Restaurante[] restaurantes = restaurantes();
+			itensCardapio(restaurantes);
+			
+			Pedido p = new Pedido();
+			p.setData(LocalDateTime.now());
+			p.setCliente(clientes[0]);
+			p.setRestaurante(restaurantes[0]);
+			p.setStatus(Status.Producao);
+			p.setSubtotal(BigDecimal.valueOf(10));
+			p.setTaxaEntrega(BigDecimal.valueOf(2));
+			p.setTotal(BigDecimal.valueOf(12.0));
+			pedidoRespository.save(p);
+		} 
 		
 	}
 	
