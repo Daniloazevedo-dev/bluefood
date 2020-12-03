@@ -29,7 +29,7 @@ import br.com.softblue.bluefood.util.StringUtils;
 @Component
 public class InsertDataForTesting {
 	
-	@Autowired
+	@Autowired 
 	private PedidoRepository pedidoRespository;
 	
 	@Autowired
